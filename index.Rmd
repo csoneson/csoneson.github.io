@@ -1,0 +1,20 @@
+---
+title: "Brief CV"
+---
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+- 04/2015 - : Postdoc, [Robinson lab](https://robinsonlabuzh.github.io/), Institute of Molecular Life Sciences, University of Zurich, Switzerland
+- 01/2011 - : Analyst, [Qlucore AB](http://qlucore.com), Lund, Sweden
+- 02/2012 - 03/2015: Bioinformatician/Project Manager, [Bioinformatics Core Facility](http://bcf.isb-sib.ch), SIB Swiss Institute of Bioinformatics, Lausanne, Switzerland
+- 08/2011 - 01/2012: Acting assistant professor, [Centre for Mathematical Sciences](http://maths.lu.se), Lund University, Sweden
+- 08/2006 - 07/2011: PhD student, [Centre for Mathematical Sciences](http://maths.lu.se), Lund University, Sweden
+
+## Contact:
+<i class="fa fa-envelope-o"></i> charlotte.soneson (at) uzh.ch
+
+
+
+

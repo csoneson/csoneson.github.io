@@ -1,0 +1,23 @@
+---
+title: "Resources"
+author: ""
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+## R packages
+
+I am the main developer and maintainer of the following R packages:
+
+- [iCOBRA](http://bioconductor.org/packages/iCOBRA/)
+- [compcodeR](http://bioconductor.org/packages/compcodeR)
+- [countsimQC](https://github.com/csoneson/countsimQC)
+
+I have also contributed to these R packages:
+
+- [iSEE](https://github.com/csoneson/iSEE)
+
+## Other resources
+
+- [conquer](http://imlspenticton.uzh.ch:3838/conquer/)
