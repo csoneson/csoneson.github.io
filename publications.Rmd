@@ -31,6 +31,9 @@ pmid_software <- rbind(
 biorxiv_software <- rbind(
   c(doi = "", software = "")
 )
+
+## names to highlight in publication list
+highlight <- c("Soneson C", "Charlotte Soneson")
 ```
 
 
@@ -104,6 +107,13 @@ summ$title <- sapply(summ$title, function(x) {
 })
 ```
 
+```{r}
+## Highlight name in bold
+summ$authors <- sapply(summ$authors, function(a) {
+  gsub(paste0("(", paste(highlight, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+})
+```
+
 ```{r add_links, message = FALSE, warning = FALSE}
 ## Add column with links to GitHub repos
 summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
@@ -139,6 +149,12 @@ biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFacto
     dplyr::mutate(software = replace(software, is.na(software), ""))
 ```
 
+```{r}
+## Highlight name in bold
+biorxiv$authors <- sapply(biorxiv$authors, function(a) {
+  gsub(paste0("(", paste(highlight, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+})
+```
 
 ```{r}
 ## Split by publication year
