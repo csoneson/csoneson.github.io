@@ -8,8 +8,8 @@ editor_options:
 
 ## 2018
 
+- [Statistical data analysis for genome scale biology (CSAMA 2018)](http://www-huber.embl.de/csama2018/#home), Brixen, Italy
 - [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis), Hinxton, UK
-- CSAMA 2018, Brixen, Italy
 
 ## 2017
 
