@@ -11,7 +11,7 @@ editor_options:
 pmid_remove <- c()
 
 ## PubMed IDs to add
-pmid_add <- c()
+pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
 biorxiv_dois <- c()
@@ -34,6 +34,24 @@ biorxiv_software <- rbind(
 
 ## names to highlight in publication list
 highlight <- c("Soneson C", "Charlotte Soneson")
+
+## publications not in PubMed/bioRxiv
+unlisted_publications <- data.frame(
+  title = c("Incorporation of gene exchangeabilities improves the reproducibility of gene set rankings",
+            "Manliga och kvinnliga teknologers självbilder och deras stereotypbilder av teknologer",
+            "A method for visual identification of small sample subgroups and potential biomarkers"),
+  pubdate = c("", "", ""),
+  pubyear = c("2014", "2013", "2011"),
+  journal = c("Computational Statistics & Data Analysis", "Högre Utbildning", 
+              "Annals of Applied Statistics"),
+  authors = c("Soneson C, Fontes M", "Soneson C, Torstensson A", "Soneson C, Fontes M"),
+  volume = c("71", "3", "5"),
+  issue = c("", "1", "3"),
+  pages = c("588-598", "3-14", "2131-2149"),
+  doi = c("10.1016/j.csda.2012.07.026", "", "10.1214/11-AOAS460"),
+  pmid = c("", "", ""),
+  elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460")
+)
 ```
 
 
@@ -60,9 +78,13 @@ make_link_text <- function(address, title) {
 }
 
 make_link_pmid <- function(pmid) {
-  sprintf('<a href="%s" target="_blank"> %s</a>',
+  if (pmid != "") {
+      sprintf('<a href="%s" target="_blank"> %s</a>',
           paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
           paste0("PMID ", pmid))
+  } else {
+    ""
+  }
 }
 
 make_link_altmetric <- function(doi) {
@@ -106,6 +128,15 @@ summ$title <- sapply(summ$title, function(x) {
   x
 })
 ```
+
+```{r}
+## Add unlisted publications
+unlisted_publications <- unlisted_publications[, match(colnames(summ), 
+                                                       colnames(unlisted_publications))]
+colnames(unlisted_publications) <- colnames(summ)
+summ <- rbind(summ, unlisted_publications)
+```
+
 
 ```{r}
 ## Highlight name in bold
