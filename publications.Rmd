@@ -37,9 +37,9 @@ highlight <- c("Soneson C", "Charlotte Soneson")
 
 ## publications not in PubMed/bioRxiv
 unlisted_publications <- data.frame(
-  title = c("Incorporation of gene exchangeabilities improves the reproducibility of gene set rankings",
-            "Manliga och kvinnliga teknologers självbilder och deras stereotypbilder av teknologer",
-            "A method for visual identification of small sample subgroups and potential biomarkers"),
+  title = c("Incorporation of gene exchangeabilities improves the reproducibility of gene set rankings.",
+            "Manliga och kvinnliga teknologers självbilder och deras stereotypbilder av teknologer.",
+            "A method for visual identification of small sample subgroups and potential biomarkers."),
   pubdate = c("", "", ""),
   pubyear = c("2014", "2013", "2011"),
   journal = c("Computational Statistics & Data Analysis", "Högre Utbildning", 
