@@ -7,6 +7,9 @@ editor_options:
 ---
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
+## Google Scholar ID
+id <- "c28GqkIAAAAJ"
+
 ## PubMed IDs to remove
 pmid_remove <- c()
 
@@ -57,9 +60,12 @@ unlisted_publications <- data.frame(
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-suppressPackageStartupMessages(library(dplyr))
-suppressPackageStartupMessages(library(rentrez))
-suppressPackageStartupMessages(library(rvest))
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(rentrez)
+  library(rvest)
+  library(scholar)
+})
 ```
 
 ```{r}
@@ -95,6 +101,9 @@ make_link_altmetric <- function(doi) {
 
 
 ```{r}
+## Get Google Scholar publication list
+scholarpubs <- get_publications(id)
+
 ## Search PubMed
 x <- entrez_search(db = "pubmed", term = "Soneson Charlotte[au]", retmax = 1000)
 
@@ -159,6 +168,16 @@ summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALS
     dplyr::mutate(software = replace(software, is.na(software), ""))
 ```
 
+```{r add_citations, message = FALSE, warning = FALSE}
+## Add citations from Google Scholar
+idx <- match(tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                         summ$title)))),
+             tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                         scholarpubs$title)))))
+summ$citations <- scholarpubs$cites[idx]
+```
+
+
 ```{r}
 ## Add bioRxiv preprints by doi
 biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
@@ -185,6 +204,18 @@ if (!is.null(biorxiv)) {
     dplyr::mutate(software = replace(software, is.na(software), ""))
 }
 ```
+
+```{r add_citations_preprints, message = FALSE, warning = FALSE}
+if (!is.null(biorxiv)) {
+  ## Add citations from Google Scholar
+  idx <- match(tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                           biorxiv$title)))),
+               tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                           scholarpubs$title)))))
+  biorxiv$citations <- scholarpubs$cites[idx]
+}
+```
+
 
 ```{r}
 if (!is.null(biorxiv)) {
