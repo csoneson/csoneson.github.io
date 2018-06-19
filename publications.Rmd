@@ -17,7 +17,7 @@ pmid_remove <- c()
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c()
+biorxiv_dois <- c("10.1101/349738")
 
 ## github repos
 pmid_github <- rbind(
@@ -54,6 +54,21 @@ unlisted_publications <- data.frame(
   doi = c("10.1016/j.csda.2012.07.026", "", "10.1214/11-AOAS460"),
   pmid = c("", "", ""),
   elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460")
+)
+
+## F1000Research articles awaiting peer review
+f1000_preprints <- data.frame(
+  title = c("iSEE: Interactive SummarizedExperiment Explorer"),
+  pubdate = c("Posted June 14, 2018."),
+  pubyear = c("Preprints"),
+  journal = c("F1000Research"),
+  authors = c("Kevin Rue-Albrecht, Federico Marini, Charlotte Soneson, Aaron TL Lun"),
+  volume = c(7),
+  issue = c(741),
+  pages = c(""),
+  doi = c("10.12688/f1000research.14966.1"),
+  pmid = c(""),
+  elocationid = c("")
 )
 ```
 
@@ -187,10 +202,20 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
                                 html_text(html_nodes(html, ".nlm-surname")))), collapse = ", ")
   pubdate <- html_text(html_nodes(html, ".published"))
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-             journal = "", authors = authors, volume = "", issue = "", 
+             journal = "bioRxiv", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
+```
+
+```{r}
+## Add F1000Research preprints
+if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
+  f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
+                                             colnames(f1000_preprints))]
+  colnames(f1000_preprints) <- colnames(biorxiv)
+  biorxiv <- rbind(biorxiv, f1000_preprints)
+}
 ```
 
 ```{r add_links_preprints, message = FALSE, warning = FALSE}
@@ -235,10 +260,11 @@ summ <- split(summ, summ$pubyear)
 txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>\n\n"
 ## Preprints
 if (!is.null(biorxiv)) {
-  txt <- paste0(txt, "\n## Preprints\n\n")
+  txt <- paste0(txt, "\n## Preprints and articles awaiting peer review\n\n")
   for (j in seq_len(nrow(biorxiv))) {
     txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
-                  ". bioRxiv doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                  ". ", biorxiv[j, "journal"], 
+                  " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
                   biorxiv[j, "pubdate"], " ", 
                   ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")),
