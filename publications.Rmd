@@ -58,15 +58,15 @@ unlisted_publications <- data.frame(
 
 ## F1000Research articles awaiting peer review
 f1000_preprints <- data.frame(
-  title = c("iSEE: Interactive SummarizedExperiment Explorer"),
-  pubdate = c("Posted June 14, 2018."),
+  title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification"),
+  pubdate = c("Posted June 27, 2018."),
   pubyear = c("Preprints"),
   journal = c("F1000Research"),
-  authors = c("Kevin Rue-Albrecht, Federico Marini, Charlotte Soneson, Aaron TL Lun"),
+  authors = c("Michael I Love, Charlotte Soneson, Rob Patro"),
   volume = c(7),
-  issue = c(741),
+  issue = c(952),
   pages = c(""),
-  doi = c("10.12688/f1000research.14966.1"),
+  doi = c("10.12688/f1000research.15398.1"),
   pmid = c(""),
   elocationid = c("")
 )
@@ -123,7 +123,7 @@ scholarpubs <- get_publications(id)
 x <- entrez_search(db = "pubmed", term = "Soneson Charlotte[au]", retmax = 1000)
 
 ## Add and remove PubMed IDs manually
-x$ids <- unique(c(setdiff(x$ids, pmid_remove), pmid_add))
+x$ids <- unique(c(base::setdiff(x$ids, pmid_remove), pmid_add))
 
 ## Extract info
 summ <- entrez_summary(db = "pubmed", id = x$ids)
