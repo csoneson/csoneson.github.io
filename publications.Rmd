@@ -58,21 +58,17 @@ unlisted_publications <- data.frame(
 
 ## F1000Research articles awaiting peer review
 f1000_preprints <- data.frame(
-  title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification",
-            "A systematic performance evaluation of clustering methods for single-cell RNA-seq data"),
-  pubdate = c("Posted June 27, 2018.",
-              "Posted July 26, 2018."),
-  pubyear = c("Preprints", "Preprints"),
-  journal = c("F1000Research", "F1000Research"),
-  authors = c("Michael I Love, Charlotte Soneson, Rob Patro",
-              "Angelo Duò, Mark D Robinson, Charlotte Soneson"),
-  volume = c(7, 7),
-  issue = c(952, 1141),
-  pages = c("", ""),
-  doi = c("10.12688/f1000research.15398.1",
-          "10.12688/f1000research.15666.1"),
-  pmid = c("", ""),
-  elocationid = c("", "")
+  title = c("Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification"),
+  pubdate = c("Posted June 27, 2018."),
+  pubyear = c("Preprints"),
+  journal = c("F1000Research"),
+  authors = c("Michael I Love, Charlotte Soneson, Rob Patro"),
+  volume = c(7),
+  issue = c(952),
+  pages = c(""),
+  doi = c("10.12688/f1000research.15398.1"),
+  pmid = c(""),
+  elocationid = c("")
 )
 ```
 
