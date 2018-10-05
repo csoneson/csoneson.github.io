@@ -13,6 +13,7 @@ I am the main developer and maintainer of the following R packages:
 - [iCOBRA](http://bioconductor.org/packages/iCOBRA/)
 - [compcodeR](http://bioconductor.org/packages/compcodeR)
 - [countsimQC](https://github.com/csoneson/countsimQC)
+- [jcc](https://github.com/csoneson/jcc)
 
 I have also contributed to these R packages:
 
@@ -21,3 +22,5 @@ I have also contributed to these R packages:
 ## Other resources
 
 - [conquer](http://imlspenticton.uzh.ch:3838/conquer/)
+- [TabulaMurisData](https://bioconductor.org/packages/TabulaMurisData/)
+- [DuoClustering2018](https://bioconductor.org/packages/DuoClustering2018/)
