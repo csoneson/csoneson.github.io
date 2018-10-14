@@ -10,17 +10,17 @@ editor_options:
 
 I am the main developer and maintainer of the following R packages:
 
-- [iCOBRA](http://bioconductor.org/packages/iCOBRA/)
-- [compcodeR](http://bioconductor.org/packages/compcodeR)
-- [countsimQC](https://github.com/csoneson/countsimQC)
-- [jcc](https://github.com/csoneson/jcc)
+- `r badger::badge_custom(x = "", y = "iCOBRA", color = "blue", url = "http://bioconductor.org/packages/iCOBRA/")` <img src="https://bioconductor.org/shields/years-in-bioc/iCOBRA.svg"> `r badger::badge_download_bioc(pkg = "iCOBRA")`
+- `r badger::badge_custom(x = "", y = "compcodeR", color = "blue", url = "http://bioconductor.org/packages/compcodeR/")` <img src="https://bioconductor.org/shields/years-in-bioc/compcodeR.svg"> `r badger::badge_download_bioc(pkg = "compcodeR")`
+- `r badger::badge_custom(x = "", y = "countsimQC", color = "blue", url = "http://bioconductor.org/packages/countsimQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/countsimQC.svg"> `r badger::badge_download_bioc(pkg = "countsimQC")`
+- `r badger::badge_custom(x = "", y = "jcc", color = "red", url = "https://github.com/csoneson/jcc")`
 
 I have also contributed to these R packages:
 
-- [iSEE](https://github.com/csoneson/iSEE)
+- `r badger::badge_custom(x = "", y = "iSEE", color = "blue", url = "http://bioconductor.org/packages/iSEE/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEE.svg"> `r badger::badge_download_bioc(pkg = "iSEE")`
 
 ## Other resources
 
-- [conquer](http://imlspenticton.uzh.ch:3838/conquer/)
-- [TabulaMurisData](https://bioconductor.org/packages/TabulaMurisData/)
-- [DuoClustering2018](https://bioconductor.org/packages/DuoClustering2018/)
+- `r badger::badge_custom(x = "", y = "conquer", color = "red", url = "http://imlspenticton.uzh.ch:3838/conquer/")`
+- `r badger::badge_custom(x = "", y = "TabulaMurisData", color = "blue", url = "http://bioconductor.org/packages/TabulaMurisData/")` `r badger::badge_download_bioc(pkg = "TabulaMurisData")`
+- `r badger::badge_custom(x = "", y = "DuoClustering2018", color = "blue", url = "http://bioconductor.org/packages/DuoClustering2018/")` `r badger::badge_download_bioc(pkg = "DuoClustering2018")`
