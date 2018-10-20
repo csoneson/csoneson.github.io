@@ -19,6 +19,9 @@ pmid_add <- c("27309738", "26615188", "25057166")
 ## bioRxiv dois
 biorxiv_dois <- c("10.1101/349738", "10.1101/378539")
 
+## PeerJ dois
+peerj_dois <- c("10.7287/peerj.preprints.27283v1")
+
 ## github repos
 pmid_github <- rbind(
   c(pmid = "", github = "")
@@ -199,10 +202,27 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
   html <- read_html(paste0("https://doi.org/", doi))
   title <- html_text(html_nodes(html, "#page-title"))
   authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
-                                html_text(html_nodes(html, ".nlm-surname")))), collapse = ", ")
+                                html_text(html_nodes(html, ".nlm-surname")))),
+                   collapse = ", ")
   pubdate <- html_text(html_nodes(html, ".published"))
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
              journal = "bioRxiv", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+```
+
+```{r}
+## Add PeerJ preprints by doi
+peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
+  html <- read_html(paste0("https://doi.org/", doi))
+  title <- html_text(html_nodes(html, ".article-title"))
+  authors <- paste(unique(paste(html_text(html_nodes(html, ".given-names")), 
+                                html_text(html_nodes(html, ".surname")))), 
+                   collapse = ", ")
+  pubdate <- paste0("Posted ", format(as.Date(html_text(html_nodes(html, "time"))[1]), "%B %d, %Y."))
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints",       
+             journal = "PeerJ", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
              stringsAsFactors = FALSE)
 }))
@@ -217,6 +237,11 @@ if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
   biorxiv <- rbind(biorxiv, f1000_preprints)
 } else if (!is.null(f1000_preprints)) {
   biorxiv <- f1000_preprints
+}
+
+## Add PeerJ preprints
+if (!is.null(peerj)) {
+  biorxiv <- plyr::rbind.fill(biorxiv, peerj)
 }
 ```
 
