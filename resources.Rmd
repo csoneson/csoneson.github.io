@@ -22,5 +22,5 @@ I have also contributed to these R packages:
 ## Other resources
 
 - `r badger::badge_custom(x = "", y = "conquer", color = "red", url = "http://imlspenticton.uzh.ch:3838/conquer/")`
-- `r badger::badge_custom(x = "", y = "TabulaMurisData", color = "blue", url = "http://bioconductor.org/packages/TabulaMurisData/")` `r badger::badge_download_bioc(pkg = "TabulaMurisData")`
-- `r badger::badge_custom(x = "", y = "DuoClustering2018", color = "blue", url = "http://bioconductor.org/packages/DuoClustering2018/")` `r badger::badge_download_bioc(pkg = "DuoClustering2018")`
+- `r badger::badge_custom(x = "", y = "TabulaMurisData", color = "blue", url = "http://bioconductor.org/packages/TabulaMurisData/")` 
+- `r badger::badge_custom(x = "", y = "DuoClustering2018", color = "blue", url = "http://bioconductor.org/packages/DuoClustering2018/")` 
