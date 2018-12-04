@@ -205,7 +205,8 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
   authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
                                 html_text(html_nodes(html, ".nlm-surname")))),
                    collapse = ", ")
-  pubdate <- html_text(html_nodes(html, ".published"))
+  #pubdate <- html_text(html_nodes(html, ".published"))
+  pubdate <- gsub("^ *| *$", "", gsub("\n", "", html_text(html_nodes(html, ".pane-1 .pane-content"))))
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
              journal = "bioRxiv", authors = authors, volume = "", issue = "", 
              pages = "", doi = doi, pmid = "", elocationid = "", 
