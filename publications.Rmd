@@ -22,6 +22,9 @@ biorxiv_dois <- c("10.1101/349738", "10.1101/378539")
 ## PeerJ dois
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
 
+## ArXiv dois
+arxiv_dois <- c("1812.00661")
+
 ## github repos
 pmid_github <- rbind(
   c(pmid = "", github = "")
@@ -115,6 +118,11 @@ make_link_pmid <- function(pmid) {
 make_link_altmetric <- function(doi) {
   sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
           doi)
+}
+
+make_link_altmetric_arxiv <- function(arxivid) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-arxiv-id="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          arxivid)
 }
 ```
 
@@ -231,6 +239,22 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
 ```
 
 ```{r}
+## Add ArXiv preprints by doi
+arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
+  html <- read_html(paste0("https://arxiv.org/abs/", doi))
+  title <- gsub("^Title:", "", html_text(html_nodes(html, ".title")))
+  authors <- gsub(" *$", "", gsub("\n", "", gsub("^Authors:", "", html_text(html_nodes(html, ".authors")))))
+  tmp <- strsplit(html_text(html_nodes(html, ".submission-history")), "\n")[[1]]
+  tmp <- strsplit(tmp[length(tmp)], " ")[[1]][c(3, 2, 4)]
+  pubdate <- paste0("Posted ", tmp[1], " ", tmp[2], ", ", tmp[3], ".")
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints",       
+             journal = "ArXiv", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+```
+
+```{r}
 ## Add F1000Research preprints
 if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
   f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
@@ -244,6 +268,11 @@ if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
 ## Add PeerJ preprints
 if (!is.null(peerj)) {
   biorxiv <- plyr::rbind.fill(biorxiv, peerj)
+}
+
+## Add ArXiv preprints
+if (!is.null(arxiv)) {
+  biorxiv <- plyr::rbind.fill(biorxiv, arxiv)
 }
 ```
 
@@ -291,14 +320,25 @@ txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.ne
 if (!is.null(biorxiv)) {
   txt <- paste0(txt, "\n## Preprints and articles awaiting peer review\n\n")
   for (j in seq_len(nrow(biorxiv))) {
-    txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
-                  ". ", biorxiv[j, "journal"], 
-                  " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
-                  biorxiv[j, "pubdate"], " ", 
-                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+    if (biorxiv[j, "journal"] != "ArXiv") {
+      txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                    ". ", biorxiv[j, "journal"], 
+                    " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                    biorxiv[j, "pubdate"], " ", 
+                    ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")),
                   make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
                   "\n\n")
+    } else {
+      txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                  ". ", biorxiv[j, "journal"], 
+                  " ID:", make_link_text(address = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"]), title = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"])), ". ", 
+                  biorxiv[j, "pubdate"], " ", 
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")),
+                  make_link_altmetric_arxiv(biorxiv[j, "doi"]),
+                  "\n\n")
+    }
   }
 }
 
