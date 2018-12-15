@@ -14,7 +14,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 - 08/2006 - 07/2011: PhD student, [Centre for Mathematical Sciences](http://maths.lu.se), Lund University, Sweden
 
 ## Contact:
-<i class="fa fa-envelope-o"></i> charlotte.soneson (at) uzh.ch
+<i class="fa fa-envelope-o"></i> charlotte.soneson (at) fmi.ch
 
 
 
