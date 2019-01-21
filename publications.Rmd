@@ -17,7 +17,7 @@ pmid_remove <- c()
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/349738", "10.1101/378539")
+biorxiv_dois <- c("10.1101/349738")
 
 ## PeerJ dois
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
