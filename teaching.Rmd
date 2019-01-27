@@ -6,10 +6,15 @@ editor_options:
   chunk_output_type: console
 ---
 
+## 2019
+
+- [RNA-sequence analysis](https://www.ebi.ac.uk/training/events/2019/rna-sequence-analysis), EBI, Hinxton, UK
+- [Microbiota Data Analysis Workshop](http://gdc-mda.ethz.ch/MDA19/program.html), Zurich, Switzerland
+
 ## 2018
 
 - [Statistical data analysis for genome scale biology (CSAMA 2018)](http://www-huber.embl.de/csama2018/#home), Brixen, Italy
-- [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis), Hinxton, UK
+- [Advanced RNA-seq analysis](https://www.ebi.ac.uk/training/events/2018/advanced-rna-seq-analysis), EBI, Hinxton, UK
 
 ## 2017
 

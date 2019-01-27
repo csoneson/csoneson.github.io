@@ -8,16 +8,15 @@ editor_options:
 
 ## R packages
 
-I am the main developer and maintainer of the following R packages:
+I am the maintainer or co-developer of the following R packages:
 
-- `r badger::badge_custom(x = "", y = "iCOBRA", color = "blue", url = "http://bioconductor.org/packages/iCOBRA/")` <img src="https://bioconductor.org/shields/years-in-bioc/iCOBRA.svg"> `r badger::badge_download_bioc(pkg = "iCOBRA")`
-- `r badger::badge_custom(x = "", y = "compcodeR", color = "blue", url = "http://bioconductor.org/packages/compcodeR/")` <img src="https://bioconductor.org/shields/years-in-bioc/compcodeR.svg"> `r badger::badge_download_bioc(pkg = "compcodeR")`
-- `r badger::badge_custom(x = "", y = "countsimQC", color = "blue", url = "http://bioconductor.org/packages/countsimQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/countsimQC.svg"> `r badger::badge_download_bioc(pkg = "countsimQC")`
+- `r badger::badge_custom(x = "", y = "iCOBRA", color = "blue", url = "http://bioconductor.org/packages/iCOBRA/")` <img src="https://bioconductor.org/shields/years-in-bioc/iCOBRA.svg">
+- `r badger::badge_custom(x = "", y = "compcodeR", color = "blue", url = "http://bioconductor.org/packages/compcodeR/")` <img src="https://bioconductor.org/shields/years-in-bioc/compcodeR.svg">
+- `r badger::badge_custom(x = "", y = "countsimQC", color = "blue", url = "http://bioconductor.org/packages/countsimQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/countsimQC.svg"> 
+- `r badger::badge_custom(x = "", y = "iSEE", color = "blue", url = "http://bioconductor.org/packages/iSEE/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEE.svg">
 - `r badger::badge_custom(x = "", y = "jcc", color = "red", url = "https://github.com/csoneson/jcc")`
-
-I have also contributed to these R packages:
-
-- `r badger::badge_custom(x = "", y = "iSEE", color = "blue", url = "http://bioconductor.org/packages/iSEE/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEE.svg"> `r badger::badge_download_bioc(pkg = "iSEE")`
+- `r badger::badge_custom(x = "", y = "Rhisat2", color = "red", url = "https://github.com/fmicompbio/Rhisat2")`
+- `r badger::badge_custom(x = "", y = "alevinQC", color = "red", url = "https://github.com/csoneson/alevinQC")`
 
 ## Other resources
 
