@@ -9,6 +9,7 @@ editor_options:
 ## 2019
 
 - [Statistical data analysis for genome scale biology (CSAMA 2019)](https://www.huber.embl.de/csama2019/#home), Brixen, Italy
+- [Bioinformatics summer school](https://uclouvain-cbio.github.io/BSS2019/), Louvain-la-Neuve, Belgium
 - [RNA-sequence analysis](https://www.ebi.ac.uk/training/events/2019/rna-sequence-analysis), EBI, Hinxton, UK
 - [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
 - [Microbiota Data Analysis Workshop](http://gdc-mda.ethz.ch/MDA19/program.html), Zurich, Switzerland
