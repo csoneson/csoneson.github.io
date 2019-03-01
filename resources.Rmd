@@ -10,7 +10,7 @@ editor_options:
 
 I am the maintainer or co-developer of the following R packages:
 
-- `r badger::badge_custom(x = "", y = "alevinQC", color = "red", url = "https://github.com/csoneson/alevinQC")`
+- `r badger::badge_custom(x = "", y = "alevinQC", color = "blue", url = "http://bioconductor.org/packages/alevinQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/alevinQC.svg">
 - `r badger::badge_custom(x = "", y = "compcodeR", color = "blue", url = "http://bioconductor.org/packages/compcodeR/")` <img src="https://bioconductor.org/shields/years-in-bioc/compcodeR.svg">
 - `r badger::badge_custom(x = "", y = "countsimQC", color = "blue", url = "http://bioconductor.org/packages/countsimQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/countsimQC.svg"> 
 - `r badger::badge_custom(x = "", y = "iCOBRA", color = "blue", url = "http://bioconductor.org/packages/iCOBRA/")` <img src="https://bioconductor.org/shields/years-in-bioc/iCOBRA.svg">
