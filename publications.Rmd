@@ -28,15 +28,40 @@ arxiv_dois <- c("1812.00661")
 
 ## github repos
 pmid_github <- rbind(
-  c(pmid = "", github = "")
+  c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
+  c(pmid = "30356428", github = "https://github.com/mikelove/swimdown"),
+  c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scrnaseq_clustering_comparison"),
+  c(pmid = "30002819", github = "https://github.com/ltla/isee2018"),
+  c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
+  c(pmid = "29478411", github = "https://github.com/statOmics/zinbwaveZinger"),
+  c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
+  c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper")
 )
 biorxiv_github <- rbind(
   c(doi = "", github = "")
 )
 
-## software packages
+## preprint links
+pmid_preprints <- rbind(
+  c(pmid = "30655364", preprint = "https://www.biorxiv.org/content/10.1101/378539v1"),
+  c(pmid = "29481549", preprint = "https://www.biorxiv.org/content/10.1101/143289v1"),
+  c(pmid = "29478411", preprint = "https://www.biorxiv.org/content/10.1101/250126v1"),
+  c(pmid = "28784146", preprint = "https://www.biorxiv.org/content/10.1101/109082v1"),
+  c(pmid = "27027585", preprint = "https://www.biorxiv.org/content/10.1101/033431v1"),
+  c(pmid = "26813113", preprint = "https://www.biorxiv.org/content/10.1101/025387v2")
+)
+
+## software packages/other resources
 pmid_software <- rbind(
-  c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html")
+  c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
+  c(pmid = "30655364", software = "https://github.com/csoneson/jcc"),
+  c(pmid = "30271584", software = "http://bioconductor.org/packages/DuoClustering2018/"),
+  c(pmid = "30002819", software = "https://bioconductor.org/packages/iSEE/"),
+  c(pmid = "29481549", software = "http://imlspenticton.uzh.ch:3838/conquer/"),
+  c(pmid = "29028961", software = "https://bioconductor.org/packages/countsimQC/"),
+  c(pmid = "28784146", software = "https://bioconductor.org/packages/stageR/"),
+  c(pmid = "26925227", software = "https://bioconductor.org/packages/tximport/"),
+  c(pmid = "24813215", software = "https://bioconductor.org/packages/compcodeR/")
 )
 biorxiv_software <- rbind(
   c(doi = "", software = "")
@@ -191,9 +216,13 @@ summ$authors <- sapply(summ$authors, function(a) {
 summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
   dplyr::mutate(github = replace(github, is.na(github), ""))
 
-## Add colum with links to software packages
+## Add column with links to software packages
 summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
+
+## Add column with links to preprints
+summ <- dplyr::left_join(summ, data.frame(pmid_preprints, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(preprint = replace(preprint, is.na(preprint), ""))
 ```
 
 ```{r add_citations, message = FALSE, warning = FALSE}
@@ -355,7 +384,8 @@ for (i in years) {
                   " (", i, "). DOI: ", summ[[i]][j, "doi"],
                   ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), ". ",  
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
-                  ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software"), ". ")), 
+                  ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software/Resources"), ". ")), 
+                  ifelse(summ[[i]][j, "preprint"] == "", "", paste0(make_link_text(address = summ[[i]][j, "preprint"], title = "Preprint"), ". ")), 
                   make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
                   "\n\n")
   }
