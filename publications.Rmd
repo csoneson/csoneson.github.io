@@ -17,7 +17,7 @@ pmid_remove <- c()
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/349738", "10.1101/574525", "10.1101/575951", 
+biorxiv_dois <- c("10.1101/349738", "10.1101/574525", 
                   "10.1101/590562")
 
 ## PeerJ dois
@@ -187,6 +187,7 @@ summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
 ## Change some HTML formatting to markdown
 summ$title <- sapply(summ$title, function(x) {
   x <- gsub("&lt;i&gt;|&lt;/i&gt;", "*", x)  ## <i>, </i>
+  x <- gsub("&lt;u&gt;|&lt;/u&gt;", "*", x)  ## <u>, </u>
   x
 })
 ```
