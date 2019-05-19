@@ -17,8 +17,7 @@ pmid_remove <- c()
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/349738", "10.1101/574525", 
-                  "10.1101/590562")
+biorxiv_dois <- c("10.1101/574525", "10.1101/590562")
 
 ## PeerJ dois
 peerj_dois <- c("10.7287/peerj.preprints.27283v1")
@@ -49,7 +48,8 @@ pmid_preprints <- rbind(
   c(pmid = "28784146", preprint = "https://www.biorxiv.org/content/10.1101/109082v1"),
   c(pmid = "27027585", preprint = "https://www.biorxiv.org/content/10.1101/033431v1"),
   c(pmid = "26813113", preprint = "https://www.biorxiv.org/content/10.1101/025387v2"),
-  c(pmid = "31088905", preprint = "https://www.biorxiv.org/content/10.1101/575951v1")
+  c(pmid = "31088905", preprint = "https://www.biorxiv.org/content/10.1101/575951v1"),
+  c(pmid = "31098416", preprint = "https://www.biorxiv.org/content/10.1101/349738v3")
 )
 
 ## software packages/other resources
