@@ -20,7 +20,7 @@ pmid_add <- c("27309738", "26615188", "25057166")
 biorxiv_dois <- c("10.1101/574525", "10.1101/590562", "10.1101/657874")
 
 ## PeerJ dois
-peerj_dois <- c("10.7287/peerj.preprints.27283v1")
+peerj_dois <- c("10.7287/peerj.preprints.27283v2")
 
 ## ArXiv dois
 arxiv_dois <- c("1812.00661")
