@@ -20,7 +20,7 @@ pmid_add <- c("27309738", "26615188", "25057166")
 biorxiv_dois <- c("10.1101/574525", "10.1101/590562", "10.1101/657874")
 
 ## PeerJ dois
-peerj_dois <- c("10.7287/peerj.preprints.27283v2")
+peerj_dois <- c()#c("10.7287/peerj.preprints.27283v2")
 
 ## ArXiv dois
 arxiv_dois <- c()
@@ -75,18 +75,22 @@ highlight <- c("Soneson C", "Charlotte Soneson")
 unlisted_publications <- data.frame(
   title = c("Incorporation of gene exchangeabilities improves the reproducibility of gene set rankings.",
             "Manliga och kvinnliga teknologers självbilder och deras stereotypbilder av teknologer.",
-            "A method for visual identification of small sample subgroups and potential biomarkers."),
-  pubdate = c("", "", ""),
-  pubyear = c("2014", "2013", "2011"),
+            "A method for visual identification of small sample subgroups and potential biomarkers.", 
+            "RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis."),
+  pubdate = c("", "", "", ""),
+  pubyear = c("2014", "2013", "2011", "2019"),
   journal = c("Computational Statistics & Data Analysis", "Högre Utbildning", 
-              "Annals of Applied Statistics"),
-  authors = c("Soneson C, Fontes M", "Soneson C, Torstensson A", "Soneson C, Fontes M"),
-  volume = c("71", "3", "5"),
-  issue = c("", "1", "3"),
-  pages = c("588-598", "3-14", "2131-2149"),
-  doi = c("10.1016/j.csda.2012.07.026", "", "10.1214/11-AOAS460"),
-  pmid = c("", "", ""),
-  elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460")
+              "Annals of Applied Statistics", "Annual Review of Biomedical Data Science"),
+  authors = c("Soneson C, Fontes M", "Soneson C, Torstensson A", "Soneson C, Fontes M", 
+              "Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),
+  volume = c("71", "3", "5", "2"),
+  issue = c("", "1", "3", ""),
+  pages = c("588-598", "3-14", "2131-2149", "139-173"),
+  doi = c("10.1016/j.csda.2012.07.026", "", "10.1214/11-AOAS460",
+          "10.1146/annurev-biodatasci-072018-021255"),
+  pmid = c("", "", "", ""),
+  elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460", 
+                  "doi: 10.1146/annurev-biodatasci-072018-021255")
 )
 
 ## F1000Research articles awaiting peer review
