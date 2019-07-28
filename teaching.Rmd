@@ -8,6 +8,7 @@ editor_options:
 
 ## 2019
 
+- [Single-cell analysis autumn school](https://www.sib.swiss/training/course/2019-10_single-cell), Leysin, Switzerland
 - [Statistical data analysis for genome scale biology (CSAMA 2019)](https://www.huber.embl.de/csama2019/#home), Brixen, Italy
 - [Bioinformatics summer school](https://uclouvain-cbio.github.io/BSS2019/), Louvain-la-Neuve, Belgium
 - [RNA-sequence analysis](https://www.ebi.ac.uk/training/events/2019/rna-sequence-analysis), EBI, Hinxton, UK
