@@ -50,7 +50,8 @@ pmid_preprints <- rbind(
   c(pmid = "27027585", preprint = "https://www.biorxiv.org/content/10.1101/033431v1"),
   c(pmid = "26813113", preprint = "https://www.biorxiv.org/content/10.1101/025387v2"),
   c(pmid = "31088905", preprint = "https://www.biorxiv.org/content/10.1101/575951v1"),
-  c(pmid = "31098416", preprint = "https://www.biorxiv.org/content/10.1101/349738v3")
+  c(pmid = "31098416", preprint = "https://www.biorxiv.org/content/10.1101/349738v3"),
+  c(pmid = "31221194", preprint = "https://arxiv.org/abs/1812.00661")
 )
 
 ## software packages/other resources
