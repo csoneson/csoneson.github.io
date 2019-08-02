@@ -17,7 +17,7 @@ pmid_remove <- c()
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/574525", "10.1101/590562", "10.1101/657874", 
+biorxiv_dois <- c("10.1101/590562", "10.1101/657874", 
                   "10.1101/713412")
 
 ## PeerJ dois
@@ -35,7 +35,8 @@ pmid_github <- rbind(
   c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
   c(pmid = "29478411", github = "https://github.com/statOmics/zinbwaveZinger"),
   c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
-  c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper")
+  c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
+  c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome")
 )
 biorxiv_github <- rbind(
   c(doi = "", github = "")
@@ -51,7 +52,8 @@ pmid_preprints <- rbind(
   c(pmid = "26813113", preprint = "https://www.biorxiv.org/content/10.1101/025387v2"),
   c(pmid = "31088905", preprint = "https://www.biorxiv.org/content/10.1101/575951v1"),
   c(pmid = "31098416", preprint = "https://www.biorxiv.org/content/10.1101/349738v3"),
-  c(pmid = "31221194", preprint = "https://arxiv.org/abs/1812.00661")
+  c(pmid = "31221194", preprint = "https://arxiv.org/abs/1812.00661"),
+  c(pmid = "31366910", preprint = "https://www.biorxiv.org/content/10.1101/574525v1")
 )
 
 ## software packages/other resources
