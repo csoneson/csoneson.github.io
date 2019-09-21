@@ -17,6 +17,8 @@ I am the maintainer or co-developer of the following R packages:
   - A package providing extensive functionality for comparing results obtained by different methods for differential expression analysis of RNAseq data. It also contains functions for simulating count data and interfaces to several packages for performing the differential expression analysis.
 - `r badger::badge_custom(x = "", y = "countsimQC", color = "blue", url = "http://bioconductor.org/packages/countsimQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/countsimQC.svg"> 
   - countsimQC provides functionality to create a comprehensive report comparing a broad range of characteristics across a collection of count matrices. One important use case is the comparison of one or more synthetic count matrices to a real count matrix, possibly the one underlying the simulations. However, any collection of count matrices can be compared.
+- `r badger::badge_custom(x = "", y = "ExploreModelMatrix", color = "red", url = "https://github.com/csoneson/ExploreModelMatrix")`
+  - Interactive interface for exploring design matrices in R.
 - `r badger::badge_custom(x = "", y = "iCOBRA", color = "blue", url = "http://bioconductor.org/packages/iCOBRA/")` <img src="https://bioconductor.org/shields/years-in-bioc/iCOBRA.svg">
   - iCOBRA provides functions for calculation and visualization of performance metrics for evaluation of ranking and binary classification (assignment) methods. It also contains a shiny application for interactive exploration of results.
 - `r badger::badge_custom(x = "", y = "iSEE", color = "blue", url = "http://bioconductor.org/packages/iSEE/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEE.svg">
