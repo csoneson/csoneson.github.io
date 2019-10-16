@@ -8,7 +8,7 @@ editor_options:
 
 ## 2019
 
-- [Single-cell analysis autumn school](https://www.sib.swiss/training/course/2019-10_single-cell), Leysin, Switzerland
+- [Single-cell analysis autumn school](https://nbisweden.github.io/single-cell_sib_scilifelab/README.html), Leysin, Switzerland
 - [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
 - [Statistical data analysis for genome scale biology (CSAMA 2019)](https://www.huber.embl.de/csama2019/#home), Brixen, Italy
 - [Bioinformatics summer school](https://uclouvain-cbio.github.io/BSS2019/), Louvain-la-Neuve, Belgium
