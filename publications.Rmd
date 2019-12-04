@@ -17,7 +17,7 @@ pmid_remove <- c()
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/590562", "10.1101/657874", 
+biorxiv_dois <- c("10.1101/657874", 
                   "10.1101/713412", "10.1101/777888")
 
 ## PeerJ dois
@@ -53,7 +53,8 @@ pmid_preprints <- rbind(
   c(pmid = "31088905", preprint = "https://www.biorxiv.org/content/10.1101/575951v1"),
   c(pmid = "31098416", preprint = "https://www.biorxiv.org/content/10.1101/349738v3"),
   c(pmid = "31221194", preprint = "https://arxiv.org/abs/1812.00661"),
-  c(pmid = "31366910", preprint = "https://www.biorxiv.org/content/10.1101/574525v1")
+  c(pmid = "31366910", preprint = "https://www.biorxiv.org/content/10.1101/574525v1"),
+  c(pmid = "31792435", preprint = "https://www.biorxiv.org/content/10.1101/590562v1")
 )
 
 ## software packages/other resources
@@ -66,7 +67,8 @@ pmid_software <- rbind(
   c(pmid = "29028961", software = "https://bioconductor.org/packages/countsimQC/"),
   c(pmid = "28784146", software = "https://bioconductor.org/packages/stageR/"),
   c(pmid = "26925227", software = "https://bioconductor.org/packages/tximport/"),
-  c(pmid = "24813215", software = "https://bioconductor.org/packages/compcodeR/")
+  c(pmid = "24813215", software = "https://bioconductor.org/packages/compcodeR/"),
+  c(pmid = "31792435", software = "https://osca.bioconductor.org/")
 )
 biorxiv_software <- rbind(
   c(doi = "", software = "")
