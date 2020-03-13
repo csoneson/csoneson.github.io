@@ -6,7 +6,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
 ## Google Scholar ID
 id <- "c28GqkIAAAAJ"
 
@@ -19,7 +19,8 @@ pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
 biorxiv_dois <- c("10.1101/657874", 
-                  "10.1101/713412")
+                  "10.1101/713412", 
+                  "10.1101/2020.03.13.990069")
 
 ## PeerJ dois
 peerj_dois <- c()#c("10.7287/peerj.preprints.27283v2")
@@ -119,7 +120,7 @@ f1000_preprints <- NULL
 ```
 
 
-```{r, include = FALSE}
+```{r pkgs, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 suppressPackageStartupMessages({
   library(dplyr)
@@ -129,7 +130,7 @@ suppressPackageStartupMessages({
 })
 ```
 
-```{r}
+```{r help-functions}
 fix_null <- function(x) {
   if (is.null(x) || length(x) == 0) NA
   else x
@@ -166,7 +167,7 @@ make_link_altmetric_arxiv <- function(arxivid) {
 ```
 
 
-```{r}
+```{r get-pubs}
 ## Get Google Scholar publication list
 scholarpubs <- get_publications(id)
 
@@ -196,7 +197,7 @@ summ <- lapply(summ, function(w) {
 summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
 ```
 
-```{r}
+```{r fix-html}
 ## Change some HTML formatting to markdown
 summ$title <- sapply(summ$title, function(x) {
   x <- gsub("&lt;i&gt;|&lt;/i&gt;", "*", x)  ## <i>, </i>
@@ -205,7 +206,7 @@ summ$title <- sapply(summ$title, function(x) {
 })
 ```
 
-```{r}
+```{r get-unlisted}
 ## Add unlisted publications
 unlisted_publications <- unlisted_publications[, match(colnames(summ), 
                                                        colnames(unlisted_publications))]
@@ -214,7 +215,7 @@ summ <- rbind(summ, unlisted_publications)
 ```
 
 
-```{r}
+```{r highlight}
 ## Highlight name in bold
 summ$authors <- sapply(summ$authors, function(a) {
   gsub(paste0("(", paste(highlight, collapse = "|"), ")"), "<strong>\\1</strong>", a)
@@ -225,7 +226,7 @@ summ$authors <- sapply(summ$authors, function(a) {
 })
 ```
 
-```{r add_links, message = FALSE, warning = FALSE}
+```{r add-links, message = FALSE, warning = FALSE}
 ## Add column with links to GitHub repos
 summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
   dplyr::mutate(github = replace(github, is.na(github), ""))
@@ -239,7 +240,7 @@ summ <- dplyr::left_join(summ, data.frame(pmid_preprints, stringsAsFactors = FAL
   dplyr::mutate(preprint = replace(preprint, is.na(preprint), ""))
 ```
 
-```{r add_citations, message = FALSE, warning = FALSE}
+```{r add-citations, message = FALSE, warning = FALSE}
 ## Add citations from Google Scholar
 idx <- match(tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
                                                          summ$title)))),
@@ -249,7 +250,7 @@ summ$citations <- scholarpubs$cites[idx]
 ```
 
 
-```{r}
+```{r add-biorxiv}
 ## Add bioRxiv preprints by doi
 biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
   html <- read_html(paste0("https://doi.org/", doi))
@@ -266,7 +267,7 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
 }))
 ```
 
-```{r}
+```{r add-peerj}
 ## Add PeerJ preprints by doi
 peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
   html <- read_html(paste0("https://doi.org/", doi))
@@ -282,7 +283,7 @@ peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
 }))
 ```
 
-```{r}
+```{r add-arxiv}
 ## Add ArXiv preprints by doi
 arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
   html <- read_html(paste0("https://arxiv.org/abs/", doi))
@@ -298,7 +299,7 @@ arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
 }))
 ```
 
-```{r}
+```{r add-f1000}
 ## Add F1000Research preprints
 if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
   f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
@@ -320,7 +321,7 @@ if (!is.null(arxiv)) {
 }
 ```
 
-```{r add_links_preprints, message = FALSE, warning = FALSE}
+```{r add-links-preprints, message = FALSE, warning = FALSE}
 if (!is.null(biorxiv)) {
   ## Add column with links to GitHub repos
   biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
@@ -332,7 +333,7 @@ if (!is.null(biorxiv)) {
 }
 ```
 
-```{r add_citations_preprints, message = FALSE, warning = FALSE}
+```{r add-citations-preprints, message = FALSE, warning = FALSE}
 if (!is.null(biorxiv)) {
   ## Add citations from Google Scholar
   idx <- match(tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
@@ -344,7 +345,7 @@ if (!is.null(biorxiv)) {
 ```
 
 
-```{r}
+```{r highlight-biorxiv}
 if (!is.null(biorxiv)) {
   ## Highlight name in bold
   biorxiv$authors <- sapply(biorxiv$authors, function(a) {
@@ -353,7 +354,7 @@ if (!is.null(biorxiv)) {
 }
 ```
 
-```{r}
+```{r generate-output}
 ## Split by publication year
 years <- as.character(unique(summ$pubyear))
 summ <- split(summ, summ$pubyear)
@@ -407,7 +408,7 @@ for (i in years) {
 }
 ```
 
-```{r, results = "asis"}
+```{r print-output, results = "asis"}
 cat(txt)
 ```
 
