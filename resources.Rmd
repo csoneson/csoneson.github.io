@@ -29,8 +29,10 @@ I am a maintainer or contributor of the following R packages:
   - iCOBRA provides functions for calculation and visualization of performance metrics for evaluation of ranking and binary classification (assignment) methods. It also contains a shiny application for interactive exploration of results.
 - `r badger::badge_custom(x = "", y = "iSEE", color = "blue", url = "http://bioconductor.org/packages/iSEE/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEE.svg">
   - iSEE provides functions for creating an interactive Shiny-based graphical user interface for exploring data stored in SummarizedExperiment objects, including row- and column-level metadata. Particular attention is given to single-cell data in a SingleCellExperiment object with visualization of dimensionality reduction results.
-- `r badger::badge_custom(x = "", y = "iSEEu", color = "red", url = "https://github.com/iSEE/iSEEu")`
-  - The iSEE universe.
+- `r badger::badge_custom(x = "", y = "iSEEu", color = "blue", url = "http://bioconductor.org/packages/iSEEu/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEEu.svg">
+  - iSEEu (the iSEE universe) contains diverse functionality to extend 
+    the usage of the iSEE package, including additional classes for the panels, 
+    or modes allowing easy configuration of iSEE applications.
 - `r badger::badge_custom(x = "", y = "jcc", color = "red", url = "https://github.com/csoneson/jcc")`
   - Calculates [JCC scores](http://www.life-science-alliance.org/content/2/1/e201800175.abstract), which are aimed at detecting genes for which estimated transcript abundances are unreliable, either because of problems in the transcript abundance estimation or because of missing or wrongly annotated reference transcripts. It does so by comparing the number of reads predicted to align across each junction, inferred from the transcript abundances and a fragment bias model, to the observed number of junction-spanning reads, obtained via alignment of the reads to the genome. A high JCC score for a gene indicates that the estimated abundances for the corresponding transcripts are unreliable and should be treated with care in downstream analyses.
 - `r badger::badge_custom(x = "", y = "Rhisat2", color = "blue", url = "http://bioconductor.org/packages/Rhisat2/")` <img src="https://bioconductor.org/shields/years-in-bioc/Rhisat2.svg">
