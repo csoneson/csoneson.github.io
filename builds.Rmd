@@ -16,9 +16,15 @@ for (pkgs in c("csoneson/dreval", "csoneson/ExploreModelMatrix",
   db <- rbind(db, my[, match(colnames(db), colnames(my))])
   rownames(db)[nrow(db)] <- strsplit(pkgs, "/")[[1]][2]
 }
+
+# suppressPackageStartupMessages({
+#   library(BiocPkgTools)
+# })
+# bprel <- BiocPkgTools::biocPkgList(version = "release")
+# bpdev <- BiocPkgTools::biocPkgList(version = "devel")
 ```
 
-| Package | BioC devel | BioC release | Travis | GitHub actions | Code coverage | Nbr deps | GitHub issues | Bioc support |
+| Package | Bioc devel | Bioc release | Travis | GitHub actions | Code coverage | Nbr deps | GitHub issues | Bioc support |
 |:----------------|:----------------|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
 | alevinQC [GitHub](https://github.com/csoneson/alevinQC) [Bioc](https://bioconductor.org/packages/alevinQC/) | [![](http://bioconductor.org/shields/build/devel/bioc/alevinQC.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/alevinQC) | [![](http://bioconductor.org/shields/build/release/bioc/alevinQC.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/alevinQC) | [![Travis CI build status](https://travis-ci.com/csoneson/alevinQC.svg?branch=master)](https://travis-ci.com/csoneson/alevinQC) | [![R build status](https://github.com/csoneson/alevinQC/workflows/R-CMD-check/badge.svg)](https://github.com/csoneson/alevinQC/actions) | [![Codecov.io coverage status](https://codecov.io/github/csoneson/alevinQC/coverage.svg?branch=master)](https://codecov.io/github/csoneson/alevinQC) | `r length(tools::package_dependencies("alevinQC", db, recursive = TRUE)$alevinQC)` | [![GitHub issues](https://img.shields.io/github/issues/csoneson/alevinQC)](https://github.com/csoneson/alevinQC/issues) | [![Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts.](http://www.bioconductor.org/shields/posts/alevinQC.svg)](https://support.bioconductor.org/t/alevinQC/) |
 | ARMOR [GitHub](https://github.com/csoneson/ARMOR) | N/A | N/A | [![Travis CI build status](https://travis-ci.com/csoneson/ARMOR.svg?branch=master)](https://travis-ci.com/csoneson/ARMOR) | [![snakemake-run](https://github.com/csoneson/ARMOR/workflows/snakemake-run/badge.svg)](https://github.com/csoneson/ARMOR/actions) | N/A | N/A | [![GitHub issues](https://img.shields.io/github/issues/csoneson/ARMOR)](https://github.com/csoneson/ARMOR/issues) | N/A |
