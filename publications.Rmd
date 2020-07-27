@@ -104,20 +104,20 @@ unlisted_publications <- data.frame(
 )
 
 ## F1000Research articles awaiting peer review
-f1000_preprints <- data.frame(
-  title = c("ExploreModelMatrix: Interactive exploration for improved understanding of design matrices and linear models in R"),
-  pubdate = c("Posted June 4, 2020."),
-  pubyear = c("Preprints"),
-  journal = c("F1000Research"),
-  authors = c("Charlotte Soneson, Federico Marini, Florian Geier, Michael I Love, Michael B Stadler"),
-  volume = c(9),
-  issue = c(512),
-  pages = c(""),
-  doi = c("10.12688/f1000research.24187.1"),
-  pmid = c(""),
-  elocationid = c("")
-)
-# f1000_preprints <- NULL
+# f1000_preprints <- data.frame(
+#   title = c("ExploreModelMatrix: Interactive exploration for improved understanding of design matrices and linear models in R"),
+#   pubdate = c("Posted June 4, 2020."),
+#   pubyear = c("Preprints"),
+#   journal = c("F1000Research"),
+#   authors = c("Charlotte Soneson, Federico Marini, Florian Geier, Michael I Love, Michael B Stadler"),
+#   volume = c(9),
+#   issue = c(512),
+#   pages = c(""),
+#   doi = c("10.12688/f1000research.24187.1"),
+#   pmid = c(""),
+#   elocationid = c("")
+# )
+f1000_preprints <- NULL
 ```
 
 
