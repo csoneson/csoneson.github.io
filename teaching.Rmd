@@ -8,12 +8,13 @@ editor_options:
 
 ## 2020
 
-- [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
+- [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland (online)
+- [Summer School in Bioinformatics and High-Dimensional Statistics](http://www3.unimedizin-mainz.de/transmed/training-program/training-in-scientific-skills/summer-school-in-bioinformatics-and-high-dimensional-statistics.html), Mainz, Germany (online)
 - [~~Statistical data analysis for genome scale biology (CSAMA 2020)~~](https://www.huber.embl.de/csama2020/#home), Brixen, Italy (cancelled due to covid-19)
 - [~~Bioinformatics summer school~~](https://uclouvain-cbio.github.io/BSS2020/), Louvain-la-Neuve, Belgium (cancelled due to covid-19)
-- [Advanced topics in single-cell transcriptomics](https://www.sib.swiss/training/course/2020-05-adv-scrna), Basel, Switzerland (streamed)
+- [Advanced topics in single-cell transcriptomics](https://www.sib.swiss/training/course/2020-05-adv-scrna), Basel, Switzerland (online)
 - ~~RNA-seq analysis~~, University of Freiburg, Germany (postponed due to covid-19)
-- [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
+- [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland (online)
 
 ## 2019
 
