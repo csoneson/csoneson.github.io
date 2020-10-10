@@ -41,7 +41,7 @@ I am a maintainer or contributor of the following R packages:
   - Calculates [JCC scores](http://www.life-science-alliance.org/content/2/1/e201800175.abstract), which are aimed at detecting genes for which estimated transcript abundances are unreliable, either because of problems in the transcript abundance estimation or because of missing or wrongly annotated reference transcripts. It does so by comparing the number of reads predicted to align across each junction, inferred from the transcript abundances and a fragment bias model, to the observed number of junction-spanning reads, obtained via alignment of the reads to the genome. A high JCC score for a gene indicates that the estimated abundances for the corresponding transcripts are unreliable and should be treated with care in downstream analyses.
 - `r badger::badge_custom(x = "", y = "Rhisat2", color = "blue", url = "http://bioconductor.org/packages/Rhisat2/")` <img src="https://bioconductor.org/shields/years-in-bioc/Rhisat2.svg">
   - An R interface to the HISAT2 spliced short-read aligner by Kim et al. (2015). The package contains wrapper functions to create a genome index and to perform the read alignment to the generated index.
-- `r badger::badge_custom(x = "", y = "velociraptor", color = "red", url = "https://github.com/kevinrue/velociraptor")`
+- `r badger::badge_custom(x = "", y = "velociraptor", color = "blue", url = "http://bioconductor.org/packages/velociraptor/")` <img src="https://bioconductor.org/shields/years-in-bioc/velociraptor.svg">
   - Provides Bioconductor-friendly wrappers for RNA velocity calculations in single-cell RNA-seq data. 
 
 ## Other resources
