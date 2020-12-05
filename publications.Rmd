@@ -110,20 +110,20 @@ unlisted_publications <- data.frame(
 )
 
 ## F1000Research articles awaiting peer review
-f1000_preprints <- data.frame(
-  title = c("TreeSummarizedExperiment: a S4 class for data with hierarchical structure"),
-  pubdate = c("Posted October 15, 2020."),
-  pubyear = c("Preprints"),
-  journal = c("F1000Research"),
-  authors = c("Ruizhu Huang, Charlotte Soneson, Felix G.M. Ernst, Kevin C. Rue-Albrecht, Guangchuang Yu, Stephanie C. Hicks, Mark D. Robinson"),
-  volume = c(9),
-  issue = c(1246),
-  pages = c(""),
-  doi = c("10.12688/f1000research.26669.1"),
-  pmid = c(""),
-  elocationid = c("")
-)
-# f1000_preprints <- NULL
+# f1000_preprints <- data.frame(
+#   title = c("TreeSummarizedExperiment: a S4 class for data with hierarchical structure"),
+#   pubdate = c("Posted October 15, 2020."),
+#   pubyear = c("Preprints"),
+#   journal = c("F1000Research"),
+#   authors = c("Ruizhu Huang, Charlotte Soneson, Felix G.M. Ernst, Kevin C. Rue-Albrecht, Guangchuang Yu, Stephanie C. Hicks, Mark D. Robinson"),
+#   volume = c(9),
+#   issue = c(1246),
+#   pages = c(""),
+#   doi = c("10.12688/f1000research.26669.1"),
+#   pmid = c(""),
+#   elocationid = c("")
+# )
+f1000_preprints <- NULL
 ```
 
 
