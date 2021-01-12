@@ -18,8 +18,7 @@ pmid_remove <- c("31925006")
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/2020.03.13.990069", 
-                  "10.1101/2020.06.08.140608",
+biorxiv_dois <- c("10.1101/2020.06.08.140608",
                   "10.1101/2020.11.11.355693",
                   "10.1101/2020.12.11.420885")
 
@@ -39,7 +38,8 @@ pmid_github <- rbind(
   c(pmid = "29478411", github = "https://github.com/statOmics/zinbwaveZinger"),
   c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
-  c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome")
+  c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
+  c(pmid = "33428615", github = "https://github.com/csoneson/rna_velocity_quant")
 )
 biorxiv_github <- rbind(
   c(doi = "10.1101/2020.03.13.990069", github = "https://github.com/csoneson/rna_velocity_quant")
@@ -60,7 +60,8 @@ pmid_preprints <- rbind(
   c(pmid = "31792435", preprint = "https://www.biorxiv.org/content/10.1101/590562v1"),
   c(pmid = "32097405", preprint = "https://www.biorxiv.org/content/10.1101/777888v1"),
   c(pmid = "32894187", preprint = "https://www.biorxiv.org/content/10.1101/657874v2"),
-  c(pmid = "33257685", preprint = "https://www.biorxiv.org/content/10.1101/713412v3")
+  c(pmid = "33257685", preprint = "https://www.biorxiv.org/content/10.1101/713412v3"),
+  c(pmid = "33428615", preprint = "https://www.biorxiv.org/content/10.1101/2020.03.13.990069v1")
 )
 
 ## software packages/other resources
@@ -78,11 +79,11 @@ pmid_software <- rbind(
   c(pmid = "31857895", software = "https://bioconductor.org/packages/HDCytoData/"),
   c(pmid = "32097405", software = "https://bioconductor.org/packages/tximeta/"),
   c(pmid = "32704355", software = "https://bioconductor.org/packages/ExploreModelMatrix/"),
-  c(pmid = "33257685", software = "https://bioconductor.org/packages/muscat/")
+  c(pmid = "33257685", software = "https://bioconductor.org/packages/muscat/"),
+  c(pmid = "33428615", software = "https://bioconductor.org/packages/eisaR/")
 )
 biorxiv_software <- rbind(
-  c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR"),
-  c(doi = "10.1101/2020.03.13.990069", software = "https://bioconductor.org/packages/eisaR/")
+  c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR")
 )
 
 ## names to highlight in publication list
