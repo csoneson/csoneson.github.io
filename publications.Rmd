@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-author: ""
+author: "[Google Scholar page](https://scholar.google.ch/citations?user=c28GqkIAAAAJ&hl=en)"
 output: html_document
 editor_options: 
   chunk_output_type: console
