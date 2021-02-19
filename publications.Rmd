@@ -382,7 +382,7 @@ if (!is.null(biorxiv)) {
                     biorxiv[j, "pubdate"], " ", 
                     ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")),
-                  make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
+                  # make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
                   "\n\n")
     } else {
       txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
@@ -391,7 +391,7 @@ if (!is.null(biorxiv)) {
                   biorxiv[j, "pubdate"], " ", 
                   ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")),
-                  make_link_altmetric_arxiv(biorxiv[j, "doi"]),
+                  # make_link_altmetric_arxiv(biorxiv[j, "doi"]),
                   "\n\n")
     }
   }
@@ -412,7 +412,7 @@ for (i in years) {
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
                   ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software/Resources"), ". ")), 
                   ifelse(summ[[i]][j, "preprint"] == "", "", paste0(make_link_text(address = summ[[i]][j, "preprint"], title = "Preprint"), ". ")), 
-                  make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
+                  # make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
                   "\n\n")
   }
 }
