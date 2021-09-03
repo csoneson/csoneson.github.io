@@ -8,6 +8,9 @@ editor_options:
 
 ## 2021
 
+- RNA-seq analysis, University of Freiburg, Germany
+- [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
+- [Summer School in Advanced topics in Single Cell Omics](https://nbisweden.github.io/single-cell_sib_scilifelab_2021/README.html), online
 - [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland (online)
 
 ## 2020
