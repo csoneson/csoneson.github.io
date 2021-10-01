@@ -142,6 +142,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 suppressPackageStartupMessages({
   library(dplyr)
   library(rentrez)
+  library(httr)
   library(rvest)
   library(scholar)
 })
@@ -270,7 +271,9 @@ summ$citations <- scholarpubs$cites[idx]
 ```{r add-biorxiv}
 ## Add bioRxiv preprints by doi
 biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
-  html <- read_html(paste0("https://doi.org/", doi))
+  html <- paste0("https://doi.org/", doi) %>%
+    httr::GET(., config = httr::config(connecttimeout = 0.1)) %>% read_html
+  # html <- read_html(paste0("https://doi.org/", doi))
   title <- html_text(html_nodes(html, "#page-title"))
   authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
                                 html_text(html_nodes(html, ".nlm-surname")))),
