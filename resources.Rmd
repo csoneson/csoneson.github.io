@@ -50,6 +50,8 @@ I am a maintainer or contributor of the following R packages:
   - A lightweight Snakemake workflow for preprocessing and statistical analysis of RNA-seq data.
 - `r badger::badge_custom(x = "", y = "conquer", color = "red", url = "http://imlspenticton.uzh.ch:3838/conquer/")`
   - A repository with consistently quantified single-cell RNA-seq data sets.
+- `r badger::badge_custom(x = "", y = "TabulaMurisSenisData", color = "blue", url = "http://bioconductor.org/packages/TabulaMurisSenisData/")` 
+  - An R package interface to processed 10x (droplet) and SmartSeq2 (on FACS-sorted cells) single-cell RNA-seq data from the [Tabula Muris Senis project](https://tabula-muris-senis.ds.czbiohub.org/).
 - `r badger::badge_custom(x = "", y = "TabulaMurisData", color = "blue", url = "http://bioconductor.org/packages/TabulaMurisData/")` 
   - An R package interface to processed 10x (droplet) and SmartSeq2 (on FACS-sorted cells) single-cell RNA-seq data from the [Tabula Muris consortium](http://tabula-muris.ds.czbiohub.org/).
 - `r badger::badge_custom(x = "", y = "DuoClustering2018", color = "blue", url = "http://bioconductor.org/packages/DuoClustering2018/")` 
