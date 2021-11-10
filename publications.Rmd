@@ -95,7 +95,7 @@ biorxiv_software <- rbind(
 )
 
 ## names to highlight in publication list
-highlight <- c("Soneson C", "Charlotte Soneson")
+highlight <- c("Soneson C", "Charlotte Soneson", "Soneson, C.")
 
 ## publications not in PubMed/bioRxiv
 unlisted_publications <- data.frame(
@@ -145,6 +145,8 @@ suppressPackageStartupMessages({
   library(httr)
   library(rvest)
   library(scholar)
+  library(lubridate)
+  library(medrxivr)
 })
 ```
 
@@ -271,18 +273,17 @@ summ$citations <- scholarpubs$cites[idx]
 ```{r add-biorxiv}
 ## Add bioRxiv preprints by doi
 biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
-  html <- paste0("https://doi.org/", doi) %>%
-    httr::GET(., config = httr::config(connecttimeout = 0.1)) %>% read_html
-  # html <- read_html(paste0("https://doi.org/", doi))
-  title <- html_text(html_nodes(html, "#page-title"))
-  authors <- paste(unique(paste(html_text(html_nodes(html, ".nlm-given-names")), 
-                                html_text(html_nodes(html, ".nlm-surname")))),
-                   collapse = ", ")
-  #pubdate <- html_text(html_nodes(html, ".published"))
-  pubdate <- gsub("^ *| *$", "", gsub("\n", "", html_text(html_nodes(html, ".pane-1 .pane-content"))))
-  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints", 
-             journal = "bioRxiv", authors = authors, volume = "", issue = "", 
-             pages = "", doi = doi, pmid = "", elocationid = "", 
+  brx <- medrxivr::mx_api_doi(doi, server = "biorxiv", clean = TRUE) %>%
+    dplyr::slice_max(node, n = 1)
+  data.frame(title = brx$title,
+             pubdate = paste0("Posted ", 
+                              format(lubridate::ymd(brx$date), 
+                                     "%B %d, %Y"), "."),
+             pubyear = "Preprints",
+             journal = "bioRxiv", 
+             authors = brx$authors, 
+             volume = "", issue = "", pages = "",
+             doi = doi, pmid = "", elocationid = "",
              stringsAsFactors = FALSE)
 }))
 ```
