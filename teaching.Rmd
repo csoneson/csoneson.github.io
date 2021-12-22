@@ -6,6 +6,10 @@ editor_options:
   chunk_output_type: console
 ---
 
+## 2022
+
+- [Single-Cell: Transcriptomics, Spatial and Multi-Omics (sincellTE 2022)](https://www.france-bioinformatique.fr/formation/single-cell-2022/), Roscoff, France (hybrid)
+
 ## 2021
 
 - RNA-seq analysis, University of Freiburg, Germany
