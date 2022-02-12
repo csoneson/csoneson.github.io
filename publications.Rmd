@@ -23,7 +23,6 @@ biorxiv_dois <- c("10.1101/2022.01.21.476612",
                   "10.1101/2021.11.30.470570",
                   "10.1101/2021.11.15.468676",
                   "10.1101/2021.06.29.450377",
-                  "10.1101/2021.03.26.436976",
                   "10.1101/2021.01.17.426996",
                   "10.1101/2020.11.11.355693")
 
@@ -44,11 +43,11 @@ pmid_github <- rbind(
   c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
-  c(pmid = "33428615", github = "https://github.com/csoneson/rna_velocity_quant")
+  c(pmid = "33428615", github = "https://github.com/csoneson/rna_velocity_quant"),
+  c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020")
 )
 biorxiv_github <- rbind(
-  c(doi = "10.1101/2020.03.13.990069", github = "https://github.com/csoneson/rna_velocity_quant"),
-  c(doi = "10.1101/2021.03.26.436976", github = "https://github.com/csoneson/WagnerEMT2020")
+  c(doi = "10.1101/2020.03.13.990069", github = "https://github.com/csoneson/rna_velocity_quant")
 )
 
 ## preprint links
@@ -69,7 +68,8 @@ pmid_preprints <- rbind(
   c(pmid = "33257685", preprint = "https://www.biorxiv.org/content/10.1101/713412v3"),
   c(pmid = "33428615", preprint = "https://www.biorxiv.org/content/10.1101/2020.03.13.990069v1"),
   c(pmid = "33758076", preprint = "https://www.biorxiv.org/content/10.1101/2020.12.11.420885v1"),
-  c(pmid = "34001188", preprint = "https://www.biorxiv.org/content/10.1101/2020.06.08.140608v1")
+  c(pmid = "34001188", preprint = "https://www.biorxiv.org/content/10.1101/2020.06.08.140608v1"),
+  c(pmid = "35140234", preprint = "https://www.biorxiv.org/content/10.1101/2021.03.26.436976v1")
 )
 
 ## software packages/other resources
