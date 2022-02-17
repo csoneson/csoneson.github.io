@@ -8,6 +8,7 @@ editor_options:
 
 ## 2022
 
+- [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
 - [Single-Cell: Transcriptomics, Spatial and Multi-Omics (sincellTE 2022)](https://www.france-bioinformatique.fr/formation/single-cell-2022/), Roscoff, France (hybrid)
 
 ## 2021
