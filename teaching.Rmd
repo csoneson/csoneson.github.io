@@ -10,7 +10,7 @@ editor_options:
 
 - [Statistical Analysis of Genome Scale Data](https://meetings.cshl.edu/courses.aspx?course=C-data&year=22), Cold Spring Harbor Laboratory, USA (hybrid)
 - [Statistical data analysis for genome scale biology (CSAMA 2022)](https://csama2022.bioconductor.eu/), Brixen, Italy
-- [Genomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022)](), Mainz, Germany
+- [Genomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022)](https://imbeimainz.github.io/GTIPI2022/index.html), Mainz, Germany
 - [Advanced topics in single-cell analysis](https://www.sib.swiss/training/course/20220426_ADVSC), Basel, Switzerland
 - [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
 - [Single-Cell: Transcriptomics, Spatial and Multi-Omics (sincellTE 2022)](https://www.france-bioinformatique.fr/formation/single-cell-2022/), Roscoff, France (hybrid)
