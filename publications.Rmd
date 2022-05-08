@@ -290,6 +290,10 @@ biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
              doi = doi, pmid = "", elocationid = "",
              stringsAsFactors = FALSE)
 }))
+
+## Manual fix to title
+biorxiv$title <- gsub("unexpectedorigin", "unexpected origin", biorxiv$title)
+biorxiv$title <- gsub("inRNA", "in RNA", biorxiv$title)
 ```
 
 ```{r add-peerj}
