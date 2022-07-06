@@ -8,6 +8,8 @@ editor_options:
 
 ## 2022
 
+- [Introduction to genomic data analysis with R and Bioconductor](https://bioconductor.github.io/2022-09-12-BiocIntro-Heidelberg/), Heidelberg, Germany
+- [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
 - [Statistical Analysis of Genome Scale Data](https://meetings.cshl.edu/courses.aspx?course=C-data&year=22), Cold Spring Harbor Laboratory, USA (hybrid)
 - [Statistical data analysis for genome scale biology (CSAMA 2022)](https://csama2022.bioconductor.eu/), Brixen, Italy
 - [Genomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022)](https://imbeimainz.github.io/GTIPI2022/index.html), Mainz, Germany
