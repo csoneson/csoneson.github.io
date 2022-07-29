@@ -124,20 +124,20 @@ unlisted_publications <- data.frame(
 )
 
 ## F1000Research articles awaiting peer review
-# f1000_preprints <- data.frame(
-#   title = c("TreeSummarizedExperiment: a S4 class for data with hierarchical structure"),
-#   pubdate = c("Posted October 15, 2020."),
-#   pubyear = c("Preprints"),
-#   journal = c("F1000Research"),
-#   authors = c("Ruizhu Huang, Charlotte Soneson, Felix G.M. Ernst, Kevin C. Rue-Albrecht, Guangchuang Yu, Stephanie C. Hicks, Mark D. Robinson"),
-#   volume = c(9),
-#   issue = c(1246),
-#   pages = c(""),
-#   doi = c("10.12688/f1000research.26669.1"),
-#   pmid = c(""),
-#   elocationid = c("")
-# )
-f1000_preprints <- NULL
+f1000_preprints <- data.frame(
+  title = c("Community-driven ELIXIR activities in single-cell omics"),
+  pubdate = c("Posted July 29, 2022."),
+  pubyear = c("Preprints"),
+  journal = c("F1000Research"),
+  authors = c("Paulo Czarnewski, Ahmed Mahfouz, Raffaele A. Calogero, Patricia M. Palagi, Laura Portell-Silva, Asier Gonzalez-Uriarte, Charlotte Soneson, Tony Burdett, Barbara Szomolay, Pavankumar Videm, Hans-Rudolf Hotz, Irene Papatheodorou, John M. Hancock, Björn Grüning, Wilfried Haerty, Roland Krause, Salvador Capella-Gutierrez, Brane Leskošek, Luca Alessandri, Maddalena Arigoni, Tadeja Rezen, Alexander Botzki, Polonca Ferk, Jessica Lindvall, Katharina F Heil, Naveed Ishaque, Eija Korpelainen"),
+  volume = c(11),
+  issue = c(869),
+  pages = c(""),
+  doi = c("10.12688/f1000research.122312.1"),
+  pmid = c(""),
+  elocationid = c("")
+)
+# f1000_preprints <- NULL
 ```
 
 
