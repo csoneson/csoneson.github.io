@@ -7,7 +7,10 @@ editor_options:
 ---
 
 <center>
-[![](stickers/alevinQC.png){width=3cm}](https://bioconductor.org/packages/alevinQC/)[![](stickers/ARMOR.png){width=3cm}](https://github.com/csoneson/ARMOR)[![](stickers/countsimQC.png){width=3cm}](https://bioconductor.org/packages/countsimQC/)[![](stickers/eisaR.png){width=3cm}](https://bioconductor.org/packages/eisaR/)[![](stickers/emm_logo.png){width=3cm}](https://bioconductor.org/packages/ExploreModelMatrix/)[![](stickers/iCOBRA.png){width=3cm}](https://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png){width=3cm}](https://bioconductor.org/packages/iSEE/)[![](stickers/velociraptor_sticker.png){width=3cm}](https://bioconductor.org/packages/velociraptor/)
+[![](stickers/alevinQC.png){width=3cm}](https://bioconductor.org/packages/alevinQC/)[![](stickers/ARMOR.png){width=3cm}](https://github.com/csoneson/ARMOR)[![](stickers/countsimQC.png){width=3cm}](https://bioconductor.org/packages/countsimQC/)[![](stickers/einprot.png){width=3cm}](https://github.com/fmicompbio/einprot)[![](stickers/eisaR.png){width=3cm}](https://bioconductor.org/packages/eisaR/)[![](stickers/emm_logo.png){width=3cm}](https://bioconductor.org/packages/ExploreModelMatrix/)
+</center>
+<center>
+[![](stickers/iCOBRA.png){width=3cm}](https://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png){width=3cm}](https://bioconductor.org/packages/iSEE/)[![](stickers/mutscan.png){width=3cm}](https://github.com/fmicompbio/mutscan)[![](stickers/sketchR.png){width=3cm}](https://github.com/csoneson/sketchR)[![](stickers/velociraptor_sticker.png){width=3cm}](https://bioconductor.org/packages/velociraptor/)
 </center>
 
 
