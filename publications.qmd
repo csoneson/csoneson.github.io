@@ -1,0 +1,451 @@
+---
+title: "Publications"
+subtitle: "[Google Scholar page](https://scholar.google.ch/citations?user=c28GqkIAAAAJ&hl=en)"
+output: html
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup}
+#| echo: false
+#| message: false
+#| warning: false
+## Google Scholar ID
+id <- "c28GqkIAAAAJ"
+
+## PubMed IDs to remove
+## diffcyt paper appears twice for some reason
+## Also ARMOR
+pmid_remove <- c("31925006", "33877351")
+
+## PubMed IDs to add
+pmid_add <- c("27309738", "26615188", "25057166")
+
+## bioRxiv dois
+biorxiv_dois <- c("10.1101/2022.09.22.508982", 
+                  "10.1101/2022.01.21.476612",
+                  "10.1101/2021.11.15.468676",
+                  "10.1101/2021.01.17.426996")
+
+## PeerJ dois
+peerj_dois <- c()#c("10.7287/peerj.preprints.27283v2")
+
+## ArXiv dois
+arxiv_dois <- c()
+
+## github repos
+pmid_github <- rbind(
+  c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
+  c(pmid = "30356428", github = "https://github.com/mikelove/swimdown"),
+  c(pmid = "30271584", github = "https://github.com/markrobinsonuzh/scrnaseq_clustering_comparison"),
+  c(pmid = "30002819", github = "https://github.com/ltla/isee2018"),
+  c(pmid = "29481549", github = "https://github.com/csoneson/conquer_comparison"),
+  c(pmid = "29478411", github = "https://github.com/statOmics/zinbwaveZinger"),
+  c(pmid = "29028961", github = "https://github.com/csoneson/countsimQC"),
+  c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
+  c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
+  c(pmid = "33428615", github = "https://github.com/csoneson/rna_velocity_quant"),
+  c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020")
+)
+biorxiv_github <- rbind(
+  c(doi = "10.1101/2020.03.13.990069", github = "https://github.com/csoneson/rna_velocity_quant")
+)
+
+## preprint links
+pmid_preprints <- rbind(
+  c(pmid = "30655364", preprint = "https://www.biorxiv.org/content/10.1101/378539v1"),
+  c(pmid = "29481549", preprint = "https://www.biorxiv.org/content/10.1101/143289v1"),
+  c(pmid = "29478411", preprint = "https://www.biorxiv.org/content/10.1101/250126v1"),
+  c(pmid = "28784146", preprint = "https://www.biorxiv.org/content/10.1101/109082v1"),
+  c(pmid = "27027585", preprint = "https://www.biorxiv.org/content/10.1101/033431v1"),
+  c(pmid = "26813113", preprint = "https://www.biorxiv.org/content/10.1101/025387v2"),
+  c(pmid = "31088905", preprint = "https://www.biorxiv.org/content/10.1101/575951v1"),
+  c(pmid = "31098416", preprint = "https://www.biorxiv.org/content/10.1101/349738v3"),
+  c(pmid = "31221194", preprint = "https://arxiv.org/abs/1812.00661"),
+  c(pmid = "31366910", preprint = "https://www.biorxiv.org/content/10.1101/574525v1"),
+  c(pmid = "31792435", preprint = "https://www.biorxiv.org/content/10.1101/590562v1"),
+  c(pmid = "32097405", preprint = "https://www.biorxiv.org/content/10.1101/777888v1"),
+  c(pmid = "32894187", preprint = "https://www.biorxiv.org/content/10.1101/657874v2"),
+  c(pmid = "33257685", preprint = "https://www.biorxiv.org/content/10.1101/713412v3"),
+  c(pmid = "33428615", preprint = "https://www.biorxiv.org/content/10.1101/2020.03.13.990069v1"),
+  c(pmid = "33758076", preprint = "https://www.biorxiv.org/content/10.1101/2020.12.11.420885v1"),
+  c(pmid = "34001188", preprint = "https://www.biorxiv.org/content/10.1101/2020.06.08.140608v1"),
+  c(pmid = "35140234", preprint = "https://www.biorxiv.org/content/10.1101/2021.03.26.436976v1"),
+  c(pmid = "35199152", preprint = "https://www.biorxiv.org/content/10.1101/2021.11.30.470570v1"),
+  c(pmid = "35277707", preprint = "https://www.biorxiv.org/content/10.1101/2021.06.29.450377v2"),
+  c(pmid = "35354817", preprint = "https://www.biorxiv.org/content/10.1101/2020.11.11.355693v3")
+)
+
+## software packages/other resources
+pmid_software <- rbind(
+  c(pmid = "27027585", software = "http://bioconductor.org/packages/release/bioc/html/iCOBRA.html"),
+  c(pmid = "30655364", software = "https://github.com/csoneson/jcc"),
+  c(pmid = "30271584", software = "https://bioconductor.org/packages/DuoClustering2018/"),
+  c(pmid = "30002819", software = "https://bioconductor.org/packages/iSEE/"),
+  c(pmid = "29481549", software = "http://imlspenticton.uzh.ch:3838/conquer/"),
+  c(pmid = "29028961", software = "https://bioconductor.org/packages/countsimQC/"),
+  c(pmid = "28784146", software = "https://bioconductor.org/packages/stageR/"),
+  c(pmid = "26925227", software = "https://bioconductor.org/packages/tximport/"),
+  c(pmid = "24813215", software = "https://bioconductor.org/packages/compcodeR/"),
+  c(pmid = "31792435", software = "https://osca.bioconductor.org/"),
+  c(pmid = "31857895", software = "https://bioconductor.org/packages/HDCytoData/"),
+  c(pmid = "32097405", software = "https://bioconductor.org/packages/tximeta/"),
+  c(pmid = "32704355", software = "https://bioconductor.org/packages/ExploreModelMatrix/"),
+  c(pmid = "33257685", software = "https://bioconductor.org/packages/muscat/"),
+  c(pmid = "33428615", software = "https://bioconductor.org/packages/eisaR/"),
+  c(pmid = "33274053", software = "https://bioconductor.org/packages/TreeSummarizedExperiment/"),
+  c(pmid = "33758076", software = "https://bioconductor.org/packages/CellMixS/"),
+  c(pmid = "34001188", software = "https://github.com/fionarhuang/treeclimbR"),
+  c(pmid = "35199152", software = "https://bioconductor.org/packages/monaLisa/")
+)
+biorxiv_software <- rbind(
+  c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR")
+)
+
+## names to highlight in publication list
+highlight <- c("Soneson C", "Charlotte Soneson", "Soneson, C.")
+
+## publications not in PubMed/bioRxiv
+unlisted_publications <- data.frame(
+  title = c("Incorporation of gene exchangeabilities improves the reproducibility of gene set rankings.",
+            "Manliga och kvinnliga teknologers självbilder och deras stereotypbilder av teknologer.",
+            "A method for visual identification of small sample subgroups and potential biomarkers.", 
+            "RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis."),
+  pubdate = c("", "", "", ""),
+  pubyear = c("2014", "2013", "2011", "2019"),
+  journal = c("Computational Statistics & Data Analysis", "Högre Utbildning", 
+              "Annals of Applied Statistics", "Annual Review of Biomedical Data Science"),
+  authors = c("Soneson C, Fontes M", "Soneson C, Torstensson A", "Soneson C, Fontes M", 
+              "Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),
+  volume = c("71", "3", "5", "2"),
+  issue = c("", "1", "3", ""),
+  pages = c("588-598", "3-14", "2131-2149", "139-173"),
+  doi = c("10.1016/j.csda.2012.07.026", "", "10.1214/11-AOAS460",
+          "10.1146/annurev-biodatasci-072018-021255"),
+  pmid = c("", "", "", ""),
+  elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460", 
+                  "doi: 10.1146/annurev-biodatasci-072018-021255")
+)
+
+## F1000Research articles awaiting peer review
+f1000_preprints <- data.frame(
+  title = c("Community-driven ELIXIR activities in single-cell omics"),
+  pubdate = c("Posted July 29, 2022."),
+  pubyear = c("Preprints"),
+  journal = c("F1000Research"),
+  authors = c("Paulo Czarnewski, Ahmed Mahfouz, Raffaele A. Calogero, Patricia M. Palagi, Laura Portell-Silva, Asier Gonzalez-Uriarte, Charlotte Soneson, Tony Burdett, Barbara Szomolay, Pavankumar Videm, Hans-Rudolf Hotz, Irene Papatheodorou, John M. Hancock, Björn Grüning, Wilfried Haerty, Roland Krause, Salvador Capella-Gutierrez, Brane Leskošek, Luca Alessandri, Maddalena Arigoni, Tadeja Rezen, Alexander Botzki, Polonca Ferk, Jessica Lindvall, Katharina F Heil, Naveed Ishaque, Eija Korpelainen"),
+  volume = c(11),
+  issue = c(869),
+  pages = c(""),
+  doi = c("10.12688/f1000research.122312.1"),
+  pmid = c(""),
+  elocationid = c("")
+)
+# f1000_preprints <- NULL
+```
+
+```{r pkgs}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(rentrez)
+  library(httr)
+  library(rvest)
+  library(scholar)
+  library(lubridate)
+  library(medrxivr)
+})
+```
+
+```{r help-functions}
+fix_null <- function(x) {
+  if (is.null(x) || length(x) == 0) NA
+  else x
+}
+
+make_link_button <- function(address, title) {
+  sprintf('<a href="%s" target="_blank" class="btn btn-primary">%s</a>', 
+                   address, title)
+}
+
+make_link_text <- function(address, title) {
+  sprintf('<a href="%s" target="_blank"> %s</a>', address, title)
+}
+
+make_link_pmid <- function(pmid) {
+  if (pmid != "") {
+      sprintf('<a href="%s" target="_blank"> %s</a>',
+          paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
+          paste0("PMID ", pmid))
+  } else {
+    ""
+  }
+}
+
+make_link_altmetric <- function(doi) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          doi)
+}
+
+make_link_altmetric_arxiv <- function(arxivid) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-arxiv-id="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          arxivid)
+}
+```
+
+```{r get-pubs}
+## Get Google Scholar publication list
+scholarpubs <- get_publications(id)
+
+## Search PubMed
+x <- entrez_search(db = "pubmed", term = "Soneson Charlotte[au]", retmax = 1000)
+
+## Add and remove PubMed IDs manually
+x$ids <- unique(c(base::setdiff(x$ids, pmid_remove), pmid_add))
+
+## Extract info
+summ <- entrez_summary(db = "pubmed", id = x$ids)
+summ <- lapply(summ, function(w) {
+  data.frame(title = fix_null(w$title), 
+             pubdate = fix_null(w$pubdate),
+             pubyear = fix_null(strsplit(w$pubdate, " ")[[1]][1]), 
+             journal = fix_null(w$source), 
+             authors = fix_null(paste(w$authors$name, collapse = ", ")),
+             volume = fix_null(w$volume),
+             issue = fix_null(w$issue),
+             pages = fix_null(w$pages), 
+             doi = fix_null(w$articleids$value[w$articleids$idtype == "doi"]),
+             pmid = fix_null(w$articleids$value[w$articleids$idtype == "pubmed"]),
+             elocationid = fix_null(w$elocationid),
+             stringsAsFactors = FALSE)
+})
+## Put into data frame and arrange by year
+summ <- do.call(rbind, summ) %>% dplyr::arrange(desc(pubyear))
+```
+
+```{r fix-html}
+## Change some HTML formatting to markdown
+summ$title <- sapply(summ$title, function(x) {
+  x <- gsub("&lt;i&gt;|&lt;/i&gt;", "*", x)  ## <i>, </i>
+  x <- gsub("&lt;u&gt;|&lt;/u&gt;", "*", x)  ## <u>, </u>
+  x
+})
+```
+
+```{r get-unlisted}
+## Add unlisted publications
+unlisted_publications <- unlisted_publications[, match(colnames(summ), 
+                                                       colnames(unlisted_publications))]
+colnames(unlisted_publications) <- colnames(summ)
+summ <- rbind(summ, unlisted_publications)
+```
+
+```{r highlight}
+## Highlight name in bold
+summ$authors <- sapply(summ$authors, function(a) {
+  gsub(paste0("(", paste(highlight, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+})
+
+summ$authors <- sapply(summ$authors, function(a) {
+  gsub(", Bar-Joseph Z", "", a)
+})
+```
+
+```{r add-links}
+#| message: false
+#| warning: false
+## Add column with links to GitHub repos
+summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(github = replace(github, is.na(github), ""))
+
+## Add column with links to software packages
+summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(software = replace(software, is.na(software), ""))
+
+## Add column with links to preprints
+summ <- dplyr::left_join(summ, data.frame(pmid_preprints, stringsAsFactors = FALSE)) %>%
+  dplyr::mutate(preprint = replace(preprint, is.na(preprint), ""))
+```
+
+```{r add-citations}
+#| message: false
+#| warning: false
+## Add citations from Google Scholar
+idx <- match(tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                         summ$title)))),
+             tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                         scholarpubs$title)))))
+summ$citations <- scholarpubs$cites[idx]
+```
+
+```{r add-biorxiv}
+## Add bioRxiv preprints by doi
+biorxiv <- do.call(rbind, lapply(biorxiv_dois, function(doi) {
+  brx <- medrxivr::mx_api_doi(doi, server = "biorxiv", clean = TRUE) %>%
+    dplyr::slice_max(node, n = 1)
+  data.frame(title = brx$title,
+             pubdate = paste0("Posted ", 
+                              format(lubridate::ymd(brx$date), 
+                                     "%B %d, %Y"), "."),
+             pubyear = "Preprints",
+             journal = "bioRxiv", 
+             authors = brx$authors, 
+             volume = "", issue = "", pages = "",
+             doi = doi, pmid = "", elocationid = "",
+             stringsAsFactors = FALSE)
+}))
+
+## Manual fix to title
+biorxiv$title <- gsub("unexpectedorigin", "unexpected origin", biorxiv$title)
+biorxiv$title <- gsub("inRNA", "in RNA", biorxiv$title)
+```
+
+```{r add-peerj}
+## Add PeerJ preprints by doi
+peerj <- do.call(rbind, lapply(peerj_dois, function(doi) {
+  html <- read_html(paste0("https://doi.org/", doi))
+  title <- html_text(html_nodes(html, ".article-title"))
+  authors <- paste(unique(paste(html_text(html_nodes(html, ".given-names")), 
+                                html_text(html_nodes(html, ".surname")))), 
+                   collapse = ", ")
+  pubdate <- paste0("Posted ", format(as.Date(html_text(html_nodes(html, "time"))[1]), "%B %d, %Y."))
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints",       
+             journal = "PeerJ", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+```
+
+```{r add-arxiv}
+## Add ArXiv preprints by doi
+arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
+  html <- read_html(paste0("https://arxiv.org/abs/", doi))
+  title <- gsub("^Title:", "", html_text(html_nodes(html, ".title")))
+  authors <- gsub(" *$", "", gsub("\n", "", gsub("^Authors:", "", html_text(html_nodes(html, ".authors")))))
+  tmp <- strsplit(html_text(html_nodes(html, ".submission-history")), "\n")[[1]]
+  tmp <- strsplit(tmp[length(tmp)], " ")[[1]][c(3, 2, 4)]
+  pubdate <- paste0("Posted ", tmp[1], " ", tmp[2], ", ", tmp[3], ".")
+  data.frame(title = title, pubdate = pubdate, pubyear = "Preprints",       
+             journal = "ArXiv", authors = authors, volume = "", issue = "", 
+             pages = "", doi = doi, pmid = "", elocationid = "", 
+             stringsAsFactors = FALSE)
+}))
+```
+
+```{r add-f1000}
+## Add F1000Research preprints
+if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
+  f1000_preprints <- f1000_preprints[, match(colnames(biorxiv), 
+                                             colnames(f1000_preprints))]
+  colnames(f1000_preprints) <- colnames(biorxiv)
+  biorxiv <- rbind(biorxiv, f1000_preprints)
+} else if (!is.null(f1000_preprints)) {
+  biorxiv <- f1000_preprints
+}
+
+## Add PeerJ preprints
+if (!is.null(peerj)) {
+  biorxiv <- plyr::rbind.fill(biorxiv, peerj)
+}
+
+## Add ArXiv preprints
+if (!is.null(arxiv)) {
+  biorxiv <- plyr::rbind.fill(biorxiv, arxiv)
+}
+```
+
+```{r add-links-preprints}
+#| message: false
+#| warning: false
+if (!is.null(biorxiv)) {
+  ## Add column with links to GitHub repos
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(github = replace(github, is.na(github), ""))
+  
+  ## Add colum with links to software packages
+  biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFactors = FALSE)) %>%
+    dplyr::mutate(software = replace(software, is.na(software), ""))
+}
+```
+
+```{r add-citations-preprints}
+#| message: false
+#| warning: false
+if (!is.null(biorxiv)) {
+  ## Add citations from Google Scholar
+  idx <- match(tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                           biorxiv$title)))),
+               tolower(gsub(" $", "", gsub("  ", " ", gsub("[[:punct:]]", " ",
+                                                           scholarpubs$title)))))
+  biorxiv$citations <- scholarpubs$cites[idx]
+}
+```
+
+```{r highlight-biorxiv}
+if (!is.null(biorxiv)) {
+  ## Highlight name in bold
+  biorxiv$authors <- sapply(biorxiv$authors, function(a) {
+    gsub(paste0("(", paste(highlight, collapse = "|"), ")"), "<strong>\\1</strong>", a)
+  })
+}
+```
+
+```{r generate-output}
+## Split by publication year
+years <- as.character(unique(summ$pubyear))
+summ <- split(summ, summ$pubyear)
+
+## Generate final text string to display
+txt <- "<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>\n\n"
+## Preprints
+if (!is.null(biorxiv)) {
+  txt <- paste0(txt, "\n## Preprints and articles awaiting peer review\n\n")
+  for (j in seq_len(nrow(biorxiv))) {
+    if (biorxiv[j, "journal"] != "ArXiv") {
+      txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                    ". ", biorxiv[j, "journal"], 
+                    " doi:", make_link_text(address = paste0("https://doi.org/", biorxiv[j, "doi"]), title = paste0("https://doi.org/", biorxiv[j, "doi"])), ". ", 
+                    biorxiv[j, "pubdate"], " ", 
+                    ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")),
+                  # make_link_altmetric(paste0("https://doi.org/", biorxiv[j, "doi"])),
+                  "\n\n")
+    } else {
+      txt <- paste0(txt, "- ", biorxiv[j, "authors"], ": ", biorxiv[j, "title"], 
+                  ". ", biorxiv[j, "journal"], 
+                  " ID:", make_link_text(address = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"]), title = paste0("https://arxiv.org/abs/", biorxiv[j, "doi"])), ". ", 
+                  biorxiv[j, "pubdate"], " ", 
+                  ifelse(biorxiv[j, "github"] == "", "", paste0(make_link_text(address = biorxiv[j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(biorxiv[j, "software"] == "", "", paste0(make_link_text(address = biorxiv[j, "software"], title = "Software"), ". ")),
+                  # make_link_altmetric_arxiv(biorxiv[j, "doi"]),
+                  "\n\n")
+    }
+  }
+}
+
+## Publications
+for (i in years) {
+  txt <- paste0(txt, "\n## ", i, "\n\n")
+  for (j in seq_len(nrow(summ[[i]]))) {
+    txt <- paste0(txt, "- ", summ[[i]][j, "authors"], ": ", summ[[i]][j, "title"], 
+                  " ", summ[[i]][j, "journal"], " ", summ[[i]][j, "volume"],
+                  ifelse(summ[[i]][j, "issue"] == "", "", 
+                         paste0("(", summ[[i]][j, "issue"], ")")), ":",
+                  summ[[i]][j, "pages"], 
+                  " (", i, "). DOI: ", summ[[i]][j, "doi"],
+                  ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), 
+                  ifelse(summ[[i]][j, "pmid"] == "", "", ". "),
+                  ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
+                  ifelse(summ[[i]][j, "software"] == "", "", paste0(make_link_text(address = summ[[i]][j, "software"], title = "Software/Resources"), ". ")), 
+                  ifelse(summ[[i]][j, "preprint"] == "", "", paste0(make_link_text(address = summ[[i]][j, "preprint"], title = "Preprint"), ". ")), 
+                  # make_link_altmetric(paste0("https://doi.org/", summ[[i]][j, "doi"])),
+                  "\n\n")
+  }
+}
+```
+
+```{r print-output}
+#| results: "asis"
+cat(txt)
+```
