@@ -1,0 +1,23 @@
+---
+title: |
+  Brief CV
+---
+
+::: {.column-margin}
+<img src="SonesonPhoto.jpg" align="right" alt="" width="130"  style="transform:rotate(0deg);"/>
+:::
+
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+-   10/2018 - : Research Associate, [Computational Biology Platform](https://www.fmi.ch/research/platforms/platform.html?plt=115), [Friedrich Miescher Institute for Biomedical Research](https://www.fmi.ch/), Basel, Switzerland
+-   01/2011 - 02/2020 : Analyst, [Qlucore AB](http://qlucore.com), Lund, Sweden
+-   04/2015 - 09/2018: Postdoc, [Robinson lab](https://robinsonlabuzh.github.io/), Institute of Molecular Life Sciences, University of Zurich, Switzerland
+-   02/2012 - 03/2015: Bioinformatician/Project Manager, [Bioinformatics Core Facility](https://www.sib.swiss/mauro-delorenzi-frederic-schutz-group), SIB Swiss Institute of Bioinformatics, Lausanne, Switzerland
+-   08/2011 - 01/2012: Acting assistant professor, [Centre for Mathematical Sciences](http://maths.lu.se), Lund University, Sweden
+-   08/2006 - 07/2011: PhD student, [Centre for Mathematical Sciences](http://maths.lu.se), Lund University, Sweden
+
+## Contact:
+
+<i class="fa fa-envelope-o"></i> charlotte.soneson (at) fmi.ch
