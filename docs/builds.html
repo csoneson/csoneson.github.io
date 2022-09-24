@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Charlotte Soneson - Build status</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Charlotte Soneson</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./publications.html">Publications</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resources.html">Resources</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./teaching.html">Teaching</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/csoneson"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/CSoneson"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./builds.html" aria-current="page">Build status</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bioconductor-software-packages" id="toc-bioconductor-software-packages" class="nav-link active" data-scroll-target="#bioconductor-software-packages">Bioconductor software packages</a></li>
+  <li><a href="#bioconductor-data-packages" id="toc-bioconductor-data-packages" class="nav-link" data-scroll-target="#bioconductor-data-packages">Bioconductor data packages</a></li>
+  <li><a href="#other-software-packages" id="toc-other-software-packages" class="nav-link" data-scroll-target="#other-software-packages">Other software packages</a></li>
+  <li><a href="#non-software-repositories" id="toc-non-software-repositories" class="nav-link" data-scroll-target="#non-software-repositories">Non-software repositories</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Build status</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="bioconductor-software-packages" class="level2">
+<h2 class="anchored" data-anchor-id="bioconductor-software-packages">Bioconductor software packages</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Package</th>
+<th style="text-align: center;">Bioc devel</th>
+<th style="text-align: center;">Bioc release</th>
+<th style="text-align: center;">GitHub actions</th>
+<th style="text-align: center;">Code coverage</th>
+<th style="text-align: center;">GitHub issues</th>
+<th style="text-align: center;">GitHub PRs</th>
+<th style="text-align: center;">Bioc support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">alevinQC <a href="https://github.com/csoneson/alevinQC">GitHub</a> <a href="https://bioconductor.org/packages/alevinQC/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/alevinQC"><img src="http://bioconductor.org/shields/build/devel/bioc/alevinQC.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/alevinQC"><img src="http://bioconductor.org/shields/build/release/bioc/alevinQC.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/alevinQC/actions"><img src="https://github.com/csoneson/alevinQC/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/alevinQC"><img src="https://codecov.io/github/csoneson/alevinQC/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/alevinQC/issues"><img src="https://img.shields.io/github/issues/csoneson/alevinQC.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/alevinQC/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/alevinQC.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/alevinQC"><img src="http://www.bioconductor.org/shields/posts/alevinQC.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">compcodeR <a href="https://github.com/csoneson/compcodeR">GitHub</a> <a href="https://bioconductor.org/packages/compcodeR/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/compcodeR"><img src="http://bioconductor.org/shields/build/devel/bioc/compcodeR.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/compcodeR"><img src="http://bioconductor.org/shields/build/release/bioc/compcodeR.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/compcodeR/actions"><img src="https://github.com/csoneson/compcodeR/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/compcodeR"><img src="https://codecov.io/github/csoneson/compcodeR/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/compcodeR/issues"><img src="https://img.shields.io/github/issues/csoneson/compcodeR.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/compcodeR/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/compcodeR.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/compcodeR"><img src="http://www.bioconductor.org/shields/posts/compcodeR.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">countsimQC <a href="https://github.com/csoneson/countsimQC">GitHub</a> <a href="https://bioconductor.org/packages/countsimQC/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/countsimQC"><img src="http://bioconductor.org/shields/build/devel/bioc/countsimQC.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/countsimQC"><img src="http://bioconductor.org/shields/build/release/bioc/countsimQC.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/countsimQC/actions"><img src="https://github.com/csoneson/countsimQC/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/countsimQC"><img src="https://codecov.io/github/csoneson/countsimQC/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/countsimQC/issues"><img src="https://img.shields.io/github/issues/csoneson/countsimQC.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/countsimQC/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/countsimQC.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/countsimQC"><img src="http://www.bioconductor.org/shields/posts/countsimQC.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">eisaR <a href="https://github.com/fmicompbio/eisaR">GitHub</a> <a href="https://bioconductor.org/packages/eisaR/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/eisaR"><img src="http://bioconductor.org/shields/build/devel/bioc/eisaR.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/eisaR"><img src="http://bioconductor.org/shields/build/release/bioc/eisaR.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/eisaR/actions"><img src="https://github.com/fmicompbio/eisaR/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/eisaR"><img src="https://codecov.io/github/fmicompbio/eisaR/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/eisaR/issues"><img src="https://img.shields.io/github/issues/fmicompbio/eisaR.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/eisaR/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/eisaR.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/eisaR"><img src="http://www.bioconductor.org/shields/posts/eisaR.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ExploreModelMatrix <a href="https://github.com/csoneson/ExploreModelMatrix">GitHub</a> <a href="https://bioconductor.org/packages/ExploreModelMatrix/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/ExploreModelMatrix"><img src="http://bioconductor.org/shields/build/devel/bioc/ExploreModelMatrix.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/ExploreModelMatrix"><img src="http://bioconductor.org/shields/build/release/bioc/ExploreModelMatrix.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ExploreModelMatrix/actions"><img src="https://github.com/csoneson/ExploreModelMatrix/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/ExploreModelMatrix"><img src="https://codecov.io/github/csoneson/ExploreModelMatrix/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ExploreModelMatrix/issues"><img src="https://img.shields.io/github/issues/csoneson/ExploreModelMatrix.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ExploreModelMatrix/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/ExploreModelMatrix.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/ExploreModelMatrix"><img src="http://www.bioconductor.org/shields/posts/ExploreModelMatrix.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">iCOBRA <a href="https://github.com/csoneson/iCOBRA">GitHub</a> <a href="https://bioconductor.org/packages/iCOBRA/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/iCOBRA"><img src="http://bioconductor.org/shields/build/devel/bioc/iCOBRA.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/iCOBRA"><img src="http://bioconductor.org/shields/build/release/bioc/iCOBRA.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/iCOBRA/actions"><img src="https://github.com/csoneson/iCOBRA/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/iCOBRA"><img src="https://codecov.io/github/csoneson/iCOBRA/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/iCOBRA/issues"><img src="https://img.shields.io/github/issues/csoneson/iCOBRA.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/iCOBRA/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/iCOBRA.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/iCOBRA"><img src="http://www.bioconductor.org/shields/posts/iCOBRA.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">iSEE <a href="https://github.com/iSEE/iSEE">GitHub</a> <a href="https://bioconductor.org/packages/iSEE/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/iSEE"><img src="http://bioconductor.org/shields/build/devel/bioc/iSEE.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/iSEE"><img src="http://bioconductor.org/shields/build/release/bioc/iSEE.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEE/actions"><img src="https://github.com/iSEE/iSEE/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/iSEE/iSEE"><img src="https://codecov.io/github/iSEE/iSEE/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEE/issues"><img src="https://img.shields.io/github/issues/iSEE/iSEE.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEE/pulls"><img src="https://img.shields.io/github/issues-pr/iSEE/iSEE.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/iSEE"><img src="http://www.bioconductor.org/shields/posts/iSEE.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">iSEEu <a href="https://github.com/iSEE/iSEEu">GitHub</a> <a href="https://bioconductor.org/packages/iSEEu/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/iSEEu"><img src="http://bioconductor.org/shields/build/devel/bioc/iSEEu.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/iSEEu"><img src="http://bioconductor.org/shields/build/release/bioc/iSEEu.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEu/actions"><img src="https://github.com/iSEE/iSEEu/workflows/build_check_deploy/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/iSEE/iSEEu"><img src="https://codecov.io/github/iSEE/iSEEu/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEu/issues"><img src="https://img.shields.io/github/issues/iSEE/iSEEu.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEu/pulls"><img src="https://img.shields.io/github/issues-pr/iSEE/iSEEu.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/iSEEu"><img src="http://www.bioconductor.org/shields/posts/iSEEu.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">monaLisa <a href="https://github.com/fmicompbio/monaLisa">GitHub</a> <a href="https://bioconductor.org/packages/monaLisa/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/monaLisa"><img src="http://bioconductor.org/shields/build/devel/bioc/monaLisa.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/monaLisa"><img src="http://bioconductor.org/shields/build/release/bioc/monaLisa.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/monaLisa/actions"><img src="https://github.com/fmicompbio/monaLisa/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/monaLisa"><img src="https://codecov.io/github/fmicompbio/monaLisa/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/monaLisa/issues"><img src="https://img.shields.io/github/issues/fmicompbio/monaLisa.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/monaLisa/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/monaLisa.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/monaLisa"><img src="http://www.bioconductor.org/shields/posts/monaLisa.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">QuasR <a href="https://github.com/fmicompbio/QuasR">GitHub</a> <a href="https://bioconductor.org/packages/QuasR/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/QuasR"><img src="http://bioconductor.org/shields/build/devel/bioc/QuasR.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/QuasR"><img src="http://bioconductor.org/shields/build/release/bioc/QuasR.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/QuasR/actions"><img src="https://github.com/fmicompbio/QuasR/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/QuasR"><img src="https://codecov.io/github/fmicompbio/QuasR/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/QuasR/issues"><img src="https://img.shields.io/github/issues/fmicompbio/QuasR.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/QuasR/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/QuasR.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/QuasR"><img src="http://www.bioconductor.org/shields/posts/QuasR.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rhisat2 <a href="https://github.com/fmicompbio/Rhisat2">GitHub</a> <a href="https://bioconductor.org/packages/Rhisat2/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/Rhisat2"><img src="http://bioconductor.org/shields/build/devel/bioc/Rhisat2.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/Rhisat2"><img src="http://bioconductor.org/shields/build/release/bioc/Rhisat2.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/Rhisat2/actions"><img src="https://github.com/fmicompbio/Rhisat2/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/Rhisat2"><img src="https://codecov.io/github/fmicompbio/Rhisat2/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/Rhisat2/issues"><img src="https://img.shields.io/github/issues/fmicompbio/Rhisat2.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/Rhisat2/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/Rhisat2.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/Rhisat2"><img src="http://www.bioconductor.org/shields/posts/Rhisat2.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">velociraptor <a href="https://github.com/kevinrue/velociraptor">GitHub</a> <a href="https://bioconductor.org/packages/velociraptor/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/bioc-LATEST/velociraptor"><img src="http://bioconductor.org/shields/build/devel/bioc/velociraptor.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/bioc-LATEST/velociraptor"><img src="http://bioconductor.org/shields/build/release/bioc/velociraptor.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/kevinrue/velociraptor/actions"><img src="https://github.com/kevinrue/velociraptor/workflows/build_check_deploy/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/kevinrue/velociraptor"><img src="https://codecov.io/github/kevinrue/velociraptor/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/kevinrue/velociraptor/issues"><img src="https://img.shields.io/github/issues/kevinrue/velociraptor.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/kevinrue/velociraptor/pulls"><img src="https://img.shields.io/github/issues-pr/kevinrue/velociraptor.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/velociraptor"><img src="http://www.bioconductor.org/shields/posts/velociraptor.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bioconductor-data-packages" class="level2">
+<h2 class="anchored" data-anchor-id="bioconductor-data-packages">Bioconductor data packages</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Package</th>
+<th style="text-align: center;">Bioc devel</th>
+<th style="text-align: center;">Bioc release</th>
+<th style="text-align: center;">GitHub actions</th>
+<th style="text-align: center;">Code coverage</th>
+<th style="text-align: center;">GitHub issues</th>
+<th style="text-align: center;">GitHub PRs</th>
+<th style="text-align: center;">Bioc support</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">DuoClustering2018 <a href="https://github.com/csoneson/DuoClustering2018">GitHub</a> <a href="https://bioconductor.org/packages/DuoClustering2018/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/data-experiment-LATEST/DuoClustering2018/"><img src="https://bioconductor.org/shields/build/devel/data-experiment/DuoClustering2018.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/data-experiment-LATEST/DuoClustering2018/"><img src="https://bioconductor.org/shields/build/release/data-experiment/DuoClustering2018.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/DuoClustering2018/actions"><img src="https://github.com/csoneson/DuoClustering2018/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/DuoClustering2018"><img src="https://codecov.io/github/csoneson/DuoClustering2018/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/DuoClustering2018/issues"><img src="https://img.shields.io/github/issues/csoneson/DuoClustering2018.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/DuoClustering2018/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/DuoClustering2018.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/DuoClustering2018"><img src="http://www.bioconductor.org/shields/posts/DuoClustering2018.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TabulaMurisData <a href="https://github.com/csoneson/TabulaMurisData">GitHub</a> <a href="https://bioconductor.org/packages/TabulaMurisData/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/data-experiment-LATEST/TabulaMurisData/"><img src="https://bioconductor.org/shields/build/devel/data-experiment/TabulaMurisData.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/data-experiment-LATEST/TabulaMurisData/"><img src="https://bioconductor.org/shields/build/release/data-experiment/TabulaMurisData.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/TabulaMurisData/actions"><img src="https://github.com/csoneson/TabulaMurisData/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/TabulaMurisData"><img src="https://codecov.io/github/csoneson/TabulaMurisData/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/TabulaMurisData/issues"><img src="https://img.shields.io/github/issues/csoneson/TabulaMurisData.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/TabulaMurisData/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/TabulaMurisData.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/TabulaMurisData"><img src="http://www.bioconductor.org/shields/posts/TabulaMurisData.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TabulaMurisSenisData <a href="https://github.com/fmicompbio/TabulaMurisSenisData">GitHub</a> <a href="https://bioconductor.org/packages/TabulaMurisSenisData/">Bioc</a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/devel/data-experiment-LATEST/TabulaMurisSenisData/"><img src="https://bioconductor.org/shields/build/devel/data-experiment/TabulaMurisSenisData.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="http://bioconductor.org/checkResults/release/data-experiment-LATEST/TabulaMurisSenisData/"><img src="https://bioconductor.org/shields/build/release/data-experiment/TabulaMurisSenisData.svg" class="img-fluid"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/TabulaMurisSenisData/actions/workflows/check-bioc.yml"><img src="https://github.com/fmicompbio/TabulaMurisSenisData/actions/workflows/check-bioc.yml/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/TabulaMurisSenisData"><img src="https://codecov.io/github/fmicompbio/TabulaMurisSenisData/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/TabulaMurisSenisData/issues"><img src="https://img.shields.io/github/issues/fmicompbio/TabulaMurisSenisData.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/TabulaMurisSenisData/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/TabulaMurisSenisData.png" class="img-fluid" alt="GitHub PRs"></a></td>
+<td style="text-align: center;"><a href="https://support.bioconductor.org/tag/TabulaMurisSenisData"><img src="http://www.bioconductor.org/shields/posts/TabulaMurisSenisData.svg" class="img-fluid" alt="Support site activity, last 6 months: tagged questions/avg. answers per question/avg. comments per question/accepted answers, or 0 if no tagged posts."></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="other-software-packages" class="level2">
+<h2 class="anchored" data-anchor-id="other-software-packages">Other software packages</h2>
+<p>See also <a href="https://csoneson.r-universe.dev/">r-universe</a></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Package</th>
+<th style="text-align: center;">GitHub actions</th>
+<th style="text-align: center;">Code coverage</th>
+<th style="text-align: center;">GitHub issues</th>
+<th style="text-align: center;">GitHub PRs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ARMOR <a href="https://github.com/csoneson/ARMOR">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ARMOR/actions"><img src="https://github.com/csoneson/ARMOR/workflows/snakemake-run/badge.svg" class="img-fluid" alt="snakemake-run"></a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ARMOR/issues"><img src="https://img.shields.io/github/issues/csoneson/ARMOR.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ARMOR/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/ARMOR.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bettr <a href="https://github.com/federicomarini/bettr">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/federicomarini/bettr/actions"><img src="https://github.com/federicomarini/bettr/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/federicomarini/bettr"><img src="https://codecov.io/github/federicomarini/bettr/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/federicomarini/bettr/issues"><img src="https://img.shields.io/github/issues/federicomarini/bettr.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/federicomarini/bettr/pulls"><img src="https://img.shields.io/github/issues-pr/federicomarini/bettr.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BiocBuildFailureDiagnosis <a href="https://github.com/csoneson/BiocBuildFailureDiagnosis">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/BiocBuildFailureDiagnosis/actions"><img src="https://github.com/csoneson/BiocBuildFailureDiagnosis/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/BiocBuildFailureDiagnosis"><img src="https://codecov.io/github/csoneson/BiocBuildFailureDiagnosis/coverage.svg?branch=main" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/BiocBuildFailureDiagnosis/issues"><img src="https://img.shields.io/github/issues/csoneson/BiocBuildFailureDiagnosis.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/BiocBuildFailureDiagnosis/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/BiocBuildFailureDiagnosis.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ConfoundingExplorer <a href="https://github.com/csoneson/ConfoundingExplorer">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ConfoundingExplorer/actions"><img src="https://github.com/csoneson/ConfoundingExplorer/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/ConfoundingExplorer"><img src="https://codecov.io/github/csoneson/ConfoundingExplorer/coverage.svg?branch=main" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ConfoundingExplorer/issues"><img src="https://img.shields.io/github/issues/csoneson/ConfoundingExplorer.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/ConfoundingExplorer/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/ConfoundingExplorer.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">dreval <a href="https://github.com/csoneson/dreval">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/dreval/actions"><img src="https://github.com/csoneson/dreval/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/dreval"><img src="https://codecov.io/github/csoneson/dreval/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/dreval/issues"><img src="https://img.shields.io/github/issues/csoneson/dreval.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/dreval/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/dreval.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">einprot <a href="https://github.com/fmicompbio/einprot">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/einprot/actions"><img src="https://github.com/fmicompbio/einprot/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/einprot"><img src="https://codecov.io/github/fmicompbio/einprot/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/einprot/issues"><img src="https://img.shields.io/github/issues/fmicompbio/einprot.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/einprot/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/einprot.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">jcc <a href="https://github.com/csoneson/jcc">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/jcc/actions"><img src="https://github.com/csoneson/jcc/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/jcc"><img src="https://codecov.io/github/csoneson/jcc/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/jcc/issues"><img src="https://img.shields.io/github/issues/csoneson/jcc.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/jcc/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/jcc.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mutscan <a href="https://github.com/fmicompbio/mutscan">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/mutscan/actions"><img src="https://github.com/fmicompbio/mutscan/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/mutscan"><img src="https://codecov.io/github/fmicompbio/mutscan/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/mutscan/issues"><img src="https://img.shields.io/github/issues/fmicompbio/mutscan.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/mutscan/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/mutscan.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sketchR <a href="https://github.com/csoneson/sketchR">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/sketchR/actions"><img src="https://github.com/csoneson/sketchR/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/csoneson/sketchR"><img src="https://codecov.io/github/csoneson/sketchR/coverage.svg?branch=main" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/sketchR/issues"><img src="https://img.shields.io/github/issues/csoneson/sketchR.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/sketchR/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/sketchR.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">swissknife <a href="https://github.com/fmicompbio/swissknife">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/swissknife/actions"><img src="https://github.com/fmicompbio/swissknife/workflows/R-CMD-check/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://codecov.io/github/fmicompbio/swissknife"><img src="https://codecov.io/github/fmicompbio/swissknife/coverage.svg?branch=master" class="img-fluid" alt="Codecov.io coverage status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/swissknife/issues"><img src="https://img.shields.io/github/issues/fmicompbio/swissknife.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/swissknife/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/swissknife.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="non-software-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="non-software-repositories">Non-software repositories</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Repository</th>
+<th style="text-align: center;">GitHub actions</th>
+<th style="text-align: center;">GitHub issues</th>
+<th style="text-align: center;">GitHub PRs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">iSEEWorkshopEuroBioc2020 <a href="https://github.com/iSEE/iSEEWorkshopEuroBioc2020">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEWorkshopEuroBioc2020/actions"><img src="https://github.com/iSEE/iSEEWorkshopEuroBioc2020/workflows/build_check_deploy/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEWorkshopEuroBioc2020/issues"><img src="https://img.shields.io/github/issues/iSEE/iSEEWorkshopEuroBioc2020.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEWorkshopEuroBioc2020/pulls"><img src="https://img.shields.io/github/issues-pr/iSEE/iSEEWorkshopEuroBioc2020.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">iSEEWorkshop2020 <a href="https://github.com/iSEE/iSEEWorkshop2020">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEWorkshop2020/actions"><img src="https://github.com/iSEE/iSEEWorkshop2020/workflows/build_check_deploy/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEWorkshop2020/issues"><img src="https://img.shields.io/github/issues/iSEE/iSEEWorkshop2020.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/iSEE/iSEEWorkshop2020/pulls"><img src="https://img.shields.io/github/issues-pr/iSEE/iSEEWorkshop2020.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PCAintro2020 <a href="https://github.com/fmicompbio/PCA_intro2020">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/PCA_intro2020/actions"><img src="https://github.com/fmicompbio/PCA_intro2020/workflows/build-deploy-rmd/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/PCA_intro2020/issues"><img src="https://img.shields.io/github/issues/fmicompbio/PCA_intro2020.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/fmicompbio/PCA_intro2020/pulls"><img src="https://img.shields.io/github/issues-pr/fmicompbio/PCA_intro2020.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">joss-analytics <a href="https://github.com/openjournals/joss-analytics">GitHub</a></td>
+<td style="text-align: center;"><a href="https://github.com/openjournals/joss-analytics/actions"><img src="https://github.com/openjournals/joss-analytics/workflows/build-deploy-rmd/badge.svg" class="img-fluid" alt="R build status"></a></td>
+<td style="text-align: center;"><a href="https://github.com/openjournals/joss-analytics/issues"><img src="https://img.shields.io/github/issues/openjournals/joss-analytics.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/openjournals/joss-analytics/pulls"><img src="https://img.shields.io/github/issues-pr/openjournals/joss-analytics.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">conquer_comparison <a href="https://github.com/csoneson/conquer_comparison">GitHub</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/conquer_comparison/issues"><img src="https://img.shields.io/github/issues/csoneson/conquer_comparison.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/conquer_comparison/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/conquer_comparison.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rna_velocity_quant <a href="https://github.com/csoneson/rna_velocity_quant">GitHub</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/rna_velocity_quant/issues"><img src="https://img.shields.io/github/issues/csoneson/rna_velocity_quant.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/rna_velocity_quant/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/rna_velocity_quant.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WagnerEMT2020 <a href="https://github.com/csoneson/WagnerEMT2020">GitHub</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/WagnerEMT2020/issues"><img src="https://img.shields.io/github/issues/csoneson/WagnerEMT2020.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/WagnerEMT2020/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/WagnerEMT2020.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NativeRNAseqComplexTranscriptome <a href="https://github.com/csoneson/NativeRNAseqComplexTranscriptome">GitHub</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/NativeRNAseqComplexTranscriptome/issues"><img src="https://img.shields.io/github/issues/csoneson/NativeRNAseqComplexTranscriptome.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/NativeRNAseqComplexTranscriptome/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/NativeRNAseqComplexTranscriptome.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">annotation_problem_txabundance <a href="https://github.com/csoneson/annotation_problem_txabundance">GitHub</a></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/annotation_problem_txabundance/issues"><img src="https://img.shields.io/github/issues/csoneson/annotation_problem_txabundance.png" class="img-fluid" alt="GitHub issues"></a></td>
+<td style="text-align: center;"><a href="https://github.com/csoneson/annotation_problem_txabundance/pulls"><img src="https://img.shields.io/github/issues-pr/csoneson/annotation_problem_txabundance.png" class="img-fluid" alt="GitHub PRs"></a></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
