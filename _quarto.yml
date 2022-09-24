@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Charlotte Soneson"
+  navbar:
+    background: "#6D518C"
+    search: true
+    left:
+      - text: "Home"
+        icon: fa-home
+        href: index.qmd
+      - text: "Publications"
+        icon: fa-file-pdf-o
+        href: publications.qmd
+      - text: "Resources"
+        icon: fa-cogs
+        href: resources.qmd
+      - text: "Teaching"
+        icon: fa-mortar-board
+        href: teaching.qmd
+    right:
+      - icon: github
+        href: https://github.com/csoneson
+      - icon: twitter
+        href: https://twitter.com/CSoneson
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
