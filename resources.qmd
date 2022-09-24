@@ -1,0 +1,52 @@
+---
+title: "Resources"
+output: html
+editor_options: 
+  chunk_output_type: console
+---
+
+<center>[![](stickers/alevinQC.png){width="3cm"}](https://bioconductor.org/packages/alevinQC/)[![](stickers/ARMOR.png){width="3cm"}](https://github.com/csoneson/ARMOR)[![](stickers/countsimQC.png){width="3cm"}](https://bioconductor.org/packages/countsimQC/)[![](stickers/einprot.png){width="3cm"}](https://github.com/fmicompbio/einprot)[![](stickers/eisaR.png){width="3cm"}](https://bioconductor.org/packages/eisaR/)[![](stickers/emm_logo.png){width="3cm"}](https://bioconductor.org/packages/ExploreModelMatrix/)</center>
+
+<center>[![](stickers/iCOBRA.png){width="3cm"}](https://bioconductor.org/packages/iCOBRA/)[![](stickers/iSEE.png){width="3cm"}](https://bioconductor.org/packages/iSEE/)[![](stickers/iSEEu.png){width="3cm"}](https://bioconductor.org/packages/iSEEu/)[![](stickers/mutscan.png){width="3cm"}](https://github.com/fmicompbio/mutscan)[![](stickers/sketchR.png){width="3cm"}](https://github.com/csoneson/sketchR)[![](stickers/velociraptor_sticker.png){width="3cm"}](https://bioconductor.org/packages/velociraptor/)</center>
+
+## R packages
+
+I am a maintainer or contributor of the following R packages:
+
+-   `r badger::badge_custom(x = "", y = "alevinQC", color = "blue", url = "http://bioconductor.org/packages/alevinQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/alevinQC.svg"/>
+    -   A package for generation of QC reports summarizing the output from an [alevin](https://salmon.readthedocs.io/en/latest/alevin.html) run. Reports can be generated as html or pdf files, or as shiny applications.
+-   `r badger::badge_custom(x = "", y = "compcodeR", color = "blue", url = "http://bioconductor.org/packages/compcodeR/")` <img src="https://bioconductor.org/shields/years-in-bioc/compcodeR.svg"/>
+    -   A package providing extensive functionality for comparing results obtained by different methods for differential expression analysis of RNAseq data. It also contains functions for simulating count data and interfaces to several packages for performing the differential expression analysis.
+-   `r badger::badge_custom(x = "", y = "countsimQC", color = "blue", url = "http://bioconductor.org/packages/countsimQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/countsimQC.svg"/>
+    -   countsimQC provides functionality to create a comprehensive report comparing a broad range of characteristics across a collection of count matrices. One important use case is the comparison of one or more synthetic count matrices to a real count matrix, possibly the one underlying the simulations. However, any collection of count matrices can be compared.
+-   `r badger::badge_custom(x = "", y = "dreval", color = "red", url = "https://github.com/csoneson/dreval")`
+    -   Convenience functions for evaluation and comparison of reduced dimension representations.
+-   `r badger::badge_custom(x = "", y = "eisaR", color = "blue", url = "http://bioconductor.org/packages/eisaR/")` <img src="https://bioconductor.org/shields/years-in-bioc/eisaR.svg"/>
+    -   Exon-intron split analysis (EISA) uses ordinary RNA-seq data to measure changes in mature RNA and pre-mRNA reads across different experimental conditions to quantify transcriptional and post-transcriptional regulation of gene expression.
+-   `r badger::badge_custom(x = "", y = "ExploreModelMatrix", color = "blue", url = "http://bioconductor.org/packages/ExploreModelMatrix/")` <img src="https://bioconductor.org/shields/years-in-bioc/ExploreModelMatrix.svg"/>
+    -   Interactive interface for exploring design matrices in R.
+-   `r badger::badge_custom(x = "", y = "iCOBRA", color = "blue", url = "http://bioconductor.org/packages/iCOBRA/")` <img src="https://bioconductor.org/shields/years-in-bioc/iCOBRA.svg"/>
+    -   iCOBRA provides functions for calculation and visualization of performance metrics for evaluation of ranking and binary classification (assignment) methods. It also contains a shiny application for interactive exploration of results.
+-   `r badger::badge_custom(x = "", y = "iSEE", color = "blue", url = "http://bioconductor.org/packages/iSEE/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEE.svg"/>
+    -   iSEE provides functions for creating an interactive Shiny-based graphical user interface for exploring data stored in SummarizedExperiment objects, including row- and column-level metadata. Particular attention is given to single-cell data in a SingleCellExperiment object with visualization of dimensionality reduction results.
+-   `r badger::badge_custom(x = "", y = "iSEEu", color = "blue", url = "http://bioconductor.org/packages/iSEEu/")` <img src="https://bioconductor.org/shields/years-in-bioc/iSEEu.svg"/>
+    -   iSEEu (the iSEE universe) contains diverse functionality to extend the usage of the iSEE package, including additional classes for the panels, or modes allowing easy configuration of iSEE applications.
+-   `r badger::badge_custom(x = "", y = "jcc", color = "red", url = "https://github.com/csoneson/jcc")`
+    -   Calculates [JCC scores](http://www.life-science-alliance.org/content/2/1/e201800175.abstract), which are aimed at detecting genes for which estimated transcript abundances are unreliable, either because of problems in the transcript abundance estimation or because of missing or wrongly annotated reference transcripts. It does so by comparing the number of reads predicted to align across each junction, inferred from the transcript abundances and a fragment bias model, to the observed number of junction-spanning reads, obtained via alignment of the reads to the genome. A high JCC score for a gene indicates that the estimated abundances for the corresponding transcripts are unreliable and should be treated with care in downstream analyses.
+-   `r badger::badge_custom(x = "", y = "Rhisat2", color = "blue", url = "http://bioconductor.org/packages/Rhisat2/")` <img src="https://bioconductor.org/shields/years-in-bioc/Rhisat2.svg"/>
+    -   An R interface to the HISAT2 spliced short-read aligner by Kim et al. (2015). The package contains wrapper functions to create a genome index and to perform the read alignment to the generated index.
+-   `r badger::badge_custom(x = "", y = "velociraptor", color = "blue", url = "http://bioconductor.org/packages/velociraptor/")` <img src="https://bioconductor.org/shields/years-in-bioc/velociraptor.svg"/>
+    -   Provides Bioconductor-friendly wrappers for RNA velocity calculations in single-cell RNA-seq data.
+
+## Other resources
+
+-   `r badger::badge_custom(x = "", y = "ARMOR", color = "red", url = "https://github.com/csoneson/ARMOR")`
+    -   A lightweight Snakemake workflow for preprocessing and statistical analysis of RNA-seq data.
+-   `r badger::badge_custom(x = "", y = "conquer", color = "red", url = "http://imlspenticton.uzh.ch:3838/conquer/")`
+    -   A repository with consistently quantified single-cell RNA-seq data sets.
+-   `r badger::badge_custom(x = "", y = "TabulaMurisSenisData", color = "blue", url = "http://bioconductor.org/packages/TabulaMurisSenisData/")`
+    -   An R package interface to processed 10x (droplet) and SmartSeq2 (on FACS-sorted cells) single-cell RNA-seq data from the [Tabula Muris Senis project](https://tabula-muris-senis.ds.czbiohub.org/).
+-   `r badger::badge_custom(x = "", y = "TabulaMurisData", color = "blue", url = "http://bioconductor.org/packages/TabulaMurisData/")`
+    -   An R package interface to processed 10x (droplet) and SmartSeq2 (on FACS-sorted cells) single-cell RNA-seq data from the [Tabula Muris consortium](http://tabula-muris.ds.czbiohub.org/).
+-   `r badger::badge_custom(x = "", y = "DuoClustering2018", color = "blue", url = "http://bioconductor.org/packages/DuoClustering2018/")`
+    -   Data sets and clustering results from the scRNA-seq clustering evaluation by [Duo et al. 2018](https://f1000research.com/articles/7-1141/v2).
