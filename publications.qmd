@@ -24,7 +24,6 @@ pmid_add <- c("27309738", "26615188", "25057166")
 ## bioRxiv dois
 biorxiv_dois <- c("10.1101/2022.10.25.513674",
                   "10.1101/2022.09.22.508982", 
-                  "10.1101/2022.01.21.476612",
                   "10.1101/2021.11.15.468676",
                   "10.1101/2021.01.17.426996")
 
@@ -46,7 +45,8 @@ pmid_github <- rbind(
   c(pmid = "26813113", github = "https://github.com/markrobinsonuzh/diff_splice_paper"),
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
   c(pmid = "33428615", github = "https://github.com/csoneson/rna_velocity_quant"),
-  c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020")
+  c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
+  c(pmid = "36508357", github = "https://github.com/i2bc/InterspeciesDE")
 )
 biorxiv_github <- rbind(
   c(doi = "10.1101/2020.03.13.990069", github = "https://github.com/csoneson/rna_velocity_quant"),
@@ -75,7 +75,8 @@ pmid_preprints <- rbind(
   c(pmid = "35140234", preprint = "https://www.biorxiv.org/content/10.1101/2021.03.26.436976v1"),
   c(pmid = "35199152", preprint = "https://www.biorxiv.org/content/10.1101/2021.11.30.470570v1"),
   c(pmid = "35277707", preprint = "https://www.biorxiv.org/content/10.1101/2021.06.29.450377v2"),
-  c(pmid = "35354817", preprint = "https://www.biorxiv.org/content/10.1101/2020.11.11.355693v3")
+  c(pmid = "35354817", preprint = "https://www.biorxiv.org/content/10.1101/2020.11.11.355693v3"), 
+  c(pmid = "36508357", preprint = "https://www.biorxiv.org/content/10.1101/2022.01.21.476612v1")
 )
 
 ## software packages/other resources
@@ -98,7 +99,8 @@ pmid_software <- rbind(
   c(pmid = "33274053", software = "https://bioconductor.org/packages/TreeSummarizedExperiment/"),
   c(pmid = "33758076", software = "https://bioconductor.org/packages/CellMixS/"),
   c(pmid = "34001188", software = "https://github.com/fionarhuang/treeclimbR"),
-  c(pmid = "35199152", software = "https://bioconductor.org/packages/monaLisa/")
+  c(pmid = "35199152", software = "https://bioconductor.org/packages/monaLisa/"), 
+  c(pmid = "36508357", software = "https://bioconductor.org/packages/compcodeR/")
 )
 biorxiv_software <- rbind(
   c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR"),
