@@ -6,6 +6,8 @@ editor_options:
   chunk_output_type: console
 ---
 
+PubMed-indexed preprints are indicated with a title in purple. 
+
 ```{r setup}
 #| echo: false
 #| message: false
@@ -22,8 +24,7 @@ pmid_remove <- c("31925006", "33877351")
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/2023.01.04.522742",
-                  "10.1101/2022.10.25.513674",
+biorxiv_dois <- c("10.1101/2022.10.25.513674",
                   "10.1101/2022.09.22.508982", 
                   "10.1101/2021.11.15.468676",
                   "10.1101/2021.01.17.426996")
@@ -47,12 +48,12 @@ pmid_github <- rbind(
   c(pmid = "31366910", github = "https://github.com/csoneson/NativeRNAseqComplexTranscriptome"),
   c(pmid = "33428615", github = "https://github.com/csoneson/rna_velocity_quant"),
   c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
-  c(pmid = "36508357", github = "https://github.com/i2bc/InterspeciesDE")
+  c(pmid = "36508357", github = "https://github.com/i2bc/InterspeciesDE"),
+  c(pmid = "36711921", github = "https://github.com/COMBINE-lab/scrna-ambiguity")
 )
 biorxiv_github <- rbind(
   c(doi = "10.1101/2020.03.13.990069", github = "https://github.com/csoneson/rna_velocity_quant"),
-  c(doi = "10.1101/2022.10.25.513674", github = "https://github.com/fmicompbio/mutscan_manuscript_2022"),
-  c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity")
+  c(doi = "10.1101/2022.10.25.513674", github = "https://github.com/fmicompbio/mutscan_manuscript_2022")
 )
 
 ## preprint links
@@ -199,6 +200,10 @@ make_link_altmetric_arxiv <- function(arxivid) {
   sprintf('<div data-badge-popover="right" data-badge-type="4" data-arxiv-id="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
           arxivid)
 }
+
+make_text_purple <- function(text) {
+    sprintf('<span style="color:purple;">%s</span>', text)
+}
 ```
 
 ```{r get-pubs}
@@ -238,6 +243,12 @@ summ$title <- sapply(summ$title, function(x) {
   x <- gsub("&lt;u&gt;|&lt;/u&gt;", "*", x)  ## <u>, </u>
   x
 })
+
+## For preprints, make title purple
+idx <- which(summ$journal == "bioRxiv")
+for (i in idx) {
+    summ$title[i] <- make_text_purple(summ$title[i])
+}
 ```
 
 ```{r get-unlisted}

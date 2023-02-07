@@ -4,74 +4,81 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Introduction to genomic data analysis with R and Bioconductor, Heidelberg, Germany\nIntroduction to R, University of Basel, Switzerland\nStatistical Analysis of Genome Scale Data, Cold Spring Harbor Laboratory, USA (hybrid)\nStatistical data analysis for genome scale biology (CSAMA 2022), Brixen, Italy\nGenomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022), Mainz, Germany\nAdvanced topics in single-cell analysis, Basel, Switzerland\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nSingle-Cell: Transcriptomics, Spatial and Multi-Omics (sincellTE 2022), Roscoff, France (hybrid)"
+    "text": "Analysis of genomics data with R/Bioconductor, University of Basel, Switzerland"
   },
   {
     "objectID": "teaching.html#section-1",
     "href": "teaching.html#section-1",
     "title": "Teaching",
-    "section": "2021",
-    "text": "2021\n\nRNA-seq analysis, University of Freiburg, Germany\nIntroduction to R, University of Basel, Switzerland\nSummer School in Advanced topics in Single Cell Omics, online\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
+    "section": "2022",
+    "text": "2022\n\nIntroduction to genomic data analysis with R and Bioconductor, Heidelberg, Germany\nIntroduction to R, University of Basel, Switzerland\nStatistical Analysis of Genome Scale Data, Cold Spring Harbor Laboratory, USA (hybrid)\nStatistical data analysis for genome scale biology (CSAMA 2022), Brixen, Italy\nGenomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022), Mainz, Germany\nAdvanced topics in single-cell analysis, Basel, Switzerland\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nSingle-Cell: Transcriptomics, Spatial and Multi-Omics (sincellTE 2022), Roscoff, France (hybrid)"
   },
   {
     "objectID": "teaching.html#section-2",
     "href": "teaching.html#section-2",
     "title": "Teaching",
-    "section": "2020",
-    "text": "2020\n\nIntroduction to R, University of Basel, Switzerland (online)\nSummer School in Bioinformatics and High-Dimensional Statistics, Mainz, Germany (online)\nStatistical data analysis for genome scale biology (CSAMA 2020), Brixen, Italy (cancelled due to covid-19)\nBioinformatics summer school, Louvain-la-Neuve, Belgium (cancelled due to covid-19)\nAdvanced topics in single-cell transcriptomics, Basel, Switzerland (online)\nRNA-seq analysis, University of Freiburg, Germany (postponed due to covid-19)\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
+    "section": "2021",
+    "text": "2021\n\nRNA-seq analysis, University of Freiburg, Germany\nIntroduction to R, University of Basel, Switzerland\nSummer School in Advanced topics in Single Cell Omics, online\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
   },
   {
     "objectID": "teaching.html#section-3",
     "href": "teaching.html#section-3",
     "title": "Teaching",
-    "section": "2019",
-    "text": "2019\n\nSingle-cell analysis autumn school, Leysin, Switzerland\nIntroduction to R, University of Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2019), Brixen, Italy\nBioinformatics summer school, Louvain-la-Neuve, Belgium\nRNA-sequence analysis, EBI, Hinxton, UK\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nMicrobiota Data Analysis Workshop, Zurich, Switzerland"
+    "section": "2020",
+    "text": "2020\n\nIntroduction to R, University of Basel, Switzerland (online)\nSummer School in Bioinformatics and High-Dimensional Statistics, Mainz, Germany (online)\nStatistical data analysis for genome scale biology (CSAMA 2020), Brixen, Italy (cancelled due to covid-19)\nBioinformatics summer school, Louvain-la-Neuve, Belgium (cancelled due to covid-19)\nAdvanced topics in single-cell transcriptomics, Basel, Switzerland (online)\nRNA-seq analysis, University of Freiburg, Germany (postponed due to covid-19)\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
   },
   {
     "objectID": "teaching.html#section-4",
     "href": "teaching.html#section-4",
     "title": "Teaching",
-    "section": "2018",
-    "text": "2018\n\nStatistical data analysis for genome scale biology (CSAMA 2018), Brixen, Italy\nAdvanced RNA-seq analysis, EBI, Hinxton, UK"
+    "section": "2019",
+    "text": "2019\n\nSingle-cell analysis autumn school, Leysin, Switzerland\nIntroduction to R, University of Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2019), Brixen, Italy\nBioinformatics summer school, Louvain-la-Neuve, Belgium\nRNA-sequence analysis, EBI, Hinxton, UK\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nMicrobiota Data Analysis Workshop, Zurich, Switzerland"
   },
   {
     "objectID": "teaching.html#section-5",
     "href": "teaching.html#section-5",
     "title": "Teaching",
-    "section": "2017",
-    "text": "2017\n\nStatistics for Life Scientists, Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2017), Brixen, Italy\nAdvanced RNA-seq and ChIP-seq data analysis, EBI, Hinxton, UK"
+    "section": "2018",
+    "text": "2018\n\nStatistical data analysis for genome scale biology (CSAMA 2018), Brixen, Italy\nAdvanced RNA-seq analysis, EBI, Hinxton, UK"
   },
   {
     "objectID": "teaching.html#section-6",
     "href": "teaching.html#section-6",
     "title": "Teaching",
-    "section": "2016",
-    "text": "2016\n\nAdvanced course on edgeR and DESeq2, Leuven, Belgium\nStatistics for Life Scientists, Basel, Switzerland\nMethod course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs, Regensburg, Germany\nAnalysis of high-throughput sequencing data, Cambridge, UK\nStatistics and computing in genome data science (CSAMA 2016), Brixen, Italy"
+    "section": "2017",
+    "text": "2017\n\nStatistics for Life Scientists, Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2017), Brixen, Italy\nAdvanced RNA-seq and ChIP-seq data analysis, EBI, Hinxton, UK"
   },
   {
     "objectID": "teaching.html#section-7",
     "href": "teaching.html#section-7",
     "title": "Teaching",
-    "section": "2015",
-    "text": "2015\n\nStatistical transcriptomics data analysis: from design to reproducible research, Fribourg, Switzerland\nStatistical techniques for genomics/life sciences, Basel, Switzerland"
+    "section": "2016",
+    "text": "2016\n\nAdvanced course on edgeR and DESeq2, Leuven, Belgium\nStatistics for Life Scientists, Basel, Switzerland\nMethod course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs, Regensburg, Germany\nAnalysis of high-throughput sequencing data, Cambridge, UK\nStatistics and computing in genome data science (CSAMA 2016), Brixen, Italy"
   },
   {
     "objectID": "teaching.html#section-8",
     "href": "teaching.html#section-8",
     "title": "Teaching",
-    "section": "2014",
-    "text": "2014\n\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nIntroduction to classification, Lausanne, Switzerland\nAdvanced statistics:statistical modeling, Lausanne, Switzerland\nMicroarray and RNAseq data analysis with R, Fribourg, Switzerland\nRNA-seq data analysis, Brno, Czech Republic\nRNA-seq: from experiment planning to statistical data analysis, Basel, Switzerland"
+    "section": "2015",
+    "text": "2015\n\nStatistical transcriptomics data analysis: from design to reproducible research, Fribourg, Switzerland\nStatistical techniques for genomics/life sciences, Basel, Switzerland"
   },
   {
     "objectID": "teaching.html#section-9",
     "href": "teaching.html#section-9",
     "title": "Teaching",
-    "section": "2013",
-    "text": "2013\n\nRNA-seq: from experiment planning to statistical data analysis, Bern, Switzerland\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nAdvanced transcriptomics analysis, Lausanne, Switzerland\nIntroduction to statistics for biologists, Lausanne, Switzerland"
+    "section": "2014",
+    "text": "2014\n\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nIntroduction to classification, Lausanne, Switzerland\nAdvanced statistics:statistical modeling, Lausanne, Switzerland\nMicroarray and RNAseq data analysis with R, Fribourg, Switzerland\nRNA-seq data analysis, Brno, Czech Republic\nRNA-seq: from experiment planning to statistical data analysis, Basel, Switzerland"
   },
   {
     "objectID": "teaching.html#section-10",
     "href": "teaching.html#section-10",
+    "title": "Teaching",
+    "section": "2013",
+    "text": "2013\n\nRNA-seq: from experiment planning to statistical data analysis, Bern, Switzerland\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nAdvanced transcriptomics analysis, Lausanne, Switzerland\nIntroduction to statistics for biologists, Lausanne, Switzerland"
+  },
+  {
+    "objectID": "teaching.html#section-11",
+    "href": "teaching.html#section-11",
     "title": "Teaching",
     "section": "2012",
     "text": "2012\n\nIntegration of data from different omics, Lausanne, Switzerland\nAnalysis of differential gene expression, Lausanne, Switzerland\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland"
@@ -84,18 +91,25 @@
     "text": "Contact:\n charlotte.soneson (at) fmi.ch"
   },
   {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "PubMed-indexed preprints are indicated with a title in purple."
+  },
+  {
     "objectID": "publications.html#preprints-and-articles-awaiting-peer-review",
     "href": "publications.html#preprints-and-articles-awaiting-peer-review",
     "title": "Publications",
     "section": "Preprints and articles awaiting peer review",
-    "text": "Preprints and articles awaiting peer review\n\nHe, D.; Soneson, C.; Patro, R.: Understanding and evaluating ambiguity in single-cell and single-nucleus RNA-sequencing. bioRxiv doi: https://doi.org/10.1101/2023.01.04.522742. Posted January 04, 2023.  GitHub repo.\nSoneson, C.; Bendel, A. M.; Diss, G.; Stadler, M. B.: mutscan - a flexible R package for efficient end-to-end analysis of multiplexed assays of variant effect data. bioRxiv doi: https://doi.org/10.1101/2022.10.25.513674. Posted October 26, 2022.  GitHub repo.  Software.\nSonrel, A.; Luetge, A.; Soneson, C.; Mallona Gonzalez, I.; Germain, P.-L.; Knyazev, S.; Gilis, J.; Gerber, R.; Seurinck, R.; Paul, D.; Sonder, E.; Crowell, H. L.; Fanaswala, I.; Al Ajami, A.; Heidari, E.; Schmeing, S.; Milosavljevic, S.; Saeys, Y.; Mangul, S.; Robinson, M. D.: Meta-analysis of (single-cell method) benchmarks reveals the need for extensibility and interoperability. bioRxiv doi: https://doi.org/10.1101/2022.09.22.508982. Posted September 23, 2022.\nCrowell, H. L.; Leonardo, S. X. M.; Soneson, C.; Robinson, M. D.: Built on sand: the shaky foundations of simulating single-cell RNA sequencing data. bioRxiv doi: https://doi.org/10.1101/2021.11.15.468676. Posted August 15, 2022.\nSrivastava, A.; Zakeri, M.; Sarkar, H.; Soneson, C.; Kingsford, C.; Patro, R.: Accounting for fragments of unexpected origin improves transcript quantification in RNA-seq simulations focused on increased realism. bioRxiv doi: https://doi.org/10.1101/2021.01.17.426996. Posted January 19, 2021.\nPaulo Czarnewski, Ahmed Mahfouz, Raffaele A. Calogero, Patricia M. Palagi, Laura Portell-Silva, Asier Gonzalez-Uriarte, Charlotte Soneson, Tony Burdett, Barbara Szomolay, Pavankumar Videm, Hans-Rudolf Hotz, Irene Papatheodorou, John M. Hancock, Björn Grüning, Wilfried Haerty, Roland Krause, Salvador Capella-Gutierrez, Brane Leskošek, Luca Alessandri, Maddalena Arigoni, Tadeja Rezen, Alexander Botzki, Polonca Ferk, Jessica Lindvall, Katharina F Heil, Naveed Ishaque, Eija Korpelainen: Community-driven ELIXIR activities in single-cell omics. F1000Research doi: https://doi.org/10.12688/f1000research.122312.1. Posted July 29, 2022."
+    "text": "Preprints and articles awaiting peer review\n\nSoneson, C.; Bendel, A. M.; Diss, G.; Stadler, M. B.: mutscan - a flexible R package for efficient end-to-end analysis of multiplexed assays of variant effect data. bioRxiv doi: https://doi.org/10.1101/2022.10.25.513674. Posted October 26, 2022.  GitHub repo.  Software.\nSonrel, A.; Luetge, A.; Soneson, C.; Mallona Gonzalez, I.; Germain, P.-L.; Knyazev, S.; Gilis, J.; Gerber, R.; Seurinck, R.; Paul, D.; Sonder, E.; Crowell, H. L.; Fanaswala, I.; Al Ajami, A.; Heidari, E.; Schmeing, S.; Milosavljevic, S.; Saeys, Y.; Mangul, S.; Robinson, M. D.: Meta-analysis of (single-cell method) benchmarks reveals the need for extensibility and interoperability. bioRxiv doi: https://doi.org/10.1101/2022.09.22.508982. Posted September 23, 2022.\nCrowell, H. L.; Leonardo, S. X. M.; Soneson, C.; Robinson, M. D.: Built on sand: the shaky foundations of simulating single-cell RNA sequencing data. bioRxiv doi: https://doi.org/10.1101/2021.11.15.468676. Posted August 15, 2022.\nSrivastava, A.; Zakeri, M.; Sarkar, H.; Soneson, C.; Kingsford, C.; Patro, R.: Accounting for fragments of unexpected origin improves transcript quantification in RNA-seq simulations focused on increased realism. bioRxiv doi: https://doi.org/10.1101/2021.01.17.426996. Posted January 19, 2021.\nPaulo Czarnewski, Ahmed Mahfouz, Raffaele A. Calogero, Patricia M. Palagi, Laura Portell-Silva, Asier Gonzalez-Uriarte, Charlotte Soneson, Tony Burdett, Barbara Szomolay, Pavankumar Videm, Hans-Rudolf Hotz, Irene Papatheodorou, John M. Hancock, Björn Grüning, Wilfried Haerty, Roland Krause, Salvador Capella-Gutierrez, Brane Leskošek, Luca Alessandri, Maddalena Arigoni, Tadeja Rezen, Alexander Botzki, Polonca Ferk, Jessica Lindvall, Katharina F Heil, Naveed Ishaque, Eija Korpelainen: Community-driven ELIXIR activities in single-cell omics. F1000Research doi: https://doi.org/10.12688/f1000research.122312.1. Posted July 29, 2022."
   },
   {
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
     "section": "2023",
-    "text": "2023\n\nBastide P, Soneson C, Stern DB, Lespinet O, Gallopin M: A Phylogenetic Framework to Simulate Synthetic Interspecies RNA-Seq Data. Mol Biol Evol 40(1): (2023). DOI: 10.1093/molbev/msac269.  PMID 36508357.  GitHub repo.  Software/Resources.  Preprint."
+    "text": "2023\n\nHe D, Soneson C, Patro R: Understanding and evaluating ambiguity in single-cell and single-nucleus RNA-sequencing. bioRxiv : (2023). DOI: 10.1101/2023.01.04.522742.  PMID 36711921.  GitHub repo.\nBastide P, Soneson C, Stern DB, Lespinet O, Gallopin M: A Phylogenetic Framework to Simulate Synthetic Interspecies RNA-Seq Data. Mol Biol Evol 40(1): (2023). DOI: 10.1093/molbev/msac269.  PMID 36508357.  GitHub repo.  Software/Resources.  Preprint."
   },
   {
     "objectID": "publications.html#section-1",
