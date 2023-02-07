@@ -5,6 +5,10 @@ editor_options:
   chunk_output_type: console
 ---
 
+## 2023
+
+-   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
+
 ## 2022
 
 -   [Introduction to genomic data analysis with R and Bioconductor](https://bioconductor.github.io/2022-09-12-BiocIntro-Heidelberg/), Heidelberg, Germany
