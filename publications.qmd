@@ -6,7 +6,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-PubMed-indexed preprints are indicated with a title in purple. 
+PubMed-indexed preprints are indicated with a title in <span style="color:MediumOrchid;">purple</span>. 
 
 ```{r setup}
 #| echo: false
@@ -203,7 +203,7 @@ make_link_altmetric_arxiv <- function(arxivid) {
 }
 
 make_text_purple <- function(text) {
-    sprintf('<span style="color:purple;">%s</span>', text)
+    sprintf('<span style="color:MediumOrchid;">%s</span>', text)
 }
 ```
 
