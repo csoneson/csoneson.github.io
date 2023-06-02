@@ -30,7 +30,6 @@ pmid_add <- c("27309738", "26615188", "25057166")
 biorxiv_dois <- c("10.1101/2023.04.20.537632",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2023.01.04.522742", 
-                  "10.1101/2022.10.25.513674",
                   "10.1101/2021.01.17.426996")
 
 ## PeerJ dois
@@ -53,11 +52,10 @@ pmid_github <- rbind(
   c(pmid = "33428615", github = "https://github.com/csoneson/rna_velocity_quant"),
   c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
   c(pmid = "36508357", github = "https://github.com/i2bc/InterspeciesDE"),
-  c(pmid = "36711921", github = "https://github.com/COMBINE-lab/scrna-ambiguity")
+  c(pmid = "36711921", github = "https://github.com/COMBINE-lab/scrna-ambiguity"),
+  c(pmid = "37264470", github = "https://github.com/fmicompbio/mutscan_manuscript_2022")
 )
 biorxiv_github <- rbind(
-  c(doi = "10.1101/2020.03.13.990069", github = "https://github.com/csoneson/rna_velocity_quant"),
-  c(doi = "10.1101/2022.10.25.513674", github = "https://github.com/fmicompbio/mutscan_manuscript_2022"),
   c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity")
 )
 
@@ -86,7 +84,8 @@ pmid_preprints <- rbind(
   c(pmid = "35354817", preprint = "https://www.biorxiv.org/content/10.1101/2020.11.11.355693v3"), 
   c(pmid = "36508357", preprint = "https://www.biorxiv.org/content/10.1101/2022.01.21.476612v1"),
   c(pmid = "36991470", preprint = "https://doi.org/10.1101/2021.11.15.468676"),
-  c(pmid = "37198712", preprint = "https://doi.org/10.1101/2022.09.22.508982")
+  c(pmid = "37198712", preprint = "https://doi.org/10.1101/2022.09.22.508982"),
+  c(pmid = "37264470", preprint = "https://doi.org/10.1101/2022.10.25.513674")
 )
 
 ## software packages/other resources
@@ -110,11 +109,11 @@ pmid_software <- rbind(
   c(pmid = "33758076", software = "https://bioconductor.org/packages/CellMixS/"),
   c(pmid = "34001188", software = "https://github.com/fionarhuang/treeclimbR"),
   c(pmid = "35199152", software = "https://bioconductor.org/packages/monaLisa/"), 
-  c(pmid = "36508357", software = "https://bioconductor.org/packages/compcodeR/")
+  c(pmid = "36508357", software = "https://bioconductor.org/packages/compcodeR/"),
+  c(pmid = "37264470", software = "https://github.com/fmicompbio/mutscan")
 )
 biorxiv_software <- rbind(
-  c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR"),
-  c(doi = "10.1101/2022.10.25.513674", software = "https://github.com/fmicompbio/mutscan")
+  c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR")
 )
 
 ## names to highlight in publication list
