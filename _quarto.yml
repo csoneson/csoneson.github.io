@@ -25,6 +25,8 @@ website:
         href: https://github.com/csoneson
       - icon: twitter
         href: https://twitter.com/CSoneson
+      - icon: mastodon
+        href: https://fosstodon.org/@csoneson
 
 format:
   html:
