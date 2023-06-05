@@ -11,6 +11,12 @@ editor_options:
 
 ## R packages
 
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+suppressPackageStartupMessages({
+    library(badger)
+})
+```
+
 I am a maintainer or contributor of the following R packages:
 
 -   `r badger::badge_custom(x = "", y = "alevinQC", color = "blue", url = "http://bioconductor.org/packages/alevinQC/")` <img src="https://bioconductor.org/shields/years-in-bioc/alevinQC.svg"/>
