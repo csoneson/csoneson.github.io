@@ -10,6 +10,72 @@ editor_options:
 PubMed-indexed preprints are indicated with a title in <span style="color:MediumOrchid;">purple</span>. 
 -->
 
+
+
+```{r pkgs}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(rentrez)
+  library(httr)
+  library(rvest)
+  library(scholar)
+  library(lubridate)
+  library(medrxivr)
+})
+```
+
+```{r help-functions}
+fix_null <- function(x) {
+  if (is.null(x) || length(x) == 0) NA
+  else x
+}
+
+make_link_button <- function(address, title) {
+  sprintf('<a href="%s" target="_blank" class="btn btn-primary">%s</a>', 
+                   address, title)
+}
+
+make_link_text <- function(address, title) {
+  sprintf('<a href="%s" target="_blank"> %s</a>', address, title)
+}
+
+make_link_pmid <- function(pmid) {
+  if (pmid != "") {
+      sprintf('<a href="%s" target="_blank"> %s</a>',
+          paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
+          paste0("PMID ", pmid))
+  } else {
+    ""
+  }
+}
+
+make_link_doi <- function(doi) {
+    if (doi != "") {
+        sprintf('<a href="%s" target="_blank"> %s</a>',
+                paste0("https://doi.org/", doi),
+                paste0("DOI: ", doi))
+    } else {
+        ""
+    }
+}
+
+make_link_altmetric <- function(doi) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          doi)
+}
+
+make_link_altmetric_arxiv <- function(arxivid) {
+  sprintf('<div data-badge-popover="right" data-badge-type="4" data-arxiv-id="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
+          arxivid)
+}
+
+make_text_purple <- function(text) {
+    sprintf('<span style="color:MediumOrchid;">%s</span>', text)
+}
+```
+
 ```{r setup}
 #| echo: false
 #| message: false
@@ -28,7 +94,6 @@ pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
 biorxiv_dois <- c("10.1101/2023.08.17.553679",
-                  "10.1101/2023.07.27.550821", 
                   "10.1101/2023.04.12.536513",
                   "10.1101/2023.01.04.522742", 
                   "10.1101/2021.01.17.426996")
@@ -89,6 +154,9 @@ pmid_preprints <- rbind(
   c(pmid = "37264470", preprint = "https://doi.org/10.1101/2022.10.25.513674"),
   c(pmid = "37369201", preprint = "https://doi.org/10.1101/2023.04.20.537632")
 )
+joss_preprints <- rbind(
+    c(doi = "10.21105/joss.05750", preprint = "https://doi.org/10.1101/2023.07.27.550821")
+)
 
 ## software packages/other resources
 pmid_software <- rbind(
@@ -114,9 +182,14 @@ pmid_software <- rbind(
   c(pmid = "36508357", software = "https://bioconductor.org/packages/compcodeR/"),
   c(pmid = "37264470", software = "https://github.com/fmicompbio/mutscan")
 )
+## bioRxiv software
 biorxiv_software <- rbind(
-  c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR"),
-  c(doi = "10.1101/2023.07.27.550821", software = "https://github.com/fmicompbio/einprot")
+    c(doi = "10.1101/2020.06.08.140608", software = "https://github.com/fionarhuang/treeclimbR"),
+    c(doi = "10.1101/2023.07.27.550821", software = "https://github.com/fmicompbio/einprot")
+)
+## JOSS software
+joss_software <- rbind(
+    c(doi = "10.21105/joss.05750", software = "https://github.com/fmicompbio/einprot")
 )
 
 ## names to highlight in publication list
@@ -131,7 +204,8 @@ unlisted_publications <- data.frame(
   pubdate = c("", "", "", ""),
   pubyear = c("2014", "2013", "2011", "2019"),
   journal = c("Computational Statistics & Data Analysis", "Högre Utbildning", 
-              "Annals of Applied Statistics", "Annual Review of Biomedical Data Science"),
+              "Annals of Applied Statistics", 
+              "Annual Review of Biomedical Data Science"),
   authors = c("Soneson C, Fontes M", "Soneson C, Torstensson A", "Soneson C, Fontes M", 
               "Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),
   volume = c("71", "3", "5", "2"),
@@ -142,6 +216,21 @@ unlisted_publications <- data.frame(
   pmid = c("", "", "", ""),
   elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460", 
                   "doi: 10.1146/annurev-biodatasci-072018-021255")
+)
+
+## JOSS papers
+joss <- data.frame(
+  title = c("einprot: flexible, easy-to-use, reproducible workflows for statistical analysis of quantitative proteomics data."),
+  pubdate = c(""),
+  pubyear = c("2023"),
+  journal = c("The Journal of Open Source Software"),
+  authors = c("Soneson C, Iesmantavicius V, Hess D, Stadler MB, Seebacher J"),
+  volume = c("8"),
+  issue = c("89"),
+  pages = c("5750"),
+  doi = c("10.21105/joss.05750"),
+  pmid = c(""),
+  elocationid = c("doi: 10.21105/joss.05750")
 )
 
 ## F1000Research articles awaiting peer review
@@ -159,60 +248,6 @@ f1000_preprints <- data.frame(
   elocationid = c("")
 )
 # f1000_preprints <- NULL
-```
-
-```{r pkgs}
-#| include: false
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-suppressPackageStartupMessages({
-  library(dplyr)
-  library(rentrez)
-  library(httr)
-  library(rvest)
-  library(scholar)
-  library(lubridate)
-  library(medrxivr)
-})
-```
-
-```{r help-functions}
-fix_null <- function(x) {
-  if (is.null(x) || length(x) == 0) NA
-  else x
-}
-
-make_link_button <- function(address, title) {
-  sprintf('<a href="%s" target="_blank" class="btn btn-primary">%s</a>', 
-                   address, title)
-}
-
-make_link_text <- function(address, title) {
-  sprintf('<a href="%s" target="_blank"> %s</a>', address, title)
-}
-
-make_link_pmid <- function(pmid) {
-  if (pmid != "") {
-      sprintf('<a href="%s" target="_blank"> %s</a>',
-          paste0("http://www.ncbi.nlm.nih.gov/pubmed/", pmid),
-          paste0("PMID ", pmid))
-  } else {
-    ""
-  }
-}
-
-make_link_altmetric <- function(doi) {
-  sprintf('<div data-badge-popover="right" data-badge-type="4" data-doi="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
-          doi)
-}
-
-make_link_altmetric_arxiv <- function(arxivid) {
-  sprintf('<div data-badge-popover="right" data-badge-type="4" data-arxiv-id="%s" data-hide-no-mentions="true" class="altmetric-embed"></div>',
-          arxivid)
-}
-
-make_text_purple <- function(text) {
-    sprintf('<span style="color:MediumOrchid;">%s</span>', text)
-}
 ```
 
 ```{r get-pubs}
@@ -266,6 +301,12 @@ unlisted_publications <- unlisted_publications[, match(colnames(summ),
                                                        colnames(unlisted_publications))]
 colnames(unlisted_publications) <- colnames(summ)
 summ <- rbind(summ, unlisted_publications)
+
+## Add JOSS publications
+joss <- joss[, match(colnames(summ), 
+                     colnames(joss))]
+colnames(joss) <- colnames(summ)
+summ <- rbind(summ, joss)
 ```
 
 ```{r highlight}
@@ -289,10 +330,16 @@ summ <- dplyr::left_join(summ, data.frame(pmid_github, stringsAsFactors = FALSE)
 ## Add column with links to software packages
 summ <- dplyr::left_join(summ, data.frame(pmid_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
+## Separately for JOSS papers
+joss_software <- joss_software[joss_software[, "doi"] %in% summ$doi, , drop = FALSE]
+summ$software[match(joss_software[, "doi"], summ$doi)] <- joss_software[, "software"]
 
 ## Add column with links to preprints
 summ <- dplyr::left_join(summ, data.frame(pmid_preprints, stringsAsFactors = FALSE)) %>%
   dplyr::mutate(preprint = replace(preprint, is.na(preprint), ""))
+## Separately for JOSS papers
+joss_preprints <- joss_preprints[joss_preprints[, "doi"] %in% summ$doi, , drop = FALSE]
+summ$preprint[match(joss_preprints[, "doi"], summ$doi)] <- joss_preprints[, "preprint"]
 ```
 
 ```{r add-citations}
@@ -380,6 +427,7 @@ if (!is.null(peerj)) {
 if (!is.null(arxiv)) {
   biorxiv <- plyr::rbind.fill(biorxiv, arxiv)
 }
+
 ```
 
 ```{r add-links-preprints}
@@ -390,7 +438,7 @@ if (!is.null(biorxiv)) {
   biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_github, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(github = replace(github, is.na(github), ""))
   
-  ## Add colum with links to software packages
+  ## Add column with links to software packages
   biorxiv <- dplyr::left_join(biorxiv, data.frame(biorxiv_software, stringsAsFactors = FALSE)) %>%
     dplyr::mutate(software = replace(software, is.na(software), ""))
 }
@@ -460,7 +508,7 @@ for (i in years) {
                   ifelse(summ[[i]][j, "issue"] == "", "", 
                          paste0("(", summ[[i]][j, "issue"], ")")), ":",
                   summ[[i]][j, "pages"], 
-                  " (", i, "). DOI: ", summ[[i]][j, "doi"],
+                  " (", i, "). ", make_link_doi(doi = summ[[i]][j, "doi"]),
                   ". ", make_link_pmid(pmid = summ[[i]][j, "pmid"]), 
                   ifelse(summ[[i]][j, "pmid"] == "", "", ". "),
                   ifelse(summ[[i]][j, "github"] == "", "", paste0(make_link_text(address = summ[[i]][j, "github"], title = "GitHub repo"), ". ")), 
