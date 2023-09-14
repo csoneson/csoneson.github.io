@@ -7,6 +7,8 @@ editor_options:
 
 ## 2023
 
+-   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
+-   [Analysis and interpretation of bulk RNA-seq data using Bioconductor](https://bioconductor.github.io/2023-09-18-RNASeq-EuroBioc/), Ghent, Belgium
 -   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
 -   [Statistical data analysis for genome scale biology (CSAMA 2023)](https://csama2023.bioconductor.eu/), Brixen, Italy
 
