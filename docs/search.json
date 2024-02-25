@@ -137,88 +137,95 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Introduction to R, University of Basel, Switzerland\nAnalysis and interpretation of bulk RNA-seq data using Bioconductor, Ghent, Belgium\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2023), Brixen, Italy"
+    "text": "Statistical data analysis for genome scale biology (CSAMA 2024), Brixen, Italy\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland"
   },
   {
     "objectID": "teaching.html#section",
     "href": "teaching.html#section",
     "title": "Teaching",
     "section": "",
-    "text": "Introduction to R, University of Basel, Switzerland\nAnalysis and interpretation of bulk RNA-seq data using Bioconductor, Ghent, Belgium\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2023), Brixen, Italy"
+    "text": "Statistical data analysis for genome scale biology (CSAMA 2024), Brixen, Italy\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland"
   },
   {
     "objectID": "teaching.html#section-1",
     "href": "teaching.html#section-1",
     "title": "Teaching",
-    "section": "2022",
-    "text": "2022\n\nIntroduction to genomic data analysis with R and Bioconductor, Heidelberg, Germany\nIntroduction to R, University of Basel, Switzerland\nStatistical Analysis of Genome Scale Data, Cold Spring Harbor Laboratory, USA (hybrid)\nStatistical data analysis for genome scale biology (CSAMA 2022), Brixen, Italy\nGenomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022), Mainz, Germany\nAdvanced topics in single-cell analysis, Basel, Switzerland\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nSingle-Cell: Transcriptomics, Spatial and Multi-Omics (sincellTE 2022), Roscoff, France (hybrid)"
+    "section": "2023",
+    "text": "2023\n\nIntroduction to R, University of Basel, Switzerland\nAnalysis and interpretation of bulk RNA-seq data using Bioconductor, Ghent, Belgium\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2023), Brixen, Italy"
   },
   {
     "objectID": "teaching.html#section-2",
     "href": "teaching.html#section-2",
     "title": "Teaching",
-    "section": "2021",
-    "text": "2021\n\nRNA-seq analysis, University of Freiburg, Germany\nIntroduction to R, University of Basel, Switzerland\nSummer School in Advanced topics in Single Cell Omics, online\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
+    "section": "2022",
+    "text": "2022\n\nIntroduction to genomic data analysis with R and Bioconductor, Heidelberg, Germany\nIntroduction to R, University of Basel, Switzerland\nStatistical Analysis of Genome Scale Data, Cold Spring Harbor Laboratory, USA (hybrid)\nStatistical data analysis for genome scale biology (CSAMA 2022), Brixen, Italy\nGenomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022), Mainz, Germany\nAdvanced topics in single-cell analysis, Basel, Switzerland\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nSingle-Cell: Transcriptomics, Spatial and Multi-Omics (sincellTE 2022), Roscoff, France (hybrid)"
   },
   {
     "objectID": "teaching.html#section-3",
     "href": "teaching.html#section-3",
     "title": "Teaching",
-    "section": "2020",
-    "text": "2020\n\nIntroduction to R, University of Basel, Switzerland (online)\nSummer School in Bioinformatics and High-Dimensional Statistics, Mainz, Germany (online)\nStatistical data analysis for genome scale biology (CSAMA 2020), Brixen, Italy (cancelled due to covid-19)\nBioinformatics summer school, Louvain-la-Neuve, Belgium (cancelled due to covid-19)\nAdvanced topics in single-cell transcriptomics, Basel, Switzerland (online)\nRNA-seq analysis, University of Freiburg, Germany (postponed due to covid-19)\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
+    "section": "2021",
+    "text": "2021\n\nRNA-seq analysis, University of Freiburg, Germany\nIntroduction to R, University of Basel, Switzerland\nSummer School in Advanced topics in Single Cell Omics, online\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
   },
   {
     "objectID": "teaching.html#section-4",
     "href": "teaching.html#section-4",
     "title": "Teaching",
-    "section": "2019",
-    "text": "2019\n\nSingle-cell analysis autumn school, Leysin, Switzerland\nIntroduction to R, University of Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2019), Brixen, Italy\nBioinformatics summer school, Louvain-la-Neuve, Belgium\nRNA-sequence analysis, EBI, Hinxton, UK\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nMicrobiota Data Analysis Workshop, Zurich, Switzerland"
+    "section": "2020",
+    "text": "2020\n\nIntroduction to R, University of Basel, Switzerland (online)\nSummer School in Bioinformatics and High-Dimensional Statistics, Mainz, Germany (online)\nStatistical data analysis for genome scale biology (CSAMA 2020), Brixen, Italy (cancelled due to covid-19)\nBioinformatics summer school, Louvain-la-Neuve, Belgium (cancelled due to covid-19)\nAdvanced topics in single-cell transcriptomics, Basel, Switzerland (online)\nRNA-seq analysis, University of Freiburg, Germany (postponed due to covid-19)\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland (online)"
   },
   {
     "objectID": "teaching.html#section-5",
     "href": "teaching.html#section-5",
     "title": "Teaching",
-    "section": "2018",
-    "text": "2018\n\nStatistical data analysis for genome scale biology (CSAMA 2018), Brixen, Italy\nAdvanced RNA-seq analysis, EBI, Hinxton, UK"
+    "section": "2019",
+    "text": "2019\n\nSingle-cell analysis autumn school, Leysin, Switzerland\nIntroduction to R, University of Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2019), Brixen, Italy\nBioinformatics summer school, Louvain-la-Neuve, Belgium\nRNA-sequence analysis, EBI, Hinxton, UK\nAnalysis of genomics data with R/Bioconductor, University of Basel, Switzerland\nMicrobiota Data Analysis Workshop, Zurich, Switzerland"
   },
   {
     "objectID": "teaching.html#section-6",
     "href": "teaching.html#section-6",
     "title": "Teaching",
-    "section": "2017",
-    "text": "2017\n\nStatistics for Life Scientists, Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2017), Brixen, Italy\nAdvanced RNA-seq and ChIP-seq data analysis, EBI, Hinxton, UK"
+    "section": "2018",
+    "text": "2018\n\nStatistical data analysis for genome scale biology (CSAMA 2018), Brixen, Italy\nAdvanced RNA-seq analysis, EBI, Hinxton, UK"
   },
   {
     "objectID": "teaching.html#section-7",
     "href": "teaching.html#section-7",
     "title": "Teaching",
-    "section": "2016",
-    "text": "2016\n\nAdvanced course on edgeR and DESeq2, Leuven, Belgium\nStatistics for Life Scientists, Basel, Switzerland\nMethod course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs, Regensburg, Germany\nAnalysis of high-throughput sequencing data, Cambridge, UK\nStatistics and computing in genome data science (CSAMA 2016), Brixen, Italy"
+    "section": "2017",
+    "text": "2017\n\nStatistics for Life Scientists, Basel, Switzerland\nStatistical data analysis for genome scale biology (CSAMA 2017), Brixen, Italy\nAdvanced RNA-seq and ChIP-seq data analysis, EBI, Hinxton, UK"
   },
   {
     "objectID": "teaching.html#section-8",
     "href": "teaching.html#section-8",
     "title": "Teaching",
-    "section": "2015",
-    "text": "2015\n\nStatistical transcriptomics data analysis: from design to reproducible research, Fribourg, Switzerland\nStatistical techniques for genomics/life sciences, Basel, Switzerland"
+    "section": "2016",
+    "text": "2016\n\nAdvanced course on edgeR and DESeq2, Leuven, Belgium\nStatistics for Life Scientists, Basel, Switzerland\nMethod course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs, Regensburg, Germany\nAnalysis of high-throughput sequencing data, Cambridge, UK\nStatistics and computing in genome data science (CSAMA 2016), Brixen, Italy"
   },
   {
     "objectID": "teaching.html#section-9",
     "href": "teaching.html#section-9",
     "title": "Teaching",
-    "section": "2014",
-    "text": "2014\n\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nIntroduction to classification, Lausanne, Switzerland\nAdvanced statistics:statistical modeling, Lausanne, Switzerland\nMicroarray and RNAseq data analysis with R, Fribourg, Switzerland\nRNA-seq data analysis, Brno, Czech Republic\nRNA-seq: from experiment planning to statistical data analysis, Basel, Switzerland"
+    "section": "2015",
+    "text": "2015\n\nStatistical transcriptomics data analysis: from design to reproducible research, Fribourg, Switzerland\nStatistical techniques for genomics/life sciences, Basel, Switzerland"
   },
   {
     "objectID": "teaching.html#section-10",
     "href": "teaching.html#section-10",
     "title": "Teaching",
-    "section": "2013",
-    "text": "2013\n\nRNA-seq: from experiment planning to statistical data analysis, Bern, Switzerland\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nAdvanced transcriptomics analysis, Lausanne, Switzerland\nIntroduction to statistics for biologists, Lausanne, Switzerland"
+    "section": "2014",
+    "text": "2014\n\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nIntroduction to classification, Lausanne, Switzerland\nAdvanced statistics:statistical modeling, Lausanne, Switzerland\nMicroarray and RNAseq data analysis with R, Fribourg, Switzerland\nRNA-seq data analysis, Brno, Czech Republic\nRNA-seq: from experiment planning to statistical data analysis, Basel, Switzerland"
   },
   {
     "objectID": "teaching.html#section-11",
     "href": "teaching.html#section-11",
+    "title": "Teaching",
+    "section": "2013",
+    "text": "2013\n\nRNA-seq: from experiment planning to statistical data analysis, Bern, Switzerland\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland\nAdvanced transcriptomics analysis, Lausanne, Switzerland\nIntroduction to statistics for biologists, Lausanne, Switzerland"
+  },
+  {
+    "objectID": "teaching.html#section-12",
+    "href": "teaching.html#section-12",
     "title": "Teaching",
     "section": "2012",
     "text": "2012\n\nIntegration of data from different omics, Lausanne, Switzerland\nAnalysis of differential gene expression, Lausanne, Switzerland\nMultivariate analysis for exploration and visualisation of biological data, Lausanne, Switzerland"

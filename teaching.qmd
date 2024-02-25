@@ -5,6 +5,12 @@ editor_options:
   chunk_output_type: console
 ---
 
+## 2024
+
+-   [Statistical data analysis for genome scale biology (CSAMA 2024)](https://csama2024.bioconductor.eu/), Brixen, Italy
+-   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
+
+
 ## 2023
 
 -   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
