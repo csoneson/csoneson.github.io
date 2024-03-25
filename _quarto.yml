@@ -31,6 +31,9 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    grid: 
+      sidebar-width: 150px
+      body-width: 1000px
 
 editor: source
 
