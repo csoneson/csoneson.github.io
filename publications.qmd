@@ -95,7 +95,6 @@ pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
 biorxiv_dois <- c("10.1101/2023.11.17.567387",
-                  "10.1101/2023.08.17.553679",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2023.01.04.522742", 
                   "10.1101/2021.01.17.426996")
@@ -155,7 +154,8 @@ pmid_preprints <- rbind(
   c(pmid = "37198712", preprint = "https://doi.org/10.1101/2022.09.22.508982"),
   c(pmid = "37264470", preprint = "https://doi.org/10.1101/2022.10.25.513674"),
   c(pmid = "37369201", preprint = "https://doi.org/10.1101/2023.04.20.537632"),
-  c(pmid = "38877315", preprint = "https://doi.org/10.1101/2023.09.10.557072")
+  c(pmid = "38877315", preprint = "https://doi.org/10.1101/2023.09.10.557072"),
+  c(pmid = "38887902", preprint = "https://doi.org/10.1101/2023.08.17.553679")
 )
 joss_preprints <- rbind(
     c(doi = "10.21105/joss.05750", preprint = "https://doi.org/10.1101/2023.07.27.550821")
@@ -183,7 +183,8 @@ pmid_software <- rbind(
   c(pmid = "34001188", software = "https://github.com/fionarhuang/treeclimbR"),
   c(pmid = "35199152", software = "https://bioconductor.org/packages/monaLisa/"), 
   c(pmid = "36508357", software = "https://bioconductor.org/packages/compcodeR/"),
-  c(pmid = "37264470", software = "https://github.com/fmicompbio/mutscan")
+  c(pmid = "37264470", software = "https://github.com/fmicompbio/mutscan"),
+  c(pmid = "38887902", software = "https://bioconductor.org/packages/DifferentialRegulation/")
 )
 ## bioRxiv software
 biorxiv_software <- rbind(
