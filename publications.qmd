@@ -105,7 +105,7 @@ biorxiv_dois <- c("10.1101/2024.08.20.607873",
 peerj_dois <- c()#c("10.7287/peerj.preprints.27283v2")
 
 ## ArXiv dois
-arxiv_dois <- c("2409.15472")
+arxiv_dois <- c("2409.15472", "2409.17038")
 
 ## github repos
 pmid_github <- rbind(
