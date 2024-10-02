@@ -405,7 +405,7 @@ arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
   title <- gsub("^Title:", "", html_text(html_nodes(html, ".title")))
   authors <- gsub(" *$", "", gsub("\n", "", gsub("^Authors:", "", html_text(html_nodes(html, ".authors")))))
   tmp <- strsplit(html_text(html_nodes(html, ".submission-history")), "\n")[[1]]
-  tmp <- strsplit(tmp[length(tmp)], " ")[[1]][c(3, 2, 4)]
+  tmp <- strsplit(trimws(tmp[length(tmp)]), " ")[[1]][c(3, 2, 4)]
   pubdate <- paste0("Posted ", tmp[1], " ", tmp[2], ", ", tmp[3], ".")
   data.frame(title = title, pubdate = pubdate, pubyear = "Preprints",       
              journal = "ArXiv", authors = authors, volume = "", issue = "", 
