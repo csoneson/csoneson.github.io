@@ -107,6 +107,9 @@ peerj_dois <- c()#c("10.7287/peerj.preprints.27283v2")
 ## ArXiv dois
 arxiv_dois <- c("2409.15472", "2409.17038", "2410.01351")
 
+## OSF IDs
+osf_ids <- c("wxjky")
+
 ## github repos
 pmid_github <- rbind(
   c(pmid = "30655364", github = "https://github.com/csoneson/annotation_problem_txabundance"),
@@ -414,6 +417,26 @@ arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
 }))
 ```
 
+```{r add-osf}
+## Add OSF preprints by doi
+## Sys.sleep() calls are needed to retrieve all information correctly
+osf <- do.call(rbind, lapply(osf_ids, function(id) {
+    html <- read_html_live(paste0("https://doi.org/10.31219/osf.io/", id))
+    Sys.sleep(6)
+    title <- gsub("\n", "", html_text2(html_elements(html, "._preprint-title-container_1tkehu")), fixed = TRUE)
+    Sys.sleep(4)
+    authors <- gsub("Authors\n", "", html_text2(html_elements(html, "._view-authors_1tkehu")))
+    Sys.sleep(4)
+    tmp <- strsplit(html_text2(html_elements(html, "._file-description_1tkehu")), "\\|")[[1]]
+    tmp <- tmp[grep("Last edited", tmp)]
+    pubdate <- paste0("Posted ", gsub("\n", "", gsub("Last edited: ", "", tmp)))
+    data.frame(title = title, pubdate = pubdate, pubyear = "Preprints",       
+               journal = "OSF Preprint", authors = authors, volume = "", issue = "", 
+               pages = "", doi = paste0("10.31219/osf.io/", id), pmid = "", 
+               elocationid = "", stringsAsFactors = FALSE)
+}))
+```
+
 ```{r add-f1000}
 ## Add F1000Research preprints
 if (!is.null(biorxiv) && !is.null(f1000_preprints)) {
@@ -435,6 +458,10 @@ if (!is.null(arxiv)) {
   biorxiv <- plyr::rbind.fill(biorxiv, arxiv)
 }
 
+## Add OSF preprints
+if (!is.null(osf)) {
+  biorxiv <- plyr::rbind.fill(biorxiv, osf)
+}
 ```
 
 ```{r add-links-preprints}
