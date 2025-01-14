@@ -210,22 +210,26 @@ unlisted_publications <- data.frame(
   title = c("Incorporation of gene exchangeabilities improves the reproducibility of gene set rankings.",
             "Manliga och kvinnliga teknologers självbilder och deras stereotypbilder av teknologer.",
             "A method for visual identification of small sample subgroups and potential biomarkers.", 
-            "RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis."),
-  pubdate = c("", "", "", ""),
-  pubyear = c("2014", "2013", "2011", "2019"),
+            "RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis.",
+            "The Journal of Open Source Software (JOSS): Bringing open-source software practices to the scholarly publishing community for authors, reviewers, editors, and publishers."),
+  pubdate = c("", "", "", "", ""),
+  pubyear = c("2014", "2013", "2011", "2019", "2025"),
   journal = c("Computational Statistics & Data Analysis", "Högre Utbildning", 
               "Annals of Applied Statistics", 
-              "Annual Review of Biomedical Data Science"),
+              "Annual Review of Biomedical Data Science",
+              "Journal of Librarianship and Scholarly Communication"),
   authors = c("Soneson C, Fontes M", "Soneson C, Torstensson A", "Soneson C, Fontes M", 
-              "Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD"),
-  volume = c("71", "3", "5", "2"),
-  issue = c("", "1", "3", ""),
-  pages = c("588-598", "3-14", "2131-2149", "139-173"),
+              "Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
+              "Diehl P, Soneson C, Kurchin RC, Mounce R, Katz DS"),
+  volume = c("71", "3", "5", "2", "12"),
+  issue = c("", "1", "3", "", "2"),
+  pages = c("588-598", "3-14", "2131-2149", "139-173", "eP18285"),
   doi = c("10.1016/j.csda.2012.07.026", "", "10.1214/11-AOAS460",
-          "10.1146/annurev-biodatasci-072018-021255"),
-  pmid = c("", "", "", ""),
+          "10.1146/annurev-biodatasci-072018-021255", "10.31274/jlsc.18285"),
+  pmid = c("", "", "", "", ""),
   elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460", 
-                  "doi: 10.1146/annurev-biodatasci-072018-021255")
+                  "doi: 10.1146/annurev-biodatasci-072018-021255", 
+                  "doi: 10.31274/jlsc.18285")
 )
 
 ## JOSS papers
@@ -502,7 +506,7 @@ if (!is.null(biorxiv)) {
 
 ```{r generate-output}
 ## Split by publication year
-years <- as.character(unique(summ$pubyear))
+years <- as.character(sort(as.numeric(unique(summ$pubyear)), decreasing = TRUE))
 summ <- split(summ, summ$pubyear)
 
 ## Generate final text string to display
