@@ -94,8 +94,7 @@ pmid_remove <- c("31925006", "33877351", "37090609", "36711921", "37645841",
 pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
-biorxiv_dois <- c("10.1101/2024.08.20.607873", 
-                  "10.1101/2024.08.15.608034",
+biorxiv_dois <- c("10.1101/2024.08.15.608034",
                   "10.1101/2023.04.12.536513",
                   "10.1101/2023.01.04.522742", 
                   "10.1101/2021.01.17.426996")
@@ -124,11 +123,11 @@ pmid_github <- rbind(
   c(pmid = "35140234", github = "https://github.com/csoneson/WagnerEMT2020"),
   c(pmid = "36508357", github = "https://github.com/i2bc/InterspeciesDE"),
   c(pmid = "36711921", github = "https://github.com/COMBINE-lab/scrna-ambiguity"),
-  c(pmid = "37264470", github = "https://github.com/fmicompbio/mutscan_manuscript_2022")
+  c(pmid = "37264470", github = "https://github.com/fmicompbio/mutscan_manuscript_2022"),
+  c(pmid = "40015273", github = "https://github.com/fmicompbio/Spombe_TFome")
 )
 biorxiv_github <- rbind(
-  c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity"),
-  c(doi = "10.1101/2024.08.20.607873", github = "https://github.com/fmicompbio/Spombe_TFome")
+  c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity")
 )
 
 ## preprint links
@@ -161,7 +160,8 @@ pmid_preprints <- rbind(
   c(pmid = "37369201", preprint = "https://doi.org/10.1101/2023.04.20.537632"),
   c(pmid = "38877315", preprint = "https://doi.org/10.1101/2023.09.10.557072"),
   c(pmid = "38887902", preprint = "https://doi.org/10.1101/2023.08.17.553679"),
-  c(pmid = "39468329", preprint = "https://doi.org/10.1101/2023.11.17.567387")
+  c(pmid = "39468329", preprint = "https://doi.org/10.1101/2023.11.17.567387"),
+  c(pmid = "40015273", preprint = "https://doi.org/10.1101/2024.08.20.607873")
 )
 joss_preprints <- rbind(
     c(doi = "10.21105/joss.05750", preprint = "https://doi.org/10.1101/2023.07.27.550821")
