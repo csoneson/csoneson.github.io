@@ -20,11 +20,11 @@ website:
       - text: "Teaching"
         icon: fa-mortar-board
         href: teaching.qmd
-    right:
-      - icon: github
-        href: https://github.com/csoneson
-      - icon: mastodon
-        href: https://fosstodon.org/@csoneson
+    # right:
+    #   - icon: github
+    #     href: https://github.com/csoneson
+    #   - icon: mastodon
+    #     href: https://fosstodon.org/@csoneson
 
 format:
   html:
