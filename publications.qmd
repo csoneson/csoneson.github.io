@@ -88,7 +88,7 @@ id <- "c28GqkIAAAAJ"
 ## Also ARMOR
 ## Don't include preprints in the sections for each year
 pmid_remove <- c("31925006", "33877351", "37090609", "36711921", "37645841",
-                 "38826347")
+                 "38826347", "40160449")
 
 ## PubMed IDs to add
 pmid_add <- c("27309738", "26615188", "25057166")
@@ -216,20 +216,21 @@ unlisted_publications <- data.frame(
             "The Journal of Open Source Software (JOSS): Bringing open-source software practices to the scholarly publishing community for authors, reviewers, editors, and publishers."),
   pubdate = c("", "", "", "", ""),
   pubyear = c("2014", "2013", "2011", "2019", "2025"),
-  journal = c("Computational Statistics & Data Analysis", "Högre Utbildning", 
-              "Annals of Applied Statistics", 
-              "Annual Review of Biomedical Data Science",
-              "Journal of Librarianship and Scholarly Communication"),
+  journal = c("Comput Stat Data Anal", "Högre Utbild", 
+              "Ann Appl Stat", 
+              "Annu rev biomed data sci",
+              "J Librariansh Sch Commun"),
   authors = c("Soneson C, Fontes M", "Soneson C, Torstensson A", "Soneson C, Fontes M", 
               "Van den Berge K, Hembach KM, Soneson C, Tiberi S, Clement L, Love MI, Patro R, Robinson MD",
               "Diehl P, Soneson C, Kurchin RC, Mounce R, Katz DS"),
   volume = c("71", "3", "5", "2", "12"),
   issue = c("", "1", "3", "", "2"),
   pages = c("588-598", "3-14", "2131-2149", "139-173", "eP18285"),
-  doi = c("10.1016/j.csda.2012.07.026", "", "10.1214/11-AOAS460",
+  doi = c("10.1016/j.csda.2012.07.026", "10.23865/hu.v3.822", "10.1214/11-AOAS460",
           "10.1146/annurev-biodatasci-072018-021255", "10.31274/jlsc.18285"),
   pmid = c("", "", "", "", ""),
-  elocationid = c("doi: 10.1016/j.csda.2012.07.026", "", "doi: 10.1214/11-AOAS460", 
+  elocationid = c("doi: 10.1016/j.csda.2012.07.026", "doi: 10.23865/hu.v3.822", 
+                  "doi: 10.1214/11-AOAS460", 
                   "doi: 10.1146/annurev-biodatasci-072018-021255", 
                   "doi: 10.31274/jlsc.18285")
 )
