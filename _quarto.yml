@@ -14,9 +14,9 @@ website:
       - text: "Publications"
         icon: fa-file-pdf-o
         href: publications.qmd
-      - text: "Resources"
+      - text: "Tools"
         icon: fa-cogs
-        href: resources.qmd
+        href: tools/index.qmd
       - text: "Teaching"
         icon: fa-mortar-board
         href: teaching.qmd

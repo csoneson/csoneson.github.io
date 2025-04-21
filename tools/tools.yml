@@ -1,0 +1,384 @@
+- package: alevinQC
+  package_lower: alevinqc
+  image: stickers/alevinQC.png
+  path: https://bioconductor.org/packages/alevinQC/
+  role: maintainer
+  description: >
+    A package for generation of QC reports summarizing the output from an 
+    [alevin](https://salmon.readthedocs.io/en/latest/alevin.html) or 
+    [alevin-fry](https://alevin-fry.readthedocs.io/en/latest/) run.
+    Reports can be generated as html or pdf files, or as Shiny applications.
+  
+- package: bettr
+  package_lower: bettr
+  image: stickers/bettr.png
+  path: https://bioconductor.org/packages/bettr/
+  role: maintainer
+  description: >
+    bettr provides a set of interactive visualization methods to 
+    explore the results of a benchmarking study, where typically more than a 
+    single performance measure is computed. The user can weight the 
+    performance measures according to their preferences. Performance measures
+    can also be grouped and aggregated according to additional annotations. 
+
+- package: ARMOR
+  package_lower: armor
+  image: stickers/ARMOR.png
+  path: https://github.com/csoneson/ARMOR
+  role: maintainer
+  description: >
+    A light-weight Snakemake workflow for preprocessing and statistical 
+    analysis of RNA-seq data.
+
+- package: compcodeR
+  package_lower: compcoder
+  path: https://bioconductor.org/packages/compcodeR/
+  role: maintainer
+  description: >
+    A package providing functionality for comparing results obtained by 
+    different methods for differential expression analysis of RNAseq data. It 
+    also contains functions for simulating count data and interfaces to several 
+    packages for performing the differential expression analysis.
+
+- package: countsimQC
+  package_lower: countsimqc
+  image: stickers/countsimQC.png
+  path: https://bioconductor.org/packages/countsimQC/
+  role: maintainer
+  description: >
+    countsimQC provides functionality to create a comprehensive report 
+    comparing a broad range of characteristics across a collection of count 
+    matrices. One important use case is the comparison of one or more synthetic 
+    count matrices to a real count matrix, possibly the one underlying the 
+    simulations. However, any collection of count matrices can be compared.
+
+- package: einprot
+  package_lower: einprot
+  image: stickers/einprot.png
+  path: https://github.com/fmicompbio/einprot
+  role: maintainer
+  description: >
+    einprot contains a set of workflows for statistical analysis of 
+    quantitative proteomics data processed with MaxQuant (LFQ), FragPipe (LFQ), 
+    Proteome Discoverer (TMT-labelled), Spectronaut or DIA-NN.
+
+- package: eisaR
+  package_lower: eisar
+  image: stickers/eisaR.png
+  path: https://bioconductor.org/packages/eisaR/
+  role: co-developer
+  description: >
+    Exon-intron split analysis (EISA) uses ordinary RNA-seq data to measure 
+    changes in mature RNA and pre-mRNA reads across different experimental 
+    conditions to quantify transcriptional and post-transcriptional regulation 
+    of gene expression.
+
+- package: ExploreModelMatrix
+  package_lower: exploremodelmatrix
+  image: stickers/emm_logo.png
+  path: https://bioconductor.org/packages/ExploreModelMatrix/
+  role: maintainer
+  description: >
+    Given a sample data table and a design formula, ExploreModelMatrix 
+    generates an interactive application for exploration of the resulting 
+    design matrix. This can be helpful for interpreting model coefficients 
+    and constructing appropriate contrasts in (generalized) linear models. 
+    Static visualizations can also be generated.
+
+- package: iCOBRA
+  package_lower: icobra
+  image: stickers/iCOBRA.png
+  path: https://bioconductor.org/packages/iCOBRA/
+  role: maintainer
+  description: >
+    iCOBRA provides functions for calculation and visualization of performance 
+    metrics for evaluation of ranking and binary classification (assignment) 
+    methods. It also contains a Shiny application for interactive exploration 
+    of results.
+
+- package: iSEE
+  package_lower: isee
+  image: stickers/iSEE.png
+  path: https://bioconductor.org/packages/iSEE/
+  role: co-developer
+  description: >
+    iSEE allows the user to create an interactive Shiny-based graphical user 
+    interface for exploring 
+    data stored in SummarizedExperiment objects, including row- and column-level 
+    metadata. The interface supports transmission of selections between plots 
+    and tables, code tracking, interactive tours, interactive or programmatic
+    initialization, preservation of app state, and extensibility to new panel 
+    types via S4 classes. Special attention is given to single-cell data in a
+    SingleCellExperiment object with visualization of dimensionality reduction 
+    results.
+
+- package: iSEEu
+  package_lower: iseeu
+  image: stickers/iSEEu.png
+  path: https://bioconductor.org/packages/iSEEu/
+  role: co-developer
+  description: >
+    iSEEu (the iSEE universe) contains diverse functionality to extend the 
+    usage of the iSEE package, including additional panel classes and 
+    modes allowing easy configuration of iSEE applications.
+
+- package: mutscan
+  package_lower: mutscan
+  image: stickers/mutscan.png
+  path: https://github.com/fmicompbio/mutscan
+  role: maintainer
+  description: >
+    mutscan provides functionality for processing and statistical analysis 
+    of multiplexed assays of variant effect (MAVE) and similar data. The 
+    package contains functions covering the full workflow from raw FASTQ 
+    files to publication-ready visualizations. A broad range of library 
+    designs can be processed with a single, unified interface. 
+
+- package: sketchR
+  package_lower: sketchr
+  image: stickers/sketchR.png
+  path: https://bioconductor.org/packages/sketchR/
+  role: maintainer
+  description: >
+    Provides an R interface for various subsampling algorithms implemented in 
+    python packages. Currently, interfaces to the geosketch and scSampler python 
+    packages are implemented. In addition it also provides diagnostic plots to 
+    evaluate the subsampling.
+
+- package: treeclimbR
+  package_lower: treeclimbr
+  image: stickers/treeclimbR.png
+  path: https://bioconductor.org/packages/treeclimbR/
+  role: maintainer
+  description: >
+    The arrangement of hypotheses in a hierarchical structure appears in many 
+    research fields and often indicates different resolutions at which data 
+    can be viewed. This raises the question of which resolution level the signal 
+    should best be interpreted on. treeclimbR provides a flexible method to 
+    select optimal resolution levels (potentially different levels in different 
+    parts of the tree), rather than cutting the tree at an arbitrary level. 
+
+- package: velociraptor
+  package_lower: velociraptor
+  image: stickers/velociraptor_sticker.png
+  path: https://bioconductor.org/packages/velociraptor/
+  role: co-developer
+  description: >
+    This package provides Bioconductor-friendly wrappers for RNA velocity 
+    calculations in single-cell RNA-seq data. We use the basilisk package to 
+    manage Conda environments, and the zellkonverter package to convert data 
+    structures between SingleCellExperiment (R) and AnnData (Python). The 
+    information produced by the velocity methods is stored in the various 
+    components of the SingleCellExperiment class.
+
+- package: dreval
+  package_lower: dreval
+  path: https://github.com/csoneson/dreval
+  role: maintainer
+  description: >
+    Convenience functions for evaluation and comparison of reduced dimension
+    representations.
+
+- package: jcc
+  package_lower: jcc
+  path: https://github.com/csoneson/jcc
+  role: maintainer
+  description: >
+    This package calculates JCC scores, which are aimed at detecting genes for 
+    which estimated transcript abundances are unreliable, either because of 
+    problems in the transcript abundance estimation or because of missing or 
+    wrongly annotated reference transcripts.
+
+- package: Rhisat2
+  package_lower: rhisat2
+  path: http://bioconductor.org/packages/Rhisat2/
+  role: maintainer
+  description: >
+    An R interface to the HISAT2 spliced short-read aligner by Kim et al. 
+    (2015). The package contains wrapper functions to create a genome index 
+    and to perform the read alignment to the generated index.
+
+- package: TabulaMurisData
+  package_lower: tabulamurisdata
+  path: http://bioconductor.org/packages/TabulaMurisData/
+  role: maintainer
+  description: >
+    An R package interface to processed 10x (droplet) and SmartSeq2 (on 
+    FACS-sorted cells) single-cell RNA-seq data from the Tabula Muris 
+    consortium.
+
+- package: TabulaMurisSenisData
+  package_lower: tabulamurissenisdata
+  path: http://bioconductor.org/packages/TabulaMurisSenisData/
+  role: maintainer
+  description: >
+    An R package interface to processed 10x (droplet) and SmartSeq2 (on 
+    FACS-sorted cells) single-cell RNA-seq data from the Tabula Muris Senis 
+    project.
+
+- package: DuoClustering2018
+  package_lower: duoclustering2018
+  path: http://bioconductor.org/packages/DuoClustering2018/
+  role: co-developer
+  description: >
+    Data sets and clustering results from the scRNA-seq clustering evaluation 
+    by [Duo et al. 2018](https://f1000research.com/articles/7-1141/v3).
+
+- package: tximport
+  package_lower: tximport
+  image: stickers/tximport.png
+  path: http://bioconductor.org/packages/tximport/
+  role: co-developer
+  description: >
+    Imports transcript-level abundance, estimated counts and transcript lengths, 
+    and summarizes into matrices for use with downstream gene-level analysis 
+    packages. Average transcript length, weighted by sample-specific transcript
+    abundance estimates, is provided as a matrix which can be used as an offset 
+    for differential expression of gene-level counts.
+
+- package: tximeta
+  package_lower: tximeta
+  image: stickers/tximeta.png
+  path: http://bioconductor.org/packages/tximeta/
+  role: contributor
+  description: >
+    Transcript quantification import from Salmon and other quantifiers with 
+    automatic attachment of transcript ranges and release information, and
+    other associated metadata. De novo transcriptomes can be linked to the 
+    appropriate sources with linkedTxomes and shared for computational
+    reproducibility.
+
+- package: muscat
+  package_lower: muscat
+  image: stickers/muscat.png
+  path: http://bioconductor.org/packages/muscat/
+  role: co-developer
+  description: >
+    muscat provides various methods and visualization tools for differential
+    state analysis in multi-sample, multi-group, multi-(cell-)subpopulation 
+    scRNA-seq data, including cell-level mixed models and methods based on 
+    aggregated "pseudobulk" data, as well as a flexible simulation platform
+    that mimics both single- and multi-sample scRNA-seq data.
+
+- package: iSEEpathways
+  package_lower: iseepathways
+  path: http://bioconductor.org/packages/iSEEpathways/
+  role: contributor
+  description: >
+    This package contains diverse functionality to extend the usage of the iSEE 
+    package, including additional classes for the panels or modes facilitating 
+    the analysis of pathway analysis results. The package does not perform 
+    pathway analysis. Instead, it provides methods to embed precomputed pathway 
+    analysis results in a SummarizedExperiment object, in a manner that is 
+    compatible with interactive visualisation in iSEE applications.
+
+- package: monaLisa
+  package_lower: monalisa
+  image: stickers/monaLisa.png
+  path: http://bioconductor.org/packages/monaLisa/
+  role: co-developer
+  description: >
+    Useful functions to work with sequence motifs in the analysis of genomics 
+    data. These include methods to annotate genomic regions or sequences with 
+    predicted motif hits and to identify motifs that drive observed changes in
+    accessibility or expression. Functions to produce informative visualizations 
+    of the obtained results are also provided.
+
+- package: orthos
+  package_lower: orthos
+  image: stickers/orthos.png
+  path: http://bioconductor.org/packages/orthos/
+  role: co-developer
+  description: >
+    orthos decomposes RNA-seq contrasts, for example obtained from a gene 
+    knock-out or compound treatment experiment, into unspecific and 
+    experiment-specific components. Original and decomposed contrasts can be 
+    efficiently queried against a large database of contrasts (derived from 
+    ARCHS4, https://maayanlab.cloud/archs4/) to identify similar experiments. 
+    orthos furthermore provides plotting functions to visualize the results of 
+    such a search for similar contrasts.
+
+- package: QuasR
+  package_lower: quasr
+  image: stickers/quasr.png
+  path: http://bioconductor.org/packages/QuasR/
+  role: co-developer
+  description: >
+    QuasR provides a framework for the quantification and analysis of 
+    short reads. It covers a complete workflow starting from raw sequence reads, 
+    over creation of alignments and quality control plots, to the quantification 
+    of genomic regions of interest. Read alignments are either generated through 
+    Rbowtie (data from DNA/ChIP/ATAC/Bis-seq experiments) or Rhisat2 (data from 
+    RNA-seq experiments that require spliced alignments), or can be provided in 
+    the form of bam files.
+
+- package: HDCytoData
+  package_lower: hdcytodata
+  path: http://bioconductor.org/packages/HDCytoData/
+  role: contributor
+  description: >
+    Data package containing a set of publicly available high-dimensional 
+    cytometry benchmark datasets, formatted into SummarizedExperiment and 
+    flowSet Bioconductor object formats, including all required metadata. Row 
+    metadata includes sample IDs, group IDs, patient IDs, reference cell 
+    population or cluster labels (where available), and labels identifying 
+    'spiked in' cells (where available). Column metadata includes channel names, 
+    protein marker names, and protein marker classes (cell type or cell state).
+
+- package: BiocPkgTools
+  package_lower: biocpkgtools
+  image: stickers/BiocPkgTools.png
+  path: http://bioconductor.org/packages/BiocPkgTools/
+  role: contributor
+  description: >
+    Bioconductor has a rich ecosystem of metadata around packages, usage, and
+    build status. This package is a simple collection of functions to access 
+    that metadata from R. The goal is to expose metadata for data mining and 
+    value-added functionality such as package searching, text mining, and 
+    analytics on packages.
+
+- package: ez-zarr
+  package_lower: ez-zarr
+  image: stickers/ez_zarr.png
+  path: https://pypi.org/project/ez-zarr/
+  role: co-developer
+  description: >
+    The aim of ez-zarr is to provide easy, high-level access and visualization 
+    of OME-Zarr filesets stored according to the NGFF specifications.
+
+- package: ezzarr
+  package_lower: ezzarr
+  path: https://github.com/fmicompbio/ezzarr
+  role: maintainer
+  description: >
+    The ezzarr R package provides a thin wrapper around the ez-zarr python 
+    package for easier use from R.
+
+- package: swissknife
+  package_lower: swissknife
+  path: https://github.com/fmicompbio/swissknife
+  role: co-developer
+  description: >
+    Handy code shared in the FMI CompBio group.
+
+- package: ConfoundingExplorer
+  package_lower: confoundingexplorer
+  path: https://github.com/csoneson/ConfoundingExplorer
+  role: maintainer
+  description: >
+    The ConfoundingExplorer R package provides a simple Shiny app for 
+    interactively exploring the effect of confounding between a group variable 
+    of interest and a batch variable, in terms of the ability to correctly find 
+    the variables that are truly differential between the different levels of
+    the group variable. It is mainly intended for teaching purposes and to 
+    illustrate important concepts in experimental design, and all analyses are
+    performed using (quite simplistic) simulated data.
+
+- package: tidySummarizedExperiment
+  package_lower: tidysummarizedexperiment
+  image: stickers/tidyomics.png
+  path: https://www.bioconductor.org/packages/tidySummarizedExperiment/
+  role: contributor
+  description: >
+    The tidySummarizedExperiment package provides a set of tools for creating 
+    and manipulating tidy data representations of SummarizedExperiment objects.
