@@ -1,5 +1,6 @@
 ---
 title: "Charlotte Soneson"
+toc: false
 about:
     template: trestles
     image-width: 15em
