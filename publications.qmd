@@ -202,7 +202,8 @@ biorxiv_software <- rbind(
 )
 ## JOSS software
 joss_software <- rbind(
-    c(doi = "10.21105/joss.05750", software = "https://github.com/fmicompbio/einprot")
+    c(doi = "10.21105/joss.05750", software = "https://github.com/fmicompbio/einprot"),
+    c(doi = "10.21105/joss.07882", software = "https://github.com/fmicompbio/ez_zarr")
 )
 
 ## names to highlight in publication list
@@ -238,17 +239,19 @@ unlisted_publications <- data.frame(
 
 ## JOSS papers
 joss <- data.frame(
-  title = c("einprot: flexible, easy-to-use, reproducible workflows for statistical analysis of quantitative proteomics data."),
-  pubdate = c(""),
-  pubyear = c("2023"),
+  title = c("einprot: flexible, easy-to-use, reproducible workflows for statistical analysis of quantitative proteomics data.",
+            "ez-zarr: A Python package for easy access and visualisation of OME-Zarr filesets."),
+  pubdate = c("", ""),
+  pubyear = c("2023", "2025"),
   journal = c("The Journal of Open Source Software"),
-  authors = c("Soneson C, Iesmantavicius V, Hess D, Stadler MB, Seebacher J"),
-  volume = c("8"),
-  issue = c("89"),
-  pages = c("5750"),
-  doi = c("10.21105/joss.05750"),
-  pmid = c(""),
-  elocationid = c("doi: 10.21105/joss.05750")
+  authors = c("Soneson C, Iesmantavicius V, Hess D, Stadler MB, Seebacher J",
+              "Barbiero S, Soneson C, Liberali P, Stadler MB"),
+  volume = c("8", "10"),
+  issue = c("89", "109"),
+  pages = c("5750", "7882"),
+  doi = c("10.21105/joss.05750", "10.21105/joss.07882"),
+  pmid = c("", ""),
+  elocationid = c("doi: 10.21105/joss.05750", "doi: 10.21105/joss.07882")
 )
 
 ## F1000Research articles awaiting peer review
