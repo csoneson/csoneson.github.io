@@ -7,29 +7,43 @@ editor_options:
 
 ## 2025
 
-- [Biological data science (CSAMA 2025)](https://csama2025.bioconductor.eu/), Brixen, Italy
-- [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
+-   [Reproducible research in computational biology](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=295497), University of Basel/FMI, Switzerland
+-   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
+-   Graphical representation of data, FMI, Switzerland (internal)
+-   [Biological data science (CSAMA 2025)](https://csama2025.bioconductor.eu/), Brixen, Italy
+-   Creating a website with Quarto, FMI, Switzerland (internal)
+-   [Underlying Principles of Scientific Investigation and Their Practical Application in the Laboratory Setting](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=290211), University of Basel/FMI, Switzerland
+-   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
 
 
 ## 2024
 
 -   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
+-   Graphical representation of data, FMI, Switzerland (internal)
 -   [Statistical data analysis for genome scale biology (CSAMA 2024)](https://csama2024.bioconductor.eu/), Brixen, Italy
+-   Introductory/intermediate ggplot2, FMI, Switzerland (internal)
+-   [Underlying Principles of Scientific Investigation and Their Practical Application in the Laboratory Setting](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=280434), University of Basel/FMI, Switzerland
 -   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
 
 
 ## 2023
 
+-   Reproducible research in computational biology (R Markdown/Quarto, git/GitHub, Snakemake), FMI, Switzerland (internal)
+-   Experimental design, FMI, Switzerland (internal)
 -   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
 -   [Analysis and interpretation of bulk RNA-seq data using Bioconductor](https://bioconductor.github.io/2023-09-18-RNASeq-EuroBioc/), Ghent, Belgium
--   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
+-   Graphical representation of data, FMI, Switzerland (internal)
 -   [Statistical data analysis for genome scale biology (CSAMA 2023)](https://csama2023.bioconductor.eu/), Brixen, Italy
+-   Introductory/intermediate ggplot2, FMI, Switzerland (internal)
+-   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
 
 ## 2022
 
 -   [Introduction to genomic data analysis with R and Bioconductor](https://bioconductor.github.io/2022-09-12-BiocIntro-Heidelberg/), Heidelberg, Germany
 -   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
+-   Graphical representation of data, FMI, Switzerland (internal)
 -   [Statistical Analysis of Genome Scale Data](https://meetings.cshl.edu/courses.aspx?course=C-data&year=22), Cold Spring Harbor Laboratory, USA (hybrid)
+-   Introduction to iSEE, FMI, Switzerland (internal)
 -   [Statistical data analysis for genome scale biology (CSAMA 2022)](https://csama2022.bioconductor.eu/), Brixen, Italy
 -   [Genomics and Transcriptomics, Integrated with Proteomics and Medical Informatics: learning the cornerstones of Systems Medicine (GTIPI 2022)](https://imbeimainz.github.io/GTIPI2022/index.html), Mainz, Germany
 -   [Advanced topics in single-cell analysis](https://www.sib.swiss/training/course/20220426_ADVSC), Basel, Switzerland
@@ -38,9 +52,11 @@ editor_options:
 
 ## 2021
 
+-   Experimental design, FMI, Switzerland (internal)
 -   RNA-seq analysis, University of Freiburg, Germany
 -   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
 -   [Summer School in Advanced topics in Single Cell Omics](https://nbisweden.github.io/single-cell_sib_scilifelab_2021/README.html), online
+-   Introduction to iSEE, FMI, Switzerland (internal)
 -   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland (online)
 
 ## 2020
@@ -70,14 +86,14 @@ editor_options:
 
 ## 2017
 
--   [Statistics for Life Scientists](https://www.sib.swiss/training/course/stats-basel2017), Basel, Switzerland
+-   [Statistics for Life Scientists](https://www.sib.swiss/training/course/stats-basel2017), SIB, Basel, Switzerland
 -   [Statistical data analysis for genome scale biology (CSAMA 2017)](http://www.huber.embl.de/csama2017/#home), Brixen, Italy
 -   [Advanced RNA-seq and ChIP-seq data analysis](http://www.ebi.ac.uk/training/events/2017/advanced-rna-seq-and-chip-seq-data-analysis-1), EBI, Hinxton, UK
 
 ## 2016
 
 -   Advanced course on edgeR and DESeq2, Leuven, Belgium
--   [Statistics for Life Scientists](http://edu.isb-sib.ch/course/view.php?id=269), Basel, Switzerland
+-   [Statistics for Life Scientists](http://edu.isb-sib.ch/course/view.php?id=269), SIB, Basel, Switzerland
 -   [Method course - Analysis of NextGen RNA-seq data for expression profiling and protein-binding RNAs](http://www.uni-regensburg.de/medicine/statistical-bioinformatics/method-course-oct-16/program/index.html), Regensburg, Germany
 -   [Analysis of high-throughput sequencing data](http://events.embo.org/16-htp-seq/), Cambridge, UK
 -   [Statistics and computing in genome data science (CSAMA 2016)](http://www.huber.embl.de/csama2016/about/), Brixen, Italy
@@ -85,26 +101,49 @@ editor_options:
 ## 2015
 
 -   Statistical transcriptomics data analysis: from design to reproducible research, Fribourg, Switzerland
--   [Statistical techniques for genomics/life sciences](http://edu.isb-sib.ch/course/view.php?id=189), Basel, Switzerland
+-   [Statistical techniques for genomics/life sciences](http://edu.isb-sib.ch/course/view.php?id=189), SIB, Basel, Switzerland
 
 ## 2014
 
--   [Multivariate analysis for exploration and visualisation of biological data](http://edu.isb-sib.ch/course/view.php?id=187), Lausanne, Switzerland
--   [Introduction to classification](http://edu.isb-sib.ch/course/view.php?id=186), Lausanne, Switzerland
--   [Advanced statistics:statistical modeling](http://edu.isb-sib.ch/course/view.php?id=177), Lausanne, Switzerland
--   [Microarray and RNAseq data analysis with R](http://edu.isb-sib.ch/course/view.php?id=175), Fribourg, Switzerland
+-   [Multivariate analysis for exploration and visualisation of biological data](http://edu.isb-sib.ch/course/view.php?id=187), SIB, Lausanne, Switzerland
+-   [Introduction to classification](http://edu.isb-sib.ch/course/view.php?id=186), SIB, Lausanne, Switzerland
+-   [Advanced statistics:statistical modeling](http://edu.isb-sib.ch/course/view.php?id=177), SIB, Lausanne, Switzerland
+-   [Microarray and RNAseq data analysis with R](http://edu.isb-sib.ch/course/view.php?id=175), SIB, Fribourg, Switzerland
 -   RNA-seq data analysis, Brno, Czech Republic
 -   [RNA-seq: from experiment planning to statistical data analysis](http://www.bc2.ch/courses/RNASeqCourseBasel201401/), Basel, Switzerland
 
 ## 2013
 
 -   [RNA-seq: from experiment planning to statistical data analysis](http://biologie.cuso.ch/staromics/activities/detail-activity/item/courses/rna-seq-from-experiment-planing-to-statistical-data-analysis/), Bern, Switzerland
--   [Multivariate analysis for exploration and visualisation of biological data](http://edu.isb-sib.ch/course/view.php?id=150), Lausanne, Switzerland
--   [Advanced transcriptomics analysis](http://edu.isb-sib.ch/course/view.php?id=146), Lausanne, Switzerland
--   [Introduction to statistics for biologists](http://edu.isb-sib.ch/course/view.php?id=147), Lausanne, Switzerland
+-   [Multivariate analysis for exploration and visualisation of biological data](http://edu.isb-sib.ch/course/view.php?id=150), SIB, Lausanne, Switzerland
+-   [Advanced transcriptomics analysis](http://edu.isb-sib.ch/course/view.php?id=146), SIB, Lausanne, Switzerland
+-   [Introduction to statistics for biologists](http://edu.isb-sib.ch/course/view.php?id=147), SIB, Lausanne, Switzerland
 
 ## 2012
 
--   [Integration of data from different omics](http://edu.isb-sib.ch/course/view.php?id=124), Lausanne, Switzerland
--   [Analysis of differential gene expression](http://edu.isb-sib.ch/course/view.php?id=120), Lausanne, Switzerland
--   [Multivariate analysis for exploration and visualisation of biological data](http://edu.isb-sib.ch/course/view.php?id=121), Lausanne, Switzerland
+-   [Integration of data from different omics](http://edu.isb-sib.ch/course/view.php?id=124), SIB, Lausanne, Switzerland
+-   [Analysis of differential gene expression](http://edu.isb-sib.ch/course/view.php?id=120), SIB, Lausanne, Switzerland
+-   [Multivariate analysis for exploration and visualisation of biological data](http://edu.isb-sib.ch/course/view.php?id=121), SIB, Lausanne, Switzerland
+-   Exploratory multivariate analysis (lecture), Lund University, Sweden
+
+## 2011
+
+-   Data mining and visualization (lecture), Lund University, Sweden
+
+## 2010
+
+-   Data mining and multivariate visualization methods (lecture), Lund University, Sweden
+-   Data mining and visualization (teaching assistant), ECMI Summer School, Milan, Italy
+
+## 2006-2011
+
+-   Teaching assistant/project supervisor, Lund University, Sweden
+    -   Linear Algebra
+    -   Calculus in One Variable
+    -   Calculus in Several Variables
+    -   Mathematical Modelling
+    -   Mathematical Communication
+    -   Applied Mathematics - Linear Systems
+    -   Functional Analysis and Harmonic Analysis
+    -   Analytic Functions
+    -   Systems and Transforms
