@@ -129,7 +129,8 @@ pmid_github <- rbind(
   c(pmid = "40015273", github = "https://github.com/fmicompbio/Spombe_TFome")
 )
 biorxiv_github <- rbind(
-  c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity")
+  c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity"),
+  c(doi = "10.1101/2025.07.03.663000", github = "https://github.com/fmicompbio/IVMC-protocol")
 )
 
 ## preprint links
