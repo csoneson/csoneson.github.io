@@ -95,7 +95,6 @@ pmid_add <- c("27309738", "26615188", "25057166")
 
 ## bioRxiv dois
 biorxiv_dois <- c("10.1101/2024.08.15.608034",
-                  "10.1101/2023.04.12.536513",
                   "10.1101/2023.01.04.522742", 
                   "10.1101/2021.01.17.426996",
                   "10.1101/2025.07.03.663000",
@@ -167,7 +166,8 @@ pmid_preprints <- rbind(
   c(pmid = "39468329", preprint = "https://doi.org/10.1101/2023.11.17.567387"),
   c(pmid = "40015273", preprint = "https://doi.org/10.1101/2024.08.20.607873"),
   c(pmid = "40106482", preprint = "https://doi.org/10.31219/osf.io/wxjky"),
-  c(pmid = "40261894", preprint = "https://arxiv.org/abs/2410.01351")
+  c(pmid = "40261894", preprint = "https://arxiv.org/abs/2410.01351"),
+  c(pmid = "40907933", preprint = "https://doi.org/10.1101/2023.04.12.536513")
 )
 joss_preprints <- rbind(
     c(doi = "10.21105/joss.05750", preprint = "https://doi.org/10.1101/2023.07.27.550821")
