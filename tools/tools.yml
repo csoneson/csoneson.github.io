@@ -125,7 +125,7 @@
 - package: mutscan
   package_lower: mutscan
   image: stickers/mutscan.png
-  path: https://github.com/fmicompbio/mutscan
+  path: https://bioconductor.org/packages/mutscan/
   role: maintainer
   description: >
     mutscan provides functionality for processing and statistical analysis 
