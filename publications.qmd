@@ -87,8 +87,9 @@ id <- "c28GqkIAAAAJ"
 ## diffcyt paper appears twice for some reason
 ## Also ARMOR
 ## Don't include preprints in the sections for each year
-pmid_remove <- c("31925006", "33877351", "37090609", "36711921", "37645841",
-                 "38826347", "40160449")
+pmid_remove <- c("31925006", "33877351", "37090609", 
+                 "36711921", "37645841",
+                 "38826347", "40160449", "41040322")
 
 ## PubMed IDs to add
 pmid_add <- c("27309738", "26615188", "25057166")
