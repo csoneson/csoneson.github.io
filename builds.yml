@@ -1,0 +1,306 @@
+- package: alevinQC
+  github_url: csoneson/alevinQC
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: bettr
+  github_url: federicomarini/bettr
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+  
+- package: compcodeR
+  github_url: csoneson/compcodeR
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: countsimQC
+  github_url: csoneson/countsimQC
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: ExploreModelMatrix
+  github_url: csoneson/ExploreModelMatrix
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: iCOBRA
+  github_url: csoneson/iCOBRA
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: mutscan
+  github_url: fmicompbio/mutscan
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: Rhisat2
+  github_url: fmicompbio/Rhisat2
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: sketchR
+  github_url: fmicompbio/sketchR
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: treeclimbR
+  github_url: csoneson/treeclimbR
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: maintainer
+  section: bioc
+
+- package: eisaR
+  github_url: fmicompbio/eisaR
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: iSEE
+  github_url: iSEE/iSEE
+  gha_workflow: check-bioc.yml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: iSEEde
+  github_url: iSEE/iSEEde
+  gha_workflow: check-bioc.yml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: iSEEhub
+  github_url: iSEE/iSEEhub
+  gha_workflow: check-bioc.yml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: iSEEindex
+  github_url: iSEE/iSEEindex
+  gha_workflow: check-bioc.yml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: iSEEpathways
+  github_url: iSEE/iSEEpathways
+  gha_workflow: check-bioc.yml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: iSEEu
+  github_url: iSEE/iSEEu
+  gha_workflow: build_check_deploy.yaml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: monaLisa
+  github_url: fmicompbio/monaLisa
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: orthos
+  github_url: fmicompbio/orthos
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: QuasR
+  github_url: fmicompbio/QuasR
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: velociraptor
+  github_url: kevinrue/velociraptor
+  gha_workflow: check-bioc.yml
+  codecov_branch: devel
+  role: contributor
+  section: bioc
+
+- package: DuoClustering2018
+  github_url: csoneson/DuoClustering2018
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  section: bioc-data
+
+- package: orthosData
+  github_url: fmicompbio/orthosData
+  gha_workflow: 
+  codecov_branch: 
+  section: bioc-data
+
+- package: TabulaMurisData
+  github_url: csoneson/TabulaMurisData
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  section: bioc-data
+
+- package: TabulaMurisSenisData
+  github_url: fmicompbio/TabulaMurisSenisData
+  gha_workflow: check-bioc.yml
+  codecov_branch: devel
+  section: bioc-data
+
+- package: ARMOR
+  github_url: csoneson/ARMOR
+  gha_workflow: snakemake-run.yaml
+  codecov_branch: 
+  section: other-software
+
+- package: BiocBuildFailureDiagnosis
+  github_url: csoneson/BiocBuildFailureDiagnosis
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: main
+  section: other-software
+
+- package: ConfoundingExplorer
+  github_url: csoneson/ConfoundingExplorer
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: main
+  section: other-software
+
+- package: dreval
+  github_url: csoneson/dreval
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: master
+  section: other-software
+
+- package: einprot
+  github_url: fmicompbio/einprot
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: main
+  section: other-software
+
+- package: ez-zarr
+  github_url: fmicompbio/ez_zarr
+  pypi: ez-zarr
+  gha_workflow: test_and_deploy.yaml
+  codecov_branch: main
+  section: other-software
+
+- package: ezzarr
+  github_url: fmicompbio/ezzarr
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: main
+  section: other-software
+
+- package: footprintR
+  github_url: fmicompbio/footprintR
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  section: other-software
+
+- package: jcc
+  github_url: csoneson/jcc
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: master
+  section: other-software
+
+- package: swissknife
+  github_url: fmicompbio/swissknife
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: master
+  section: other-software
+
+- package: iUSEiSEE
+  github_url: iSEE/iUSEiSEE
+  gha_workflow: rcmdcheck.yaml
+  section: other
+
+- package: iSEEWorkshopEuroBioc2025
+  github_url: iSEE/iSEEWorkshopEuroBioc2025
+  gha_workflow: basic_checks.yaml
+  section: other
+
+- package: iSEEDemoEuroBioC2024
+  github_url: iSEE/iSEEDemoEuroBioC2024
+  gha_workflow: basic_checks.yaml
+  section: other
+
+- package: iSEEDemoEuroBioC2023
+  github_url: iSEE/iSEEDemoEuroBioC2023
+  gha_workflow: basic_checks.yaml
+  section: other
+
+- package: iSEEWorkshopEuroBioc2020
+  github_url: iSEE/iSEEWorkshopEuroBioc2020
+  gha_workflow: build_check_deploy.yaml
+  section: other
+
+- package: iSEEWorkshop2020
+  github_url: iSEE/iSEEWorkshop2020
+  gha_workflow: build_check_deploy.yaml
+  section: other
+
+- package: PCAintro2020
+  github_url: fmicompbio/PCA_intro2020
+  gha_workflow: build-deploy-rmd.yaml
+  section: other
+
+- package: joss-analytics
+  github_url: openjournals/joss-analytics
+  gha_workflow: build-deploy-rmd.yaml
+  section: other
+
+- package: conquer_comparison
+  github_url: csoneson/conquer_comparison
+  gha_workflow: 
+  section: other
+
+- package: rna_velocity_quant
+  github_url: csoneson/rna_velocity_quant
+  gha_workflow: 
+  section: other
+
+- package: WagnerEMT2020
+  github_url: csoneson/WagnerEMT2020
+  gha_workflow: 
+  section: other
+
+- package: NativeRNAseqComplexTranscriptome
+  github_url: csoneson/NativeRNAseqComplexTranscriptome
+  gha_workflow: 
+  section: other
+
+- package: annotation_problem_txabundance
+  github_url: csoneson/annotation_problem_txabundance
+  gha_workflow: 
+  section: other
+
+- package: Spombe_TFome
+  github_url: fmicompbio/Spombe_TFome
+  gha_workflow: 
+  section: other
+
+- package: IVMC-protocol
+  github_url: fmicompbio/IVMC-protocol
+  gha_workflow: 
+  section: other
