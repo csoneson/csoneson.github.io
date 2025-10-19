@@ -138,6 +138,20 @@
   role: contributor
   section: bioc
 
+- package: tximport
+  github_url: thelovelab/tximport
+  gha_workflow: 
+  codecov_branch: 
+  role: contributor
+  section: bioc
+
+- package: tximeta
+  github_url: thelovelab/tximeta
+  gha_workflow: check-bioc.yml
+  codecov_branch: 
+  role: contributor
+  section: bioc
+
 - package: velociraptor
   github_url: kevinrue/velociraptor
   gha_workflow: check-bioc.yml
