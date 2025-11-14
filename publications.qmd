@@ -106,7 +106,7 @@ biorxiv_dois <- c("10.1101/2024.08.15.608034",
 peerj_dois <- c()#c("10.7287/peerj.preprints.27283v2")
 
 ## ArXiv dois
-arxiv_dois <- c("2409.15472", "2409.17038")
+arxiv_dois <- c("2409.17038")
 
 ## OSF IDs
 osf_ids <- c()
@@ -169,7 +169,8 @@ pmid_preprints <- rbind(
   c(pmid = "40015273", preprint = "https://doi.org/10.1101/2024.08.20.607873"),
   c(pmid = "40106482", preprint = "https://doi.org/10.31219/osf.io/wxjky"),
   c(pmid = "40261894", preprint = "https://arxiv.org/abs/2410.01351"),
-  c(pmid = "40907933", preprint = "https://doi.org/10.1101/2023.04.12.536513")
+  c(pmid = "40907933", preprint = "https://doi.org/10.1101/2023.04.12.536513"),
+  c(pmid = "41231865", preprint = "https://arxiv.org/abs/2409.15472")
 )
 joss_preprints <- rbind(
     c(doi = "10.21105/joss.05750", preprint = "https://doi.org/10.1101/2023.07.27.550821")
