@@ -19,11 +19,9 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/charlotte-soneson-15567134/
-    - icon: google
-      text: Google Scholar
+    - text: '<i class="fa-brands fa-google-scholar"></i> Google Scholar'
       href: http://scholar.google.ch/citations?user=c28GqkIAAAAJ&hl=en
-    - icon: orcid
-      text: ORCiD
+    - text: '<i class="fa-brands fa-orcid"></i> ORCID'
       href: https://orcid.org/0000-0003-3833-2169
 ---
 
