@@ -238,6 +238,12 @@
   codecov_branch: master
   section: other-software
 
+- package: SingleMoleculeGenomicsIO
+  github_url: fmicompbio/SingleMoleculeGenomicsIO
+  gha_workflow: R-CMD-check.yaml
+  codecov_branch: devel
+  section: other-software
+
 - package: swissknife
   github_url: fmicompbio/swissknife
   gha_workflow: R-CMD-check.yaml
