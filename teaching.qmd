@@ -5,6 +5,11 @@ editor_options:
   chunk_output_type: console
 ---
 
+## 2026
+
+-   [Biological data science (CSAMA 2026)](https://csama2026.bioconductor.eu/), Brixen, Italy
+-   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
+
 ## 2025
 
 -   [Reproducible research in computational biology](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=295497), University of Basel/FMI, Switzerland
