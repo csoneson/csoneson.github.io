@@ -53,6 +53,18 @@ get_bioc_landing_page <- function(y, version) {
     }
 }
 
+get_runiverse_check <- function(y) {
+    if (y$section %in% c("bioc")) {
+        paste0(
+            '<a href="https://bioc.r-universe.dev/', y$package, '">',
+            '<img src="https://bioc.r-universe.dev/', y$package,
+            '/badges/checks" alt="R-universe build status" height="18"></a>'
+        )
+    } else {
+        ""
+    }
+}
+
 get_gha <- function(y) {
     if (!is.null(y$gha_workflow)) {
         paste0("[![build status](https://github.com/", y$github_url, 
@@ -117,6 +129,7 @@ make_df <- function(yml) {
             Package = get_package(y),
             `Bioc devel` = get_bioc_landing_page(y, "devel"),
             `Bioc release` = get_bioc_landing_page(y, "release"),
+            # `r-universe` = get_runiverse_check(y),
             `GitHub Actions` = get_gha(y),
             `Code coverage` = get_codecov(y),
             `GitHub issues` = get_gh(y, "issues"),
