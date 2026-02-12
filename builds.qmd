@@ -56,7 +56,7 @@ get_bioc_landing_page <- function(y, version) {
 get_runiverse_check <- function(y) {
     if (y$section %in% c("bioc")) {
         paste0(
-            '<a href="https://bioc.r-universe.dev/', y$package, '">',
+            '<a href="https://bioc.r-universe.dev/', y$package, '#checktable">',
             '<img src="https://bioc.r-universe.dev/', y$package,
             '/badges/checks" alt="R-universe build status" height="18"></a>'
         )
