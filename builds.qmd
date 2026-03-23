@@ -53,7 +53,7 @@ get_bioc_landing_page <- function(y, version) {
     }
 }
 
-get_runiverse_check <- function(y) {
+get_bioc_runiverse_check <- function(y) {
     if (y$section %in% c("bioc")) {
         paste0(
             '<a href="https://bioc.r-universe.dev/', y$package, '#checktable">',
@@ -124,12 +124,12 @@ get_bioc_stats <- function(y) {
 }
 
 make_df <- function(yml) {
-    df <- do.call(bind_rows, lapply(yml, function(y) {
+    do.call(bind_rows, lapply(yml, function(y) {
         data.frame(
             Package = get_package(y),
             `Bioc devel` = get_bioc_landing_page(y, "devel"),
             `Bioc release` = get_bioc_landing_page(y, "release"),
-            # `r-universe` = get_runiverse_check(y),
+            `Bioc r-universe` = get_bioc_runiverse_check(y),
             `GitHub Actions` = get_gha(y),
             `Code coverage` = get_codecov(y),
             `GitHub issues` = get_gh(y, "issues"),
@@ -149,7 +149,7 @@ make_df <- function(yml) {
 ```{r}
 #| echo: false
 
-kable(make_df(yml[vapply(yml, function(y) y$role == "maintainer" && y$section == "bioc", FALSE)]), align = c("l", "c", "c", "c", "c", "c", "c", "c", "c"))
+kable(make_df(yml[vapply(yml, function(y) y$role == "maintainer" && y$section == "bioc", FALSE)]), align = c("l", "c", "c", "c", "c", "c", "c", "c", "c", "c"))
 ```
 
 ### Contributor/co-maintainer
@@ -157,7 +157,7 @@ kable(make_df(yml[vapply(yml, function(y) y$role == "maintainer" && y$section ==
 ```{r}
 #| echo: false
 
-kable(make_df(yml[vapply(yml, function(y) y$role == "contributor" && y$section == "bioc", FALSE)]), align = c("l", "c", "c", "c", "c", "c", "c", "c", "c"))
+kable(make_df(yml[vapply(yml, function(y) y$role == "contributor" && y$section == "bioc", FALSE)]), align = c("l", "c", "c", "c", "c", "c", "c", "c", "c", "c"))
 ```
 
 ## Bioconductor data packages
@@ -165,7 +165,7 @@ kable(make_df(yml[vapply(yml, function(y) y$role == "contributor" && y$section =
 ```{r}
 #| echo: false
 
-kable(make_df(yml[vapply(yml, function(y) y$section == "bioc-data", FALSE)]), align = c("l", "c", "c", "c", "c", "c", "c", "c", "c"))
+kable(make_df(yml[vapply(yml, function(y) y$section == "bioc-data", FALSE)])[, c("Package", "Bioc devel", "Bioc release", "GitHub Actions", "Code coverage", "GitHub issues", "GitHub PRs", "Bioc support", "Download stats")], align = c("l", "c", "c", "c", "c", "c", "c", "c", "c"))
 ```
 
 ## Other software packages
