@@ -396,6 +396,7 @@
 
 - package: SingleMoleculeGenomicsIO
   package_lower: singlemoleculegenomicsio
+  image: stickers/SingleMoleculeGenomicsIO.png
   path: https://github.com/fmicompbio/SingleMoleculeGenomicsIO
   role: co-developer
   description: >
@@ -404,3 +405,11 @@
     functions for reading collapsed or read-level data from modBAM, bedMethyl 
     and modkit extract tabular files, as well as C-to-T conversion based BAM 
     files, as SummarizedExperiment objects.
+
+- package: SpatialData
+  package_lower: spatialdata
+  path: https://github.com/HelenaLC/SpatialData
+  role: contributor
+  description: >
+    The SpatialData R package provides an R interface to the SpatialData 
+    python package.
