@@ -98,7 +98,6 @@ pmid_add <- c("27309738", "26615188", "25057166")
 biorxiv_dois <- c("10.1101/2024.08.15.608034",
                   "10.1101/2023.01.04.522742", 
                   "10.1101/2021.01.17.426996",
-                  "10.1101/2025.07.03.663000",
                   "10.1101/2025.08.21.671354",
                   "10.1101/2025.09.26.678732")
 
@@ -128,11 +127,11 @@ pmid_github <- rbind(
   c(pmid = "36508357", github = "https://github.com/i2bc/InterspeciesDE"),
   c(pmid = "36711921", github = "https://github.com/COMBINE-lab/scrna-ambiguity"),
   c(pmid = "37264470", github = "https://github.com/fmicompbio/mutscan_manuscript_2022"),
-  c(pmid = "40015273", github = "https://github.com/fmicompbio/Spombe_TFome")
+  c(pmid = "40015273", github = "https://github.com/fmicompbio/Spombe_TFome"),
+  c(pmid = "42055004", github = "https://github.com/fmicompbio/IVMC-protocol")
 )
 biorxiv_github <- rbind(
-  c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity"),
-  c(doi = "10.1101/2025.07.03.663000", github = "https://github.com/fmicompbio/IVMC-protocol")
+  c(doi = "10.1101/2023.01.04.522742", github = "https://github.com/COMBINE-lab/scrna-ambiguity")
 )
 
 ## preprint links
@@ -170,7 +169,8 @@ pmid_preprints <- rbind(
   c(pmid = "40106482", preprint = "https://doi.org/10.31219/osf.io/wxjky"),
   c(pmid = "40261894", preprint = "https://arxiv.org/abs/2410.01351"),
   c(pmid = "40907933", preprint = "https://doi.org/10.1101/2023.04.12.536513"),
-  c(pmid = "41231865", preprint = "https://arxiv.org/abs/2409.15472")
+  c(pmid = "41231865", preprint = "https://arxiv.org/abs/2409.15472"),
+  c(pmid = "42055004", preprint = "https://doi.org/10.1101/2025.07.03.663000")
 )
 joss_preprints <- rbind(
     c(doi = "10.21105/joss.05750", preprint = "https://doi.org/10.1101/2023.07.27.550821")
