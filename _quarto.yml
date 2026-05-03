@@ -24,7 +24,7 @@ website:
     #   - icon: github
     #     href: https://github.com/csoneson
     #   - icon: mastodon
-    #     href: https://fosstodon.org/@csoneson
+    #     href: https://fediscience.org/@csoneson
 
 format:
   html:

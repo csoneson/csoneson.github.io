@@ -12,7 +12,7 @@ about:
       href: https://github.com/csoneson
     - icon: mastodon
       text: mastodon
-      href: https://fosstodon.org/@csoneson
+      href: https://fediscience.org/@csoneson
     - icon: bluesky
       text: Bluesky
       href: https://bsky.app/profile/csoneson.bsky.social
