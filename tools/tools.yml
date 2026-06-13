@@ -406,10 +406,10 @@
     and modkit extract tabular files, as well as C-to-T conversion based BAM 
     files, as SummarizedExperiment objects.
 
-- package: SpatialData
-  package_lower: spatialdata
-  path: https://github.com/HelenaLC/SpatialData
+- package: spatialdataR
+  package_lower: spatialdataR
+  path: https://github.com/HelenaLC/spatialdataR
   role: contributor
   description: >
-    The SpatialData R package provides an R interface to the SpatialData 
+    The spatialdataR R package provides an R interface to the SpatialData 
     python package.
