@@ -7,6 +7,11 @@ editor_options:
 
 ## 2026
 
+-   [Reproducible research in computational biology](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=301714), University of Basel/FMI, Switzerland
+-   [Introduction to R](https://ivanek.github.io/introductionToR/), University of Basel, Switzerland
+-   Graphical representation of data, FMI, Switzerland (internal)
+-   Introduction to Principal Component Analysis. FMI, Switzerland (internal)
+-   Introduction to p-values, multiple testing and volcano plots. FMI, Switzerland (internal)
 -   [Biological data science (CSAMA 2026)](https://csama2026.bioconductor.eu/), Brixen, Italy
 -   [Underlying Principles of Scientific Investigation and Their Practical Application in the Laboratory Setting](https://vorlesungsverzeichnis.unibas.ch/de/vorlesungsverzeichnis?id=297951), University of Basel/FMI, Switzerland
 -   [Analysis of genomics data with R/Bioconductor](https://ivanek.github.io/analysisOfGenomicsDataWithR/), University of Basel, Switzerland
