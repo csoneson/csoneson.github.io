@@ -108,8 +108,8 @@ peerj_dois <- c()#c("10.7287/peerj.preprints.27283v2")
 arxiv_dois <- c("2409.17038")
 
 ## OSF IDs
-osf_ids <- c()
-# osf_ids <- c("wxjky")
+# osf_ids <- c()
+# osf_ids <- c("10.31219/osf.io/wxjky")
 
 ## github repos
 pmid_github <- rbind(
@@ -275,6 +275,21 @@ f1000_preprints <- data.frame(
   elocationid = c("")
 )
 # f1000_preprints <- NULL
+
+# OSF preprints
+osf <- data.frame(
+    title = c("Bioconductor Spatial Data and Image Analysis Hackathon"),
+    pubdate = c("Posted June 14, 2026."),
+    pubyear = c("Preprints"),
+    journal = c("BioHackrXiv"),
+    authors = c("Helena Crowell, Luca Marconato, Ilaria Billato, Matteo Calgaro, Robert Castelo, Riccardo Ceccaroni, Carissa Chen, Patrick Danaher, Sean Davis, Martin Emons, Gabriel Grajeda, Hugo Gruson, Samuel Gunz, Juan Henao, Rafael Irizarry, Sviatoslav Kharuk, Daria Lazic, Artur Manukyan, Pere Moles-Seró, Elizabeth Purdom, Dario Righelli, Gabriele Sales, Mike L. Smith, Charlotte Soneson, Michael B. Stadler, Wolfgang Huber, Davide Risso"),
+    volume = c(""), 
+    issue = c(""),
+    pages = c(""),
+    doi = c("10.37044/osf.io/9ej32_v1"),
+    pmid = c(""),
+    elocationid = c("")
+)
 ```
 
 ```{r get-pubs}
@@ -435,10 +450,13 @@ arxiv <- do.call(rbind, lapply(arxiv_dois, function(doi) {
 ```
 
 ```{r add-osf}
+#| eval: false
+
 ## Add OSF preprints by doi
 ## Sys.sleep() calls are needed to retrieve all information correctly
+## ... this is not really working reliably
 osf <- do.call(rbind, lapply(osf_ids, function(id) {
-    html <- read_html_live(paste0("https://doi.org/10.31219/osf.io/", id))
+    html <- read_html_live(paste0("https://doi.org/", id))
     Sys.sleep(6)
     title <- gsub("\n", "", html_text2(html_elements(html, "._preprint-title-container_1tkehu")), fixed = TRUE)
     Sys.sleep(4)
@@ -449,7 +467,7 @@ osf <- do.call(rbind, lapply(osf_ids, function(id) {
     pubdate <- paste0("Posted ", gsub("\n", "", gsub("Last edited: ", "", tmp)))
     data.frame(title = title, pubdate = pubdate, pubyear = "Preprints",       
                journal = "OSF Preprint", authors = authors, volume = "", issue = "", 
-               pages = "", doi = paste0("10.31219/osf.io/", id), pmid = "", 
+               pages = "", doi = id, pmid = "", 
                elocationid = "", stringsAsFactors = FALSE)
 }))
 ```
@@ -515,6 +533,14 @@ if (!is.null(biorxiv)) {
     gsub(paste0("(", paste(highlight, collapse = "|"), ")"), "<strong>\\1</strong>", a)
   })
 }
+```
+
+```{r sort-biorxiv}
+# sort preprints by date
+biorxiv <- biorxiv[
+    order(mdy(sub("\\.$", "", sub("Posted ", "", biorxiv$pubdate))), 
+          decreasing = TRUE), 
+]
 ```
 
 ```{r generate-output}
